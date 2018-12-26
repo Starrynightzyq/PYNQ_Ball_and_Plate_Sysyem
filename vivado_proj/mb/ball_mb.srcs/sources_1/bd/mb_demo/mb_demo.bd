@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xE18BCAD199A10D" bd:device="xc7a35tcpg236-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.2" bd:top="mb_demo" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xF2CF6562D0BDABCF" bd:device="xc7a35tcpg236-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.2" bd:top="mb_demo" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -26,13 +26,13 @@
         <spirit:abstractionType spirit:library="interface" spirit:name="gpio_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
       </spirit:busInterface>
       <spirit:busInterface>
-        <spirit:name>qspi_flash</spirit:name>
+        <spirit:name>iic_rtl</spirit:name>
         <spirit:master/>
-        <spirit:busType spirit:library="interface" spirit:name="spi" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:abstractionType spirit:library="interface" spirit:name="spi_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:busType spirit:library="interface" spirit:name="iic" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="iic_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
       </spirit:busInterface>
       <spirit:busInterface>
-        <spirit:name>iic_rtl</spirit:name>
+        <spirit:name>OV7725_IIC</spirit:name>
         <spirit:master/>
         <spirit:busType spirit:library="interface" spirit:name="iic" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:abstractionType spirit:library="interface" spirit:name="iic_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
@@ -162,18 +162,6 @@
           <spirit:name>reset</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>OV7725_SIOD_0</spirit:name>
-          <spirit:wire>
-            <spirit:direction>inout</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>OV7725_SIOC_0</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -324,6 +312,7 @@
         <spirit:componentRef spirit:library="ip" spirit:name="axi_intc" spirit:vendor="xilinx.com" spirit:version="4.1"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_demo_microblaze_0_axi_intc_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_IRQ_IS_LEVEL">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_HAS_FAST">1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -332,7 +321,7 @@
         <spirit:componentRef spirit:library="ip" spirit:name="xlconcat" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_demo_microblaze_0_xlconcat_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="NUM_PORTS">5</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_PORTS">6</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -349,6 +338,8 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_demo_clk_wiz_1_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT2_USED">true</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_OUT_CLKS">2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLK_OUT1_PORT">clk_100M</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLK_OUT2_PORT">clk_50M</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT2_REQUESTED_OUT_FREQ">50.000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PRIM_SOURCE">Single_ended_clock_capable_pin</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="USE_LOCKED">true</spirit:configurableElementValue>
@@ -406,15 +397,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>axi_quad_spi_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="axi_quad_spi" spirit:vendor="xilinx.com" spirit:version="3.2"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_demo_axi_quad_spi_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="USE_BOARD_FLOW">true</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="QSPI_BOARD_INTERFACE">qspi_flash</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>axi_iic_0</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_iic" spirit:vendor="xilinx.com" spirit:version="2.0"/>
         <spirit:configurableElementValues>
@@ -426,6 +408,33 @@
         <spirit:componentRef spirit:library="user" spirit:name="ball_locator" spirit:vendor="starrynightzyq.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_demo_ball_locator_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>ila_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="ila" spirit:vendor="xilinx.com" spirit:version="6.2"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_demo_ila_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_NUM_OF_PROBES">9</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_AXI_PROTOCOL">AXI4S</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>alinx_ov5640_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="alinx_ov5640" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_demo_alinx_ov5640_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">alinx_ov5640</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axi_iic_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_iic" spirit:vendor="xilinx.com" spirit:version="2.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_demo_axi_iic_1_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -486,14 +495,19 @@
         <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="servo_0"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>microblaze_0_axi_periph_M02_AXI</spirit:name>
-        <spirit:activeInterface spirit:busRef="M02_AXI" spirit:componentRef="microblaze_0_axi_periph"/>
-        <spirit:activeInterface spirit:busRef="AXI_LITE" spirit:componentRef="axi_quad_spi_0"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
         <spirit:name>microblaze_0_axi_periph_M07_AXI</spirit:name>
         <spirit:activeInterface spirit:busRef="M07_AXI" spirit:componentRef="microblaze_0_axi_periph"/>
         <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="axi_iic_0"/>
+      </spirit:interconnection>
+      <spirit:monitorInterconnection>
+        <spirit:name>alinx_ov5640_0_m_axis_video</spirit:name>
+        <spirit:monitoredActiveInterface spirit:busRef="m_axis_video" spirit:componentRef="alinx_ov5640_0"/>
+        <spirit:monitorInterface spirit:busRef="SLOT_0_AXIS" spirit:componentRef="ila_0"/>
+      </spirit:monitorInterconnection>
+      <spirit:interconnection>
+        <spirit:name>microblaze_0_axi_periph_M02_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M02_AXI" spirit:componentRef="microblaze_0_axi_periph"/>
+        <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="axi_iic_1"/>
       </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
@@ -504,7 +518,7 @@
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>microblaze_0_Clk</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="clk_wiz_1" spirit:portRef="clk_out1"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_1" spirit:portRef="clk_100M"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0" spirit:portRef="Clk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="processor_clk"/>
@@ -513,7 +527,6 @@
         <spirit:internalPortReference spirit:componentRef="axi_gpio_1" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_timer_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="servo_0" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_quad_spi_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="ball_locator_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="ACLK"/>
@@ -529,6 +542,8 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S02_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M07_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="alinx_ov5640_0" spirit:portRef="m_axis_video_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_iic_1" spirit:portRef="s_axi_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_1_locked</spirit:name>
@@ -559,7 +574,6 @@
         <spirit:internalPortReference spirit:componentRef="axi_gpio_1" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_timer_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="servo_0" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_quad_spi_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="ball_locator_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S00_ARESETN"/>
@@ -573,6 +587,8 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S02_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M07_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="alinx_ov5640_0" spirit:portRef="m_axis_video_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_iic_1" spirit:portRef="s_axi_aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mdm_1_debug_sys_rst</spirit:name>
@@ -599,16 +615,6 @@
         <spirit:name>axi_gpio_1_ip2intc_irpt</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_1" spirit:portRef="ip2intc_irpt"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_xlconcat" spirit:portRef="In1"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>Net</spirit:name>
-        <spirit:externalPortReference spirit:portRef="OV7725_SIOD_0"/>
-        <spirit:internalPortReference spirit:componentRef="ball_locator_0" spirit:portRef="OV7725_SIOD"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>ball_locator_0_OV7725_SIOC</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="ball_locator_0" spirit:portRef="OV7725_SIOC"/>
-        <spirit:externalPortReference spirit:portRef="OV7725_SIOC_0"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>ball_locator_0_OV7725_XCLK</spirit:name>
@@ -649,21 +655,26 @@
         <spirit:name>OV7725_D_0_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="OV7725_D_0"/>
         <spirit:internalPortReference spirit:componentRef="ball_locator_0" spirit:portRef="OV7725_D"/>
+        <spirit:internalPortReference spirit:componentRef="alinx_ov5640_0" spirit:portRef="cmos_d"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>OV7725_HREF_0_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="OV7725_HREF_0"/>
         <spirit:internalPortReference spirit:componentRef="ball_locator_0" spirit:portRef="OV7725_HREF"/>
+        <spirit:internalPortReference spirit:componentRef="alinx_ov5640_0" spirit:portRef="cmos_href"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>OV7725_PCLK_0_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="OV7725_PCLK_0"/>
         <spirit:internalPortReference spirit:componentRef="ball_locator_0" spirit:portRef="OV7725_PCLK"/>
+        <spirit:internalPortReference spirit:componentRef="ila_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="alinx_ov5640_0" spirit:portRef="cmos_pclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>OV7725_VSYNC_0_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="OV7725_VSYNC_0"/>
         <spirit:internalPortReference spirit:componentRef="ball_locator_0" spirit:portRef="OV7725_VSYNC"/>
+        <spirit:internalPortReference spirit:componentRef="alinx_ov5640_0" spirit:portRef="cmos_vsync"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>ball_locator_0_coord_valid_o</spirit:name>
@@ -686,14 +697,14 @@
         <spirit:externalPortReference spirit:portRef="pwm_out_1_0"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>clk_wiz_1_clk_out2</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="clk_wiz_1" spirit:portRef="clk_out2"/>
-        <spirit:internalPortReference spirit:componentRef="axi_quad_spi_0" spirit:portRef="ext_spi_clk"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>axi_iic_0_iic2intc_irpt</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="iic2intc_irpt"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_xlconcat" spirit:portRef="In4"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_iic_1_iic2intc_irpt</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_iic_1" spirit:portRef="iic2intc_irpt"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_xlconcat" spirit:portRef="In5"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -703,11 +714,11 @@
       <spirit:hierConnection spirit:interfaceRef="dip_switches_16bits/axi_gpio_1_GPIO">
         <spirit:activeInterface spirit:busRef="GPIO" spirit:componentRef="axi_gpio_1"/>
       </spirit:hierConnection>
-      <spirit:hierConnection spirit:interfaceRef="qspi_flash/axi_quad_spi_0_SPI_0">
-        <spirit:activeInterface spirit:busRef="SPI_0" spirit:componentRef="axi_quad_spi_0"/>
-      </spirit:hierConnection>
       <spirit:hierConnection spirit:interfaceRef="iic_rtl/axi_iic_0_IIC">
         <spirit:activeInterface spirit:busRef="IIC" spirit:componentRef="axi_iic_0"/>
+      </spirit:hierConnection>
+      <spirit:hierConnection spirit:interfaceRef="OV7725_IIC/axi_iic_1_IIC">
+        <spirit:activeInterface spirit:busRef="IIC" spirit:componentRef="axi_iic_1"/>
       </spirit:hierConnection>
     </spirit:hierConnections>
   </spirit:design>
@@ -4133,9 +4144,9 @@
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
-            <spirit:name>SEG_axi_quad_spi_0_Reg</spirit:name>
-            <spirit:displayName>/axi_quad_spi_0/AXI_LITE/Reg</spirit:displayName>
-            <spirit:addressOffset>0x44A20000</spirit:addressOffset>
+            <spirit:name>SEG_axi_iic_1_Reg</spirit:name>
+            <spirit:displayName>/axi_iic_1/S_AXI/Reg</spirit:displayName>
+            <spirit:addressOffset>0x40810000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>

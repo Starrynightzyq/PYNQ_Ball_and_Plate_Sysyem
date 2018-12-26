@@ -56,8 +56,8 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// clk_out1___100.000______0.000______50.0______130.958_____98.575
-// clk_out2____50.000______0.000______50.0______151.636_____98.575
+// clk_100M___100.000______0.000______50.0______130.958_____98.575
+// _clk_50M____50.000______0.000______50.0______151.636_____98.575
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -70,8 +70,8 @@ module mb_demo_clk_wiz_1_0_clk_wiz
 
  (// Clock in ports
   // Clock out ports
-  output        clk_out1,
-  output        clk_out2,
+  output        clk_100M,
+  output        clk_50M,
   // Status and control signals
   input         reset,
   output        locked,
@@ -95,8 +95,8 @@ wire clk_in2_mb_demo_clk_wiz_1_0;
   //    * Unused inputs are tied off
   //    * Unused outputs are labeled unused
 
-  wire        clk_out1_mb_demo_clk_wiz_1_0;
-  wire        clk_out2_mb_demo_clk_wiz_1_0;
+  wire        clk_100M_mb_demo_clk_wiz_1_0;
+  wire        clk_50M_mb_demo_clk_wiz_1_0;
   wire        clk_out3_mb_demo_clk_wiz_1_0;
   wire        clk_out4_mb_demo_clk_wiz_1_0;
   wire        clk_out5_mb_demo_clk_wiz_1_0;
@@ -146,9 +146,9 @@ wire clk_in2_mb_demo_clk_wiz_1_0;
    (
     .CLKFBOUT            (clkfbout_mb_demo_clk_wiz_1_0),
     .CLKFBOUTB           (clkfboutb_unused),
-    .CLKOUT0             (clk_out1_mb_demo_clk_wiz_1_0),
+    .CLKOUT0             (clk_100M_mb_demo_clk_wiz_1_0),
     .CLKOUT0B            (clkout0b_unused),
-    .CLKOUT1             (clk_out2_mb_demo_clk_wiz_1_0),
+    .CLKOUT1             (clk_50M_mb_demo_clk_wiz_1_0),
     .CLKOUT1B            (clkout1b_unused),
     .CLKOUT2             (clkout2_unused),
     .CLKOUT2B            (clkout2b_unused),
@@ -200,13 +200,13 @@ wire clk_in2_mb_demo_clk_wiz_1_0;
 
 
   BUFG clkout1_buf
-   (.O   (clk_out1),
-    .I   (clk_out1_mb_demo_clk_wiz_1_0));
+   (.O   (clk_100M),
+    .I   (clk_100M_mb_demo_clk_wiz_1_0));
 
 
   BUFG clkout2_buf
-   (.O   (clk_out2),
-    .I   (clk_out2_mb_demo_clk_wiz_1_0));
+   (.O   (clk_50M),
+    .I   (clk_50M_mb_demo_clk_wiz_1_0));
 
 
 

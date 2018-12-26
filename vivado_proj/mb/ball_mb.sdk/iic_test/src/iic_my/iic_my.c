@@ -29,7 +29,7 @@ typedef u8 AddressType;
 
 //static u8 ReadBuffer[PAGE_SIZE];	/* Read buffer for reading a page. */
 
-int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
 	int Status;
 	XIic_Config *ConfigPtr;	/* Pointer to configuration data */
 	/*
@@ -58,7 +58,7 @@ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, XIntc *IntcIns
 	 * Set the Slave address.
 	 */
 	Status = XIic_SetAddress(IicInstancePtr, XII_ADDR_TO_SEND_TYPE,
-			SLAVE_ADDRESS);
+			Slave_Address);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
@@ -72,7 +72,7 @@ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, XIntc *IntcIns
 	return XST_SUCCESS;
 }
 
-static int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
 	int Status;
 	/*
 	 * Connect the device driver handler that will be called when an

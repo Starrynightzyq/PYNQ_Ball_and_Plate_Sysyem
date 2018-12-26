@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Mon Dec 24 08:46:39 2018
+// Date        : Wed Dec 26 16:51:26 2018
 // Host        : ZYQ-Mac-Win running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_clk_wiz_1_0/mb_demo_clk_wiz_1_0_sim_netlist.v
@@ -14,50 +14,50 @@
 
 (* NotValidForBitStream *)
 module mb_demo_clk_wiz_1_0
-   (clk_out1,
-    clk_out2,
+   (clk_100M,
+    clk_50M,
     reset,
     locked,
     clk_in1);
-  output clk_out1;
-  output clk_out2;
+  output clk_100M;
+  output clk_50M;
   input reset;
   output locked;
   input clk_in1;
 
+  wire clk_100M;
+  wire clk_50M;
   (* IBUF_LOW_PWR *) wire clk_in1;
-  wire clk_out1;
-  wire clk_out2;
   wire locked;
   wire reset;
 
   mb_demo_clk_wiz_1_0_mb_demo_clk_wiz_1_0_clk_wiz inst
-       (.clk_in1(clk_in1),
-        .clk_out1(clk_out1),
-        .clk_out2(clk_out2),
+       (.clk_100M(clk_100M),
+        .clk_50M(clk_50M),
+        .clk_in1(clk_in1),
         .locked(locked),
         .reset(reset));
 endmodule
 
 (* ORIG_REF_NAME = "mb_demo_clk_wiz_1_0_clk_wiz" *) 
 module mb_demo_clk_wiz_1_0_mb_demo_clk_wiz_1_0_clk_wiz
-   (clk_out1,
-    clk_out2,
+   (clk_100M,
+    clk_50M,
     reset,
     locked,
     clk_in1);
-  output clk_out1;
-  output clk_out2;
+  output clk_100M;
+  output clk_50M;
   input reset;
   output locked;
   input clk_in1;
 
+  wire clk_100M;
+  wire clk_100M_mb_demo_clk_wiz_1_0;
+  wire clk_50M;
+  wire clk_50M_mb_demo_clk_wiz_1_0;
   wire clk_in1;
   wire clk_in1_mb_demo_clk_wiz_1_0;
-  wire clk_out1;
-  wire clk_out1_mb_demo_clk_wiz_1_0;
-  wire clk_out2;
-  wire clk_out2_mb_demo_clk_wiz_1_0;
   wire clkfbout_buf_mb_demo_clk_wiz_1_0;
   wire clkfbout_mb_demo_clk_wiz_1_0;
   wire locked;
@@ -93,12 +93,12 @@ module mb_demo_clk_wiz_1_0_mb_demo_clk_wiz_1_0_clk_wiz
         .O(clk_in1_mb_demo_clk_wiz_1_0));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFG clkout1_buf
-       (.I(clk_out1_mb_demo_clk_wiz_1_0),
-        .O(clk_out1));
+       (.I(clk_100M_mb_demo_clk_wiz_1_0),
+        .O(clk_100M));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFG clkout2_buf
-       (.I(clk_out2_mb_demo_clk_wiz_1_0),
-        .O(clk_out2));
+       (.I(clk_50M_mb_demo_clk_wiz_1_0),
+        .O(clk_50M));
   (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
@@ -158,9 +158,9 @@ module mb_demo_clk_wiz_1_0_mb_demo_clk_wiz_1_0_clk_wiz
         .CLKIN2(1'b0),
         .CLKINSEL(1'b1),
         .CLKINSTOPPED(NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED),
-        .CLKOUT0(clk_out1_mb_demo_clk_wiz_1_0),
+        .CLKOUT0(clk_100M_mb_demo_clk_wiz_1_0),
         .CLKOUT0B(NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED),
-        .CLKOUT1(clk_out2_mb_demo_clk_wiz_1_0),
+        .CLKOUT1(clk_50M_mb_demo_clk_wiz_1_0),
         .CLKOUT1B(NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED),
         .CLKOUT2(NLW_mmcm_adv_inst_CLKOUT2_UNCONNECTED),
         .CLKOUT2B(NLW_mmcm_adv_inst_CLKOUT2B_UNCONNECTED),

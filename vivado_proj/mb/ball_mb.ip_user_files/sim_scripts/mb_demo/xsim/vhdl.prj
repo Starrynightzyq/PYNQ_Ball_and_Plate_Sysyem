@@ -13,7 +13,7 @@ vhdl xil_defaultlib  \
 "../../../bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram/sim/shift_ram.vhd" \
 "../../../bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram_16bit/sim/shift_ram_16bit.vhd" \
 "../../../bd/mb_demo/ip/mb_demo_axi_timer_0_0/sim/mb_demo_axi_timer_0_0.vhd" \
-"../../../bd/mb_demo/ip/mb_demo_axi_quad_spi_0_0/sim/mb_demo_axi_quad_spi_0_0.vhd" \
 "../../../bd/mb_demo/ip/mb_demo_axi_iic_0_0/sim/mb_demo_axi_iic_0_0.vhd" \
+"../../../bd/mb_demo/ip/mb_demo_axi_iic_1_0/sim/mb_demo_axi_iic_1_0.vhd" \
 
 nosort

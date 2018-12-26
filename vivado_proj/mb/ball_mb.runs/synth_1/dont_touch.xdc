@@ -60,10 +60,16 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mb_demo_axi_tim
 # IP: bd/mb_demo/ip/mb_demo_servo_0_0/mb_demo_servo_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mb_demo_servo_0_0 || ORIG_REF_NAME==mb_demo_servo_0_0} -quiet] -quiet
 
-# IP: bd/mb_demo/ip/mb_demo_axi_quad_spi_0_0/mb_demo_axi_quad_spi_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mb_demo_axi_quad_spi_0_0 || ORIG_REF_NAME==mb_demo_axi_quad_spi_0_0} -quiet] -quiet
-
 # IP: bd/mb_demo/ip/mb_demo_axi_iic_0_0/mb_demo_axi_iic_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mb_demo_axi_iic_0_0 || ORIG_REF_NAME==mb_demo_axi_iic_0_0} -quiet] -quiet
+
+# IP: bd/mb_demo/ip/mb_demo_alinx_ov5640_0_0/mb_demo_alinx_ov5640_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mb_demo_alinx_ov5640_0_0 || ORIG_REF_NAME==mb_demo_alinx_ov5640_0_0} -quiet] -quiet
+
+# IP: bd/mb_demo/ip/mb_demo_ila_0_0/mb_demo_ila_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mb_demo_ila_0_0 || ORIG_REF_NAME==mb_demo_ila_0_0} -quiet] -quiet
+
+# IP: bd/mb_demo/ip/mb_demo_axi_iic_1_0/mb_demo_axi_iic_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mb_demo_axi_iic_1_0 || ORIG_REF_NAME==mb_demo_axi_iic_1_0} -quiet] -quiet
 
 # XDC: bd/mb_demo/mb_demo_ooc.xdc

@@ -53,13 +53,20 @@
 #include "sleep.h"
 
 #include "./iic_my/iic_my.h"
+#include "camera/camera.h"
 
 #define INTC_DEVICE_ID	XPAR_INTC_0_DEVICE_ID
 #define IIC_DEVICE_ID	XPAR_IIC_0_DEVICE_ID
 #define IIC_INTR_ID		XPAR_INTC_0_IIC_0_VEC_ID
+#define IIC_CAM_DEVICE_ID 	XPAR_IIC_1_DEVICE_ID
+#define IIC_CAM_INTR_ID		XPAR_INTC_0_IIC_1_VEC_ID
+
+#define AT24C02_IIC_ADDR 		(0xA0 >> 1)  /*AT24C02  address*/
+#define OV7725_IIC_ADDR			(0x42 >> 1)  /* The 8 bit IIC Slave address. */
 
 XIic IicInstance;	/* The instance of the IIC device. */
 XIntc IntcInstance;	/* The instance of the Interrupt control device. */
+XIic IicCamInstance;
 
 int Init_System();
 void AT24C_test();
@@ -75,6 +82,10 @@ int main()
     Init_System();
 
     print("Hello World\n\r");
+
+    Camera_Init(&IicCamInstance);
+
+    print("AT24C Test ...\n\r");
 
     AT24C_test();
 
@@ -98,7 +109,8 @@ int Init_System() {
 	 * interrupt for the device occurs, the handler defined above performs
 	 * the specific interrupt processing for the device.
 	 */
-	IicInit(&IicInstance, IIC_DEVICE_ID, IIC_INTR_ID, &IntcInstance);
+	IicInit(&IicInstance, IIC_DEVICE_ID, IIC_INTR_ID, AT24C02_IIC_ADDR, &IntcInstance);
+	IicInit(&IicCamInstance, IIC_CAM_DEVICE_ID, IIC_CAM_INTR_ID, OV7725_IIC_ADDR, &IntcInstance);
 
 	/*
 	 * Start the interrupt controller so interrupts are enabled for all

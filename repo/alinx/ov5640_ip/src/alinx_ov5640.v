@@ -2,7 +2,8 @@
 module alinx_ov5640
 #(
    parameter BUFFER_DEPTH = 4096,
-   parameter DEBUG_OV5640 = 1
+   parameter DEBUG_OV5640 = 0,
+   parameter FIFO_GEN = 0
 )
 (
 	input                                        cmos_vsync,       //cmos vsync
@@ -159,56 +160,67 @@ endgenerate
 
 wire empty;
 wire full;
-assign m_axis_video_tvalid = ~empty & m_axis_video_tready;
 assign s_axis_tready = ~full;
-xpm_fifo_async # (
 
-  .FIFO_MEMORY_TYPE          ("auto"),           //string; "auto", "block", or "distributed";
-  .ECC_MODE                  ("no_ecc"),         //string; "no_ecc" or "en_ecc";
-  .RELATED_CLOCKS            (0),                //positive integer; 0 or 1
-  .FIFO_WRITE_DEPTH          (BUFFER_DEPTH),     //positive integer
-  .WRITE_DATA_WIDTH          (18),               //positive integer
-  .WR_DATA_COUNT_WIDTH       (12),               //positive integer
-  .PROG_FULL_THRESH          (10),               //positive integer
-  .FULL_RESET_VALUE          (0),                //positive integer; 0 or 1
-  .USE_ADV_FEATURES          ("0707"),           //string; "0000" to "1F1F"; 
-  .READ_MODE                 ("fwft"),            //string; "std" or "fwft";
-  .FIFO_READ_LATENCY         (0),                //positive integer;
-  .READ_DATA_WIDTH           (18),               //positive integer
-  .RD_DATA_COUNT_WIDTH       (12),               //positive integer
-  .PROG_EMPTY_THRESH         (10),               //positive integer
-  .DOUT_RESET_VALUE          ("0"),              //string
-  .CDC_SYNC_STAGES           (2),                //positive integer
-  .WAKEUP_TIME               (0)                 //positive integer; 0 or 2;
+generate
+	if (FIFO_GEN) begin
+		xpm_fifo_async # (
 
-) xpm_fifo_async_inst (
+		  .FIFO_MEMORY_TYPE          ("auto"),           //string; "auto", "block", or "distributed";
+		  .ECC_MODE                  ("no_ecc"),         //string; "no_ecc" or "en_ecc";
+		  .RELATED_CLOCKS            (0),                //positive integer; 0 or 1
+		  .FIFO_WRITE_DEPTH          (BUFFER_DEPTH),     //positive integer
+		  .WRITE_DATA_WIDTH          (18),               //positive integer
+		  .WR_DATA_COUNT_WIDTH       (12),               //positive integer
+		  .PROG_FULL_THRESH          (10),               //positive integer
+		  .FULL_RESET_VALUE          (0),                //positive integer; 0 or 1
+		  .USE_ADV_FEATURES          ("0707"),           //string; "0000" to "1F1F"; 
+		  .READ_MODE                 ("fwft"),            //string; "std" or "fwft";
+		  .FIFO_READ_LATENCY         (0),                //positive integer;
+		  .READ_DATA_WIDTH           (18),               //positive integer
+		  .RD_DATA_COUNT_WIDTH       (12),               //positive integer
+		  .PROG_EMPTY_THRESH         (10),               //positive integer
+		  .DOUT_RESET_VALUE          ("0"),              //string
+		  .CDC_SYNC_STAGES           (2),                //positive integer
+		  .WAKEUP_TIME               (0)                 //positive integer; 0 or 2;
 
-      .rst              (~cmos_aresetn),
-      .wr_clk           (cmos_pclk),
-      .wr_en            (s_axis_tvalid & fifo_ready),
-      .din              ({s_axis_tdata,s_axis_tlast,s_axis_tuser}),
-      .full             (full),
-      .overflow         (),
-      .prog_full        (),
-      .wr_data_count    (),
-      .almost_full      (),
-      .wr_ack           (),
-      .wr_rst_busy      (),
-      .rd_clk           (m_axis_video_aclk),
-      .rd_en            (m_axis_video_tready & ~empty & fifo_ready_maxis),
-      .dout             ({m_axis_video_tdata,m_axis_video_tlast,m_axis_video_tuser}),
-      .empty            (empty),
-      .underflow        (),
-      .rd_rst_busy      (),
-      .prog_empty       (),
-      .rd_data_count    (),
-      .almost_empty     (),
-      .data_valid       (),
-      .sleep            (1'b0),
-      .injectsbiterr    (1'b0),
-      .injectdbiterr    (1'b0),
-      .sbiterr          (),
-      .dbiterr          ()
+		) xpm_fifo_async_inst (
 
-);
+		      .rst              (~cmos_aresetn),
+		      .wr_clk           (cmos_pclk),
+		      .wr_en            (s_axis_tvalid & fifo_ready),
+		      .din              ({s_axis_tdata,s_axis_tlast,s_axis_tuser}),
+		      .full             (full),
+		      .overflow         (),
+		      .prog_full        (),
+		      .wr_data_count    (),
+		      .almost_full      (),
+		      .wr_ack           (),
+		      .wr_rst_busy      (),
+		      .rd_clk           (m_axis_video_aclk),
+		      .rd_en            (m_axis_video_tready & ~empty & fifo_ready_maxis),
+		      .dout             ({m_axis_video_tdata,m_axis_video_tlast,m_axis_video_tuser}),
+		      .empty            (empty),
+		      .underflow        (),
+		      .rd_rst_busy      (),
+		      .prog_empty       (),
+		      .rd_data_count    (),
+		      .almost_empty     (),
+		      .data_valid       (),
+		      .sleep            (1'b0),
+		      .injectsbiterr    (1'b0),
+		      .injectdbiterr    (1'b0),
+		      .sbiterr          (),
+		      .dbiterr          ()
+
+		);
+
+		assign m_axis_video_tvalid = ~empty & m_axis_video_tready;
+	end else begin
+		assign {m_axis_video_tdata,m_axis_video_tlast,m_axis_video_tuser} = {s_axis_tdata,s_axis_tlast,s_axis_tuser};
+
+		assign m_axis_video_tvalid = m_axis_video_tready;
+	end
+endgenerate
+
 endmodule

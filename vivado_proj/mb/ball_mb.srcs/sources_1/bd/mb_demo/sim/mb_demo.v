@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-//Date        : Wed Dec 26 08:41:47 2018
+//Date        : Wed Dec 26 19:49:51 2018
 //Host        : ZYQ-Mac-Win running 64-bit major release  (build 9200)
 //Command     : generate_target mb_demo.bd
 //Design      : mb_demo
@@ -1093,15 +1093,19 @@ module m07_couplers_imp_78LLX9
   assign m07_couplers_to_m07_couplers_WVALID = S_AXI_wvalid;
 endmodule
 
-(* CORE_GENERATION_INFO = "mb_demo,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=mb_demo,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=32,numReposBlks=19,numNonXlnxBlks=2,numHierBlks=13,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=12,da_board_cnt=9,da_clkrst_cnt=1,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "mb_demo.hwdef" *) 
+(* CORE_GENERATION_INFO = "mb_demo,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=mb_demo,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=34,numReposBlks=21,numNonXlnxBlks=2,numHierBlks=13,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=13,da_board_cnt=10,da_clkrst_cnt=5,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "mb_demo.hwdef" *) 
 module mb_demo
    (OV7725_D_0,
     OV7725_HREF_0,
+    OV7725_IIC_scl_i,
+    OV7725_IIC_scl_o,
+    OV7725_IIC_scl_t,
+    OV7725_IIC_sda_i,
+    OV7725_IIC_sda_o,
+    OV7725_IIC_sda_t,
     OV7725_PCLK_0,
     OV7725_PWND_0,
     OV7725_RST_0,
-    OV7725_SIOC_0,
-    OV7725_SIOD_0,
     OV7725_VSYNC_0,
     OV7725_XCLK_0,
     dip_switches_16bits_tri_i,
@@ -1114,21 +1118,6 @@ module mb_demo
     iic_rtl_sda_t,
     pwm_out_0_0,
     pwm_out_1_0,
-    qspi_flash_io0_i,
-    qspi_flash_io0_o,
-    qspi_flash_io0_t,
-    qspi_flash_io1_i,
-    qspi_flash_io1_o,
-    qspi_flash_io1_t,
-    qspi_flash_io2_i,
-    qspi_flash_io2_o,
-    qspi_flash_io2_t,
-    qspi_flash_io3_i,
-    qspi_flash_io3_o,
-    qspi_flash_io3_t,
-    qspi_flash_ss_i,
-    qspi_flash_ss_o,
-    qspi_flash_ss_t,
     reset,
     sys_clock,
     usb_uart_rxd,
@@ -1138,11 +1127,15 @@ module mb_demo
     vga_vsync_0);
   input [7:0]OV7725_D_0;
   input OV7725_HREF_0;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) input OV7725_IIC_scl_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) output OV7725_IIC_scl_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) output OV7725_IIC_scl_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) input OV7725_IIC_sda_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) output OV7725_IIC_sda_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) output OV7725_IIC_sda_t;
   input OV7725_PCLK_0;
   output OV7725_PWND_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.OV7725_RST_0 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.OV7725_RST_0, POLARITY ACTIVE_LOW" *) output OV7725_RST_0;
-  output OV7725_SIOC_0;
-  inout OV7725_SIOD_0;
   input OV7725_VSYNC_0;
   output OV7725_XCLK_0;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 dip_switches_16bits TRI_I" *) input [15:0]dip_switches_16bits_tri_i;
@@ -1155,21 +1148,6 @@ module mb_demo
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 iic_rtl SDA_T" *) output iic_rtl_sda_t;
   output pwm_out_0_0;
   output pwm_out_1_0;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO0_I" *) input qspi_flash_io0_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO0_O" *) output qspi_flash_io0_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO0_T" *) output qspi_flash_io0_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO1_I" *) input qspi_flash_io1_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO1_O" *) output qspi_flash_io1_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO1_T" *) output qspi_flash_io1_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO2_I" *) input qspi_flash_io2_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO2_O" *) output qspi_flash_io2_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO2_T" *) output qspi_flash_io2_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO3_I" *) input qspi_flash_io3_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO3_O" *) output qspi_flash_io3_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash IO3_T" *) output qspi_flash_io3_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash SS_I" *) input qspi_flash_ss_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash SS_O" *) output qspi_flash_ss_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 qspi_flash SS_T" *) output qspi_flash_ss_t;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, POLARITY ACTIVE_HIGH" *) input reset;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN mb_demo_sys_clock, FREQ_HZ 100000000, PHASE 0.000" *) input sys_clock;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 usb_uart RxD" *) input usb_uart_rxd;
@@ -1178,11 +1156,15 @@ module mb_demo
   output vga_hsync_0;
   output vga_vsync_0;
 
-  wire Net;
   wire [7:0]OV7725_D_0_1;
   wire OV7725_HREF_0_1;
   wire OV7725_PCLK_0_1;
   wire OV7725_VSYNC_0_1;
+  wire [15:0]alinx_ov5640_0_m_axis_video_TDATA;
+  wire [1:0]alinx_ov5640_0_m_axis_video_TKEEP;
+  wire alinx_ov5640_0_m_axis_video_TLAST;
+  wire alinx_ov5640_0_m_axis_video_TUSER;
+  wire alinx_ov5640_0_m_axis_video_TVALID;
   wire [15:0]axi_gpio_1_GPIO_TRI_I;
   wire axi_gpio_1_ip2intc_irpt;
   wire axi_iic_0_IIC_SCL_I;
@@ -1192,34 +1174,24 @@ module mb_demo
   wire axi_iic_0_IIC_SDA_O;
   wire axi_iic_0_IIC_SDA_T;
   wire axi_iic_0_iic2intc_irpt;
-  wire axi_quad_spi_0_SPI_0_IO0_I;
-  wire axi_quad_spi_0_SPI_0_IO0_O;
-  wire axi_quad_spi_0_SPI_0_IO0_T;
-  wire axi_quad_spi_0_SPI_0_IO1_I;
-  wire axi_quad_spi_0_SPI_0_IO1_O;
-  wire axi_quad_spi_0_SPI_0_IO1_T;
-  wire axi_quad_spi_0_SPI_0_IO2_I;
-  wire axi_quad_spi_0_SPI_0_IO2_O;
-  wire axi_quad_spi_0_SPI_0_IO2_T;
-  wire axi_quad_spi_0_SPI_0_IO3_I;
-  wire axi_quad_spi_0_SPI_0_IO3_O;
-  wire axi_quad_spi_0_SPI_0_IO3_T;
-  wire axi_quad_spi_0_SPI_0_SS_I;
-  wire [0:0]axi_quad_spi_0_SPI_0_SS_O;
-  wire axi_quad_spi_0_SPI_0_SS_T;
+  wire axi_iic_1_IIC_SCL_I;
+  wire axi_iic_1_IIC_SCL_O;
+  wire axi_iic_1_IIC_SCL_T;
+  wire axi_iic_1_IIC_SDA_I;
+  wire axi_iic_1_IIC_SDA_O;
+  wire axi_iic_1_IIC_SDA_T;
+  wire axi_iic_1_iic2intc_irpt;
   wire axi_timer_0_interrupt;
   wire axi_uartlite_0_UART_RxD;
   wire axi_uartlite_0_UART_TxD;
   wire axi_uartlite_0_interrupt;
   wire ball_locator_0_OV7725_PWND;
   wire ball_locator_0_OV7725_RST;
-  wire ball_locator_0_OV7725_SIOC;
   wire ball_locator_0_OV7725_XCLK;
   wire ball_locator_0_coord_valid_o;
   wire [11:0]ball_locator_0_vga_data;
   wire ball_locator_0_vga_hsync;
   wire ball_locator_0_vga_vsync;
-  wire clk_wiz_1_clk_out2;
   wire clk_wiz_1_locked;
   wire en_take_color_i_0_1;
   wire mdm_1_debug_sys_rst;
@@ -1414,7 +1386,7 @@ module mb_demo
   wire [0:1]microblaze_0_interrupt_ACK;
   wire [31:0]microblaze_0_interrupt_ADDRESS;
   wire microblaze_0_interrupt_INTERRUPT;
-  wire [4:0]microblaze_0_intr;
+  wire [5:0]microblaze_0_intr;
   wire reset_1;
   wire [0:0]rst_clk_wiz_1_100M_bus_struct_reset;
   wire [0:0]rst_clk_wiz_1_100M_interconnect_aresetn;
@@ -1426,20 +1398,20 @@ module mb_demo
 
   assign OV7725_D_0_1 = OV7725_D_0[7:0];
   assign OV7725_HREF_0_1 = OV7725_HREF_0;
+  assign OV7725_IIC_scl_o = axi_iic_1_IIC_SCL_O;
+  assign OV7725_IIC_scl_t = axi_iic_1_IIC_SCL_T;
+  assign OV7725_IIC_sda_o = axi_iic_1_IIC_SDA_O;
+  assign OV7725_IIC_sda_t = axi_iic_1_IIC_SDA_T;
   assign OV7725_PCLK_0_1 = OV7725_PCLK_0;
   assign OV7725_PWND_0 = ball_locator_0_OV7725_PWND;
   assign OV7725_RST_0 = ball_locator_0_OV7725_RST;
-  assign OV7725_SIOC_0 = ball_locator_0_OV7725_SIOC;
   assign OV7725_VSYNC_0_1 = OV7725_VSYNC_0;
   assign OV7725_XCLK_0 = ball_locator_0_OV7725_XCLK;
   assign axi_gpio_1_GPIO_TRI_I = dip_switches_16bits_tri_i[15:0];
   assign axi_iic_0_IIC_SCL_I = iic_rtl_scl_i;
   assign axi_iic_0_IIC_SDA_I = iic_rtl_sda_i;
-  assign axi_quad_spi_0_SPI_0_IO0_I = qspi_flash_io0_i;
-  assign axi_quad_spi_0_SPI_0_IO1_I = qspi_flash_io1_i;
-  assign axi_quad_spi_0_SPI_0_IO2_I = qspi_flash_io2_i;
-  assign axi_quad_spi_0_SPI_0_IO3_I = qspi_flash_io3_i;
-  assign axi_quad_spi_0_SPI_0_SS_I = qspi_flash_ss_i;
+  assign axi_iic_1_IIC_SCL_I = OV7725_IIC_scl_i;
+  assign axi_iic_1_IIC_SDA_I = OV7725_IIC_sda_i;
   assign axi_uartlite_0_UART_RxD = usb_uart_rxd;
   assign en_take_color_i_0_1 = en_take_color_i_0;
   assign iic_rtl_scl_o = axi_iic_0_IIC_SCL_O;
@@ -1448,22 +1420,25 @@ module mb_demo
   assign iic_rtl_sda_t = axi_iic_0_IIC_SDA_T;
   assign pwm_out_0_0 = servo_0_pwm_out_0;
   assign pwm_out_1_0 = servo_0_pwm_out_1;
-  assign qspi_flash_io0_o = axi_quad_spi_0_SPI_0_IO0_O;
-  assign qspi_flash_io0_t = axi_quad_spi_0_SPI_0_IO0_T;
-  assign qspi_flash_io1_o = axi_quad_spi_0_SPI_0_IO1_O;
-  assign qspi_flash_io1_t = axi_quad_spi_0_SPI_0_IO1_T;
-  assign qspi_flash_io2_o = axi_quad_spi_0_SPI_0_IO2_O;
-  assign qspi_flash_io2_t = axi_quad_spi_0_SPI_0_IO2_T;
-  assign qspi_flash_io3_o = axi_quad_spi_0_SPI_0_IO3_O;
-  assign qspi_flash_io3_t = axi_quad_spi_0_SPI_0_IO3_T;
-  assign qspi_flash_ss_o = axi_quad_spi_0_SPI_0_SS_O;
-  assign qspi_flash_ss_t = axi_quad_spi_0_SPI_0_SS_T;
   assign reset_1 = reset;
   assign sys_clock_1 = sys_clock;
   assign usb_uart_txd = axi_uartlite_0_UART_TxD;
   assign vga_data_0[11:0] = ball_locator_0_vga_data;
   assign vga_hsync_0 = ball_locator_0_vga_hsync;
   assign vga_vsync_0 = ball_locator_0_vga_vsync;
+  mb_demo_alinx_ov5640_0_0 alinx_ov5640_0
+       (.cmos_d(OV7725_D_0_1),
+        .cmos_href(OV7725_HREF_0_1),
+        .cmos_pclk(OV7725_PCLK_0_1),
+        .cmos_vsync(OV7725_VSYNC_0_1),
+        .m_axis_video_aclk(microblaze_0_Clk),
+        .m_axis_video_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
+        .m_axis_video_tdata(alinx_ov5640_0_m_axis_video_TDATA),
+        .m_axis_video_tkeep(alinx_ov5640_0_m_axis_video_TKEEP),
+        .m_axis_video_tlast(alinx_ov5640_0_m_axis_video_TLAST),
+        .m_axis_video_tready(1'b1),
+        .m_axis_video_tuser(alinx_ov5640_0_m_axis_video_TUSER),
+        .m_axis_video_tvalid(alinx_ov5640_0_m_axis_video_TVALID));
   mb_demo_axi_gpio_1_0 axi_gpio_1
        (.gpio_io_i(axi_gpio_1_GPIO_TRI_I),
         .ip2intc_irpt(axi_gpio_1_ip2intc_irpt),
@@ -1513,26 +1488,14 @@ module mb_demo
         .sda_i(axi_iic_0_IIC_SDA_I),
         .sda_o(axi_iic_0_IIC_SDA_O),
         .sda_t(axi_iic_0_IIC_SDA_T));
-  mb_demo_axi_quad_spi_0_0 axi_quad_spi_0
-       (.ext_spi_clk(clk_wiz_1_clk_out2),
-        .io0_i(axi_quad_spi_0_SPI_0_IO0_I),
-        .io0_o(axi_quad_spi_0_SPI_0_IO0_O),
-        .io0_t(axi_quad_spi_0_SPI_0_IO0_T),
-        .io1_i(axi_quad_spi_0_SPI_0_IO1_I),
-        .io1_o(axi_quad_spi_0_SPI_0_IO1_O),
-        .io1_t(axi_quad_spi_0_SPI_0_IO1_T),
-        .io2_i(axi_quad_spi_0_SPI_0_IO2_I),
-        .io2_o(axi_quad_spi_0_SPI_0_IO2_O),
-        .io2_t(axi_quad_spi_0_SPI_0_IO2_T),
-        .io3_i(axi_quad_spi_0_SPI_0_IO3_I),
-        .io3_o(axi_quad_spi_0_SPI_0_IO3_O),
-        .io3_t(axi_quad_spi_0_SPI_0_IO3_T),
+  mb_demo_axi_iic_1_0 axi_iic_1
+       (.iic2intc_irpt(axi_iic_1_iic2intc_irpt),
         .s_axi_aclk(microblaze_0_Clk),
-        .s_axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[6:0]),
+        .s_axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[8:0]),
         .s_axi_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
         .s_axi_arready(microblaze_0_axi_periph_M02_AXI_ARREADY),
         .s_axi_arvalid(microblaze_0_axi_periph_M02_AXI_ARVALID),
-        .s_axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR[6:0]),
+        .s_axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR[8:0]),
         .s_axi_awready(microblaze_0_axi_periph_M02_AXI_AWREADY),
         .s_axi_awvalid(microblaze_0_axi_periph_M02_AXI_AWVALID),
         .s_axi_bready(microblaze_0_axi_periph_M02_AXI_BREADY),
@@ -1546,9 +1509,12 @@ module mb_demo
         .s_axi_wready(microblaze_0_axi_periph_M02_AXI_WREADY),
         .s_axi_wstrb(microblaze_0_axi_periph_M02_AXI_WSTRB),
         .s_axi_wvalid(microblaze_0_axi_periph_M02_AXI_WVALID),
-        .ss_i(axi_quad_spi_0_SPI_0_SS_I),
-        .ss_o(axi_quad_spi_0_SPI_0_SS_O),
-        .ss_t(axi_quad_spi_0_SPI_0_SS_T));
+        .scl_i(axi_iic_1_IIC_SCL_I),
+        .scl_o(axi_iic_1_IIC_SCL_O),
+        .scl_t(axi_iic_1_IIC_SCL_T),
+        .sda_i(axi_iic_1_IIC_SDA_I),
+        .sda_o(axi_iic_1_IIC_SDA_O),
+        .sda_t(axi_iic_1_IIC_SDA_T));
   mb_demo_axi_timer_0_0 axi_timer_0
        (.capturetrig0(1'b0),
         .capturetrig1(1'b0),
@@ -1602,8 +1568,6 @@ module mb_demo
         .OV7725_PCLK(OV7725_PCLK_0_1),
         .OV7725_PWND(ball_locator_0_OV7725_PWND),
         .OV7725_RST(ball_locator_0_OV7725_RST),
-        .OV7725_SIOC(ball_locator_0_OV7725_SIOC),
-        .OV7725_SIOD(OV7725_SIOD_0),
         .OV7725_VSYNC(OV7725_VSYNC_0_1),
         .OV7725_XCLK(ball_locator_0_OV7725_XCLK),
         .coord_valid_o(ball_locator_0_coord_valid_o),
@@ -1633,11 +1597,21 @@ module mb_demo
         .vga_hsync(ball_locator_0_vga_hsync),
         .vga_vsync(ball_locator_0_vga_vsync));
   mb_demo_clk_wiz_1_0 clk_wiz_1
-       (.clk_in1(sys_clock_1),
-        .clk_out1(microblaze_0_Clk),
-        .clk_out2(clk_wiz_1_clk_out2),
+       (.clk_100M(microblaze_0_Clk),
+        .clk_in1(sys_clock_1),
         .locked(clk_wiz_1_locked),
         .reset(reset_1));
+  mb_demo_ila_0_0 ila_0
+       (.clk(OV7725_PCLK_0_1),
+        .probe0(1'b1),
+        .probe1(alinx_ov5640_0_m_axis_video_TDATA),
+        .probe2({1'b1,1'b1}),
+        .probe3(alinx_ov5640_0_m_axis_video_TVALID),
+        .probe4(alinx_ov5640_0_m_axis_video_TLAST),
+        .probe5(alinx_ov5640_0_m_axis_video_TUSER),
+        .probe6(alinx_ov5640_0_m_axis_video_TKEEP),
+        .probe7(1'b0),
+        .probe8(1'b0));
   mb_demo_mdm_1_0 mdm_1
        (.Dbg_Capture_0(microblaze_0_debug_CAPTURE),
         .Dbg_Clk_0(microblaze_0_debug_CLK),
@@ -1964,6 +1938,7 @@ module mb_demo
         .In2(ball_locator_0_coord_valid_o),
         .In3(axi_timer_0_interrupt),
         .In4(axi_iic_0_iic2intc_irpt),
+        .In5(axi_iic_1_iic2intc_irpt),
         .dout(microblaze_0_intr));
   mb_demo_rst_clk_wiz_1_100M_0 rst_clk_wiz_1_100M
        (.aux_reset_in(1'b1),

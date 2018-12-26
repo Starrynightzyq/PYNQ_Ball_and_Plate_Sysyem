@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mb_demo_microblaze_0_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_demo_microblaze_0_axi_intc_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_microblaze_0_axi_intc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_demo_microblaze_0_xlconcat_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_microblaze_0_xlconcat_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_demo_xbar_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
