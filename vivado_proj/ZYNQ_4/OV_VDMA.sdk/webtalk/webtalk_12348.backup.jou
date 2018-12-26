@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# 
+# Start of session at: Tue Dec 18 10:01:27 2018
+# Process ID: 12348
+# Current directory: E:/ov5640_single/ov5640_single.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: E:/ov5640_single/ov5640_single.sdk/webtalk/webtalk.log
+# Journal file: E:/ov5640_single/ov5640_single.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

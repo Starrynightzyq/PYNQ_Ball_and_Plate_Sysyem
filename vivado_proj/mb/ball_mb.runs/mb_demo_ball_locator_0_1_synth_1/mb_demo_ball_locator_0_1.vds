@@ -1,0 +1,1364 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Dec 24 14:11:03 2018
+# Process ID: 14440
+# Current directory: C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_ball_locator_0_1_synth_1
+# Command line: vivado.exe -log mb_demo_ball_locator_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_demo_ball_locator_0_1.tcl
+# Log file: C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_ball_locator_0_1_synth_1/mb_demo_ball_locator_0_1.vds
+# Journal file: C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_ball_locator_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mb_demo_ball_locator_0_1.tcl -notrace
+Command: synth_design -top mb_demo_ball_locator_0_1 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 456 
+WARNING: [Synth 8-2611] redeclaration of ansi port iic_rd_data is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/IICctrl.v:42]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p11 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3.v:58]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p12 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3.v:58]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p13 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3.v:58]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p21 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3.v:59]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p22 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3.v:59]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p23 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3.v:59]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p31 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3.v:60]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p32 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3.v:60]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p33 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3.v:60]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p11 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3_1bit.v:56]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p12 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3_1bit.v:56]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p13 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3_1bit.v:56]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p21 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3_1bit.v:57]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p22 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3_1bit.v:57]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p23 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3_1bit.v:57]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p31 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3_1bit.v:58]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p32 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3_1bit.v:58]
+WARNING: [Synth 8-2611] redeclaration of ansi port matrix_p33 is not allowed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3_1bit.v:58]
+WARNING: [Synth 8-992] s_ram_16_dout is already implicitly declared earlier [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:86]
+WARNING: [Synth 8-992] clk_25M is already implicitly declared earlier [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:95]
+WARNING: [Synth 8-992] clk_100M is already implicitly declared earlier [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:96]
+WARNING: [Synth 8-992] ram_dout is already implicitly declared earlier [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:149]
+WARNING: [Synth 8-992] dout_ed is already implicitly declared earlier [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:267]
+WARNING: [Synth 8-992] pro_coord_x_o is already implicitly declared earlier [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:287]
+WARNING: [Synth 8-992] pro_coord_y_o is already implicitly declared earlier [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:288]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 431.371 ; gain = 115.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mb_demo_ball_locator_0_1' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/synth/mb_demo_ball_locator_0_1.v:56]
+INFO: [Synth 8-6157] synthesizing module 'ball_locator_v1_0' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/hdl/ball_locator_v1_0.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ball_locator_v1_0_S_AXI' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/hdl/ball_locator_v1_0_S_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/hdl/ball_locator_v1_0_S_AXI.v:247]
+INFO: [Synth 8-226] default block is never used [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/hdl/ball_locator_v1_0_S_AXI.v:388]
+INFO: [Synth 8-6157] synthesizing module 'ov7725_top' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:23]
+	Parameter ADDR_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vga_module' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/vga_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/vga_driver.v:23]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (1#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/vga_driver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_display_pic' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/vga_display_pic.v:23]
+	Parameter DH bound to: 320 - type: integer 
+	Parameter DV bound to: 240 - type: integer 
+	Parameter ADDR_MAX bound to: 76800 - type: integer 
+	Parameter ADDR_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_display_pic' (2#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/vga_display_pic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga_module' (3#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/vga_module.v:23]
+WARNING: [Synth 8-689] width (12) of port connection 'key_x' does not match port width (10) of module 'vga_module' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:69]
+WARNING: [Synth 8-689] width (12) of port connection 'key_y' does not match port width (10) of module 'vga_module' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:70]
+WARNING: [Synth 8-689] width (1) of port connection 'key_x_begin' does not match port width (10) of module 'vga_module' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:71]
+WARNING: [Synth 8-689] width (1) of port connection 'key_x_end' does not match port width (10) of module 'vga_module' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:72]
+WARNING: [Synth 8-689] width (1) of port connection 'key_y_begin' does not match port width (10) of module 'vga_module' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:73]
+WARNING: [Synth 8-689] width (1) of port connection 'key_y_end' does not match port width (10) of module 'vga_module' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:74]
+INFO: [Synth 8-638] synthesizing module 'shift_ram_16bit' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram_16bit/synth/shift_ram_16bit.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_DEPTH bound to: 320 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_SHIFT_TYPE bound to: 0 - type: integer 
+	Parameter C_OPT_GOAL bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 0000000000000000 - type: string 
+	Parameter C_SINIT_VAL bound to: 0000000000000000 - type: string 
+	Parameter C_DEFAULT_DATA bound to: 0000000000000000 - type: string 
+	Parameter C_HAS_A bound to: 0 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_REG_LAST_BIT bound to: 1 - type: integer 
+	Parameter C_SYNC_PRIORITY bound to: 1 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_12' declared at 'c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram_1bit/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2590' bound to instance 'U0' of component 'c_shift_ram_v12_0_12' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram_16bit/synth/shift_ram_16bit.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'shift_ram_16bit' (8#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram_16bit/synth/shift_ram_16bit.vhd:68]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/clk_wiz/clk_wiz.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_clk_wiz' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/clk_wiz/clk_wiz_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (9#1) [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (10#1) [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (11#1) [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_clk_wiz' (12#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/clk_wiz/clk_wiz_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (13#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/clk_wiz/clk_wiz.v:71]
+INFO: [Synth 8-6157] synthesizing module 'camera_module' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/camera_module.v:23]
+	Parameter ADDR_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IIC_module' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/IIC_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IICctrl' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/IICctrl.v:23]
+	Parameter LUT_SIZE bound to: 170 - type: integer 
+	Parameter CLK_FREQ bound to: 27'b101111101011110000100000000 
+	Parameter IIC_FREQ bound to: 27'b000000000011000011010100000 
+INFO: [Synth 8-6157] synthesizing module 'iic_driver' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:23]
+	Parameter CLK_FREQ bound to: 27'b101111101011110000100000000 
+	Parameter IIC_FREQ bound to: 27'b000000000011000011010100000 
+	Parameter DELAY_TOP bound to: 100000 - type: integer 
+	Parameter IIC_IDLE bound to: 5'b00000 
+	Parameter IIC_WR_START bound to: 5'b00001 
+	Parameter IIC_WR_IDADDR bound to: 5'b00010 
+	Parameter IIC_WR_ACK1 bound to: 5'b00011 
+	Parameter IIC_WR_REGADDR bound to: 5'b00100 
+	Parameter IIC_WR_ACK2 bound to: 5'b00101 
+	Parameter IIC_WR_REGDATA bound to: 5'b00110 
+	Parameter IIC_WR_ACK3 bound to: 5'b00111 
+	Parameter IIC_WR_STOP bound to: 5'b01000 
+	Parameter IIC_RD_START1 bound to: 5'b01001 
+	Parameter IIC_RD_IDADDR1 bound to: 5'b01010 
+	Parameter IIC_RD_ACK1 bound to: 5'b01011 
+	Parameter IIC_RD_REGADDR bound to: 5'b01100 
+	Parameter IIC_RD_ACK2 bound to: 5'b01101 
+	Parameter IIC_RD_STOP1 bound to: 5'b01110 
+	Parameter IIC_RD_IDLE bound to: 5'b01111 
+	Parameter IIC_RD_START2 bound to: 5'b10000 
+	Parameter IIC_RD_IDADDR2 bound to: 5'b10001 
+	Parameter IIC_RD_ACK3 bound to: 5'b10010 
+	Parameter IIC_RD_REGDATA bound to: 5'b10011 
+	Parameter IIC_RD_NACK bound to: 5'b10100 
+	Parameter IIC_RD_STOP2 bound to: 5'b10101 
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:151]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:153]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:155]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:161]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:163]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:168]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:170]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:175]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:177]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:182]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:184]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:189]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:191]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:196]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:198]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:203]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:205]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:210]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:212]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:218]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:220]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:225]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:227]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:232]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:234]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:239]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:241]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:246]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:248]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:253]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:255]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:260]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:262]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:267]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:269]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:274]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:276]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:281]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:283]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:288]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:290]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:295]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:297]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:302]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:304]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:308]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:470]
+INFO: [Synth 8-6155] done synthesizing module 'iic_driver' (14#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cam_test' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/cam_test.v:23]
+	Parameter CLK_FREQ bound to: 27'b101111101011110000100000000 
+	Parameter IIC_FREQ bound to: 27'b000000000011000011010100000 
+	Parameter LUT_SIZE bound to: 170 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter WRITE bound to: 2'b01 
+	Parameter STOP bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'cam_test' (15#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/cam_test.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IICctrl' (16#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/IICctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ov7725_regData' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/ov7725_regData.v:23]
+	Parameter Read_DATA bound to: 0 - type: integer 
+	Parameter SET_OV7725 bound to: 2 - type: integer 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000010 is unreachable [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/ov7725_regData.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ov7725_regData' (17#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/ov7725_regData.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IIC_module' (18#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/IIC_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cam_ov7670_ov7725_example' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/cam_ov7670_read_example.v:23]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/cam_ov7670_read_example.v:59]
+WARNING: [Synth 8-3848] Net href_post in module/entity cam_ov7670_ov7725_example does not have driver. [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/cam_ov7670_read_example.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'cam_ov7670_ov7725_example' (19#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/cam_ov7670_read_example.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'camera_module' (20#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/camera_module.v:23]
+INFO: [Synth 8-638] synthesizing module 'ram_pic' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/ram_pic/synth/ram_pic.vhd:71]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: ram_pic.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 76800 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 76800 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 17 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 76800 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 76800 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 17 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 34 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 4 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     31.015484 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/ram_pic/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/ram_pic/synth/ram_pic.vhd:237]
+INFO: [Synth 8-256] done synthesizing module 'ram_pic' (31#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/ram_pic/synth/ram_pic.vhd:71]
+INFO: [Synth 8-6157] synthesizing module 'median_filter_rgb888' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/median_filter_rgb888.v:23]
+	Parameter NUM_T bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'median_filter' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/median_filter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shift_RAM_3x3' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3.v:23]
+INFO: [Synth 8-638] synthesizing module 'shift_ram' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram/synth/shift_ram.vhd:69]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 320 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_SHIFT_TYPE bound to: 0 - type: integer 
+	Parameter C_OPT_GOAL bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 00000000 - type: string 
+	Parameter C_SINIT_VAL bound to: 00000000 - type: string 
+	Parameter C_DEFAULT_DATA bound to: 00000000 - type: string 
+	Parameter C_HAS_A bound to: 0 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_REG_LAST_BIT bound to: 1 - type: integer 
+	Parameter C_SYNC_PRIORITY bound to: 1 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_12' declared at 'c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram_1bit/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2590' bound to instance 'U0' of component 'c_shift_ram_v12_0_12' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram/synth/shift_ram.vhd:128]
+INFO: [Synth 8-256] done synthesizing module 'shift_ram' (32#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram/synth/shift_ram.vhd:69]
+INFO: [Synth 8-6155] done synthesizing module 'shift_RAM_3x3' (33#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'middle_comparator' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'middle_comparator' (34#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'median_filter' (35#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/median_filter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'median_filter_rgb888' (36#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/median_filter_rgb888.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RGB888_to_YCrCb' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/RGB888_to_YCrCb.v:33]
+	Parameter NUM_T bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RGB888_to_YCrCb' (37#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/RGB888_to_YCrCb.v:33]
+INFO: [Synth 8-6157] synthesizing module 'take_color' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/take_color.v:23]
+	Parameter MIDX bound to: 160 - type: integer 
+	Parameter MIDY bound to: 120 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'average_filter' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/average_filter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'average_filter' (38#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/average_filter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'take_color' (39#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/take_color.v:23]
+INFO: [Synth 8-6157] synthesizing module 'color_comparator' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/color_comparator.v:23]
+	Parameter NUM_T bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_color_cmp' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/single_color_cmp.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_color_cmp' (40#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/single_color_cmp.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'color_comparator' (41#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/color_comparator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'erosion_dilation' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/erosion_dilation.v:23]
+	Parameter NUM_T bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'shift_RAM_3x3_1bit' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3_1bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'shift_ram_1bit' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram_1bit/synth/shift_ram_1bit.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEPTH bound to: 320 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_SHIFT_TYPE bound to: 0 - type: integer 
+	Parameter C_OPT_GOAL bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_A bound to: 0 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_REG_LAST_BIT bound to: 1 - type: integer 
+	Parameter C_SYNC_PRIORITY bound to: 1 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_12' declared at 'c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram_1bit/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2590' bound to instance 'U0' of component 'c_shift_ram_v12_0_12' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram_1bit/synth/shift_ram_1bit.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'shift_ram_1bit' (42#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/shift_ram_1bit/synth/shift_ram_1bit.vhd:68]
+INFO: [Synth 8-6155] done synthesizing module 'shift_RAM_3x3_1bit' (43#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/shift_RAM_3x3_1bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'erosion_dilation' (44#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/erosion_dilation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'projection_segment' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:23]
+	Parameter VGA_HD bound to: 12'b001010000000 
+	Parameter VGA_VD bound to: 12'b000111100000 
+	Parameter CAM_HD bound to: 12'b000101000000 
+	Parameter CAM_VD bound to: 12'b000011110000 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:27]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:28]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:29]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:30]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:31]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:32]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:33]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:133]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:134]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:135]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:136]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:158]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:159]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:160]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:161]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:203]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:204]
+INFO: [Synth 8-638] synthesizing module 'histogram_x' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/histogram_x/synth/histogram_x.vhd:71]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: histogram_x.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 320 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 320 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 9 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 320 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 320 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 9 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.85095 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/ram_pic/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/histogram_x/synth/histogram_x.vhd:237]
+INFO: [Synth 8-256] done synthesizing module 'histogram_x' (45#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/histogram_x/synth/histogram_x.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'histogram_y' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/histogram_y/synth/histogram_y.vhd:71]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: histogram_y.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 240 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 240 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 240 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 240 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.85095 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/ram_pic/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/histogram_y/synth/histogram_y.vhd:237]
+INFO: [Synth 8-256] done synthesizing module 'histogram_y' (46#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/histogram_y/synth/histogram_y.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element img_bit_delay2_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:98]
+WARNING: [Synth 8-6014] Unused sequential element shift_clk_en_delay2_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:101]
+WARNING: [Synth 8-6014] Unused sequential element y_hist_rd_addr_delay2_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'projection_segment' (47#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/projection_segment.v:23]
+WARNING: [Synth 8-3848] Net key_x_begin in module/entity ov7725_top does not have driver. [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:71]
+WARNING: [Synth 8-3848] Net key_x_end in module/entity ov7725_top does not have driver. [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:72]
+WARNING: [Synth 8-3848] Net key_y_begin in module/entity ov7725_top does not have driver. [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:73]
+WARNING: [Synth 8-3848] Net key_y_end in module/entity ov7725_top does not have driver. [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'ov7725_top' (48#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:23]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/hdl/ball_locator_v1_0_S_AXI.v:240]
+INFO: [Synth 8-6155] done synthesizing module 'ball_locator_v1_0_S_AXI' (49#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/hdl/ball_locator_v1_0_S_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ball_locator_v1_0' (50#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/hdl/ball_locator_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mb_demo_ball_locator_0_1' (51#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/synth/mb_demo_ball_locator_0_1.v:56]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[35]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[34]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[33]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[32]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port ram_rstram_a
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized31 has unconnected port ram_rstreg_a
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized1 has unconnected port REGCEA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized1 has unconnected port WEA[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized1 has unconnected port RSTB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized1 has unconnected port WEB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized1 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized1 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[11]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[10]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[8]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DOUTA_I[0]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port RDADDRECC_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port RDADDRECC_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port RDADDRECC_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port RDADDRECC_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port RDADDRECC_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port RDADDRECC_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port RDADDRECC_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized1 has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port RSTA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port ENA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port RSTB
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[11]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[10]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[9]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized1 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth__parameterized1 has unconnected port S_AClk
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth__parameterized1 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth__parameterized1 has unconnected port S_AXI_AWID[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_synth__parameterized1 has unconnected port S_AXI_AWID[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:49 ; elapsed = 00:04:58 . Memory (MB): peak = 929.215 ; gain = 613.441
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[15] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[14] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[13] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[12] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[11] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[10] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[9] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[8] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[7] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[6] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[5] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[4] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[3] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[2] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[1] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_3[0] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[15] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[14] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[13] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[12] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[11] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[10] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[9] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[8] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[7] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[6] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[5] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[4] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[3] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[2] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[1] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:rgb_din_4[0] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:key_x_begin[0] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:key_x_end[0] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:key_y_begin[0] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+WARNING: [Synth 8-3295] tying undriven pin U_vga_module:key_y_end[0] to constant 0 [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/top_module.v:61]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:49 ; elapsed = 00:04:58 . Memory (MB): peak = 929.215 ; gain = 613.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:49 ; elapsed = 00:04:58 . Memory (MB): peak = 929.215 ; gain = 613.441
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/clk_wiz/clk_wiz.xdc] for cell 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst'
+Finished Parsing XDC File [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/clk_wiz/clk_wiz.xdc] for cell 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/src/clk_wiz/clk_wiz.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_demo_ball_locator_0_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_demo_ball_locator_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_ball_locator_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_ball_locator_0_1_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_ball_locator_0_1_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_demo_ball_locator_0_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_demo_ball_locator_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.254 . Memory (MB): peak = 929.215 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:05:09 ; elapsed = 00:05:19 . Memory (MB): peak = 929.215 ; gain = 613.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:09 ; elapsed = 00:05:19 . Memory (MB): peak = 929.215 ; gain = 613.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_ram_pic. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_projection_segment/U_histogram_y. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_projection_segment/U_histogram_x. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_erosion_dilation/d_shift_RAM_3x3_1bit/U1_shift_ram_1bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_erosion_dilation/d_shift_RAM_3x3_1bit/U2_shift_ram_1bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_erosion_dilation/e_shift_RAM_3x3_1bit/U1_shift_ram_1bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_erosion_dilation/e_shift_RAM_3x3_1bit/U2_shift_ram_1bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/U1_shift_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/U2_shift_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/U1_shift_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/U2_shift_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/U1_shift_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/U2_shift_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cb_average/average_shift_RAM_3x3/U1_shift_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cb_average/average_shift_RAM_3x3/U2_shift_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cr_average/average_shift_RAM_3x3/U1_shift_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cr_average/average_shift_RAM_3x3/U2_shift_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_shift_ram_16bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst. (constraint file  C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_ball_locator_0_1_synth_1/dont_touch.xdc, line 35).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:09 ; elapsed = 00:05:19 . Memory (MB): peak = 929.215 ; gain = 613.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_current_reg' in module 'iic_driver'
+INFO: [Synth 8-5546] ROM "delay_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_transfer_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "iic_ack" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "iic_capture_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "iic_ack1" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "iic_ack2" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "iic_ack3" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "iic_rd_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cam_test'
+INFO: [Synth 8-5544] ROM "iic_cmd" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "vcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/single_color_cmp.v:41]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                IIC_IDLE |           0000000000001000000000 |                            00000
+           IIC_RD_START1 |           0000001000000000000000 |                            01001
+          IIC_RD_IDADDR1 |           0000010000000000000000 |                            01010
+             IIC_RD_ACK1 |           0000000100000000000000 |                            01011
+          IIC_RD_REGADDR |           0000000000000000001000 |                            01100
+             IIC_RD_ACK2 |           0000000000000000000100 |                            01101
+            IIC_RD_STOP1 |           0000000000000000000001 |                            01110
+             IIC_RD_IDLE |           0000000000000000000010 |                            01111
+           IIC_RD_START2 |           0000000001000000000000 |                            10000
+          IIC_RD_IDADDR2 |           0000000000010000000000 |                            10001
+             IIC_RD_ACK3 |           0000000000000001000000 |                            10010
+          IIC_RD_REGDATA |           0000000000000000010000 |                            10011
+             IIC_RD_NACK |           0000000000000000100000 |                            10100
+            IIC_RD_STOP2 |           0010000000000000000000 |                            10101
+            IIC_WR_START |           0000000010000000000000 |                            00001
+           IIC_WR_IDADDR |           0000000000100000000000 |                            00010
+             IIC_WR_ACK1 |           0000000000000010000000 |                            00011
+          IIC_WR_REGADDR |           0000000000000100000000 |                            00100
+             IIC_WR_ACK2 |           1000000000000000000000 |                            00101
+          IIC_WR_REGDATA |           0100000000000000000000 |                            00110
+             IIC_WR_ACK3 |           0000100000000000000000 |                            00111
+             IIC_WR_STOP |           0001000000000000000000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_current_reg' using encoding 'one-hot' in module 'iic_driver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   WRITE |                               01 |                               01
+                    STOP |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cam_test'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:13 ; elapsed = 00:05:23 . Memory (MB): peak = 929.215 ; gain = 613.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/iic_rd_data_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:467]
+WARNING: [Synth 8-6014] Unused sequential element CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/iic_ack_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/iic_driver.v:463]
+INFO: [Synth 8-5544] ROM "CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/state_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/delay_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/iic_transfer_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/iic_capture_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element max_middle_comparator/pixel_med_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:42]
+WARNING: [Synth 8-6014] Unused sequential element max_middle_comparator/pixel_max_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:43]
+WARNING: [Synth 8-6014] Unused sequential element med_middle_comparator/pixel_max_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:43]
+WARNING: [Synth 8-6014] Unused sequential element med_middle_comparator/pixel_min_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:44]
+WARNING: [Synth 8-6014] Unused sequential element min_middle_comparator/pixel_med_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:42]
+WARNING: [Synth 8-6014] Unused sequential element min_middle_comparator/pixel_min_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:44]
+WARNING: [Synth 8-6014] Unused sequential element last_middle_comparator/pixel_max_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:43]
+WARNING: [Synth 8-6014] Unused sequential element last_middle_comparator/pixel_min_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:44]
+WARNING: [Synth 8-6014] Unused sequential element max_middle_comparator/pixel_med_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:42]
+WARNING: [Synth 8-6014] Unused sequential element max_middle_comparator/pixel_max_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:43]
+WARNING: [Synth 8-6014] Unused sequential element med_middle_comparator/pixel_max_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:43]
+WARNING: [Synth 8-6014] Unused sequential element med_middle_comparator/pixel_min_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:44]
+WARNING: [Synth 8-6014] Unused sequential element min_middle_comparator/pixel_med_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:42]
+WARNING: [Synth 8-6014] Unused sequential element min_middle_comparator/pixel_min_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:44]
+WARNING: [Synth 8-6014] Unused sequential element last_middle_comparator/pixel_max_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:43]
+WARNING: [Synth 8-6014] Unused sequential element last_middle_comparator/pixel_min_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:44]
+WARNING: [Synth 8-6014] Unused sequential element max_middle_comparator/pixel_med_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:42]
+WARNING: [Synth 8-6014] Unused sequential element max_middle_comparator/pixel_max_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:43]
+WARNING: [Synth 8-6014] Unused sequential element med_middle_comparator/pixel_max_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:43]
+WARNING: [Synth 8-6014] Unused sequential element med_middle_comparator/pixel_min_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:44]
+WARNING: [Synth 8-6014] Unused sequential element min_middle_comparator/pixel_med_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:42]
+WARNING: [Synth 8-6014] Unused sequential element min_middle_comparator/pixel_min_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:44]
+WARNING: [Synth 8-6014] Unused sequential element last_middle_comparator/pixel_max_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:43]
+WARNING: [Synth 8-6014] Unused sequential element last_middle_comparator/pixel_min_reg was removed.  [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/c5f1/src/middle_comparator.v:44]
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p33_reg[0]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p33_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p33_reg[1]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p33_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p33_reg[2]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p33_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p33_reg[0]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p33_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p33_reg[1]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p33_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p33_reg[2]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p33_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p33_reg[0]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p33_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p33_reg[1]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p33_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p32_reg[0]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p32_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p32_reg[1]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p32_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p32_reg[2]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p32_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p32_reg[0]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p32_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p32_reg[1]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p32_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p32_reg[2]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p32_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p32_reg[0]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p32_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p32_reg[1]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p32_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p31_reg[0]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p31_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p31_reg[1]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p31_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p31_reg[2]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/median_shift_RAM_3x3/matrix_p31_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p31_reg[0]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p31_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p31_reg[1]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p31_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p31_reg[2]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/median_shift_RAM_3x3/matrix_p31_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p31_reg[0]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p31_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p31_reg[1]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/median_shift_RAM_3x3/matrix_p31_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_min_reg[0]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_min_reg[1]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_min_reg[2]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_min_reg[3]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_min_reg[4]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_min_reg[5]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_min_reg[6]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_min_reg[7]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[0]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[1]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[2]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/R_median_filter/p3_middle_comparator/pixel_max_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_min_reg[0]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_min_reg[1]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_min_reg[2]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_min_reg[3]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_min_reg[4]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_min_reg[5]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_min_reg[6]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_min_reg[7]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[0]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[1]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[2]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/B_median_filter/p3_middle_comparator/pixel_max_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_min_reg[0]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_min_reg[1]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_min_reg[2]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_min_reg[3]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_min_reg[4]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_min_reg[5]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_min_reg[6]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_min_reg[7]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[0]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[1]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/G_median_filter/p3_middle_comparator/pixel_max_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_y_delay_1_reg[10]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_y_delay_1_reg[11]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_1_reg[10]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_1_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top /U_median_filter_rgb888/\pixel_x_delay_1_reg[11] )
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cr_average/mean_value1_reg[10]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cr_average/mean_value3_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cr_average/mean_value2_reg[10]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cr_average/mean_value3_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cr_average/mean_value3_reg[10]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cb_average/mean_value1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cb_average/mean_value1_reg[10]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cb_average/mean_value3_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cb_average/mean_value2_reg[10]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_take_color/cb_average/mean_value3_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top /U_take_color/\cb_average/mean_value3_reg[10] )
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_y_delay_2_reg[10]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_y_delay_2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_y_delay_2_reg[11]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_2_reg[10]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_2_reg[11]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[15]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R3_reg[0]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R2_reg[15]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B3_reg[15]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R1_reg[15]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B1_reg[13]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B1_reg[14]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B1_reg[15]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_G3_reg[15]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R3_reg[15]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_G2_reg[15]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B3_reg[0]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R3_reg[1]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R3_reg[2]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R3_reg[3]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R3_reg[4]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R3_reg[5]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R3_reg[6]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B3_reg[13]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B3_reg[14]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[0]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[1]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[2]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[3]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[4]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[5]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_B2_reg[6]' (FDC) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_RGB888_to_YCrCb/cmos_R2_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top /U_RGB888_to_YCrCb/\cmos_R2_reg[14] )
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_y_delay_3_reg[10]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_3_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_y_delay_3_reg[11]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_3_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_3_reg[10]' (FDCE) to 'inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_median_filter_rgb888/pixel_x_delay_3_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top /U_camera_module/\CMOS_IIC_module/U_IIC_ctrl/U_cam_test/iic_cmd_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/ball_locator_v1_0_S_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ball_locator_v1_0_S_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/ball_locator_v1_0_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/ball_locator_v1_0_S_AXI_inst/axi_bresp_reg[1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ball_locator_v1_0_S_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top /U_camera_module/\CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/clk_cnt_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top /U_median_filter_rgb888/\pixel_x_delay_1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top /U_median_filter_rgb888/\pixel_x_delay_1_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (U_vga_display_pic/rgb_data_reg_reg[11]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (U_vga_display_pic/rgb_data_reg_reg[6]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (U_vga_display_pic/rgb_data_reg_reg[5]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (U_vga_display_pic/rgb_data_reg_reg[0]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/clk_cnt_reg[10]) is unused and will be removed from module camera_module.
+WARNING: [Synth 8-3332] Sequential element (CMOS_IIC_module/U_IIC_ctrl/U_cam_test/iic_cmd_reg[0]) is unused and will be removed from module camera_module.
+WARNING: [Synth 8-3332] Sequential element (CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/iic_ack2_reg) is unused and will be removed from module camera_module.
+WARNING: [Synth 8-3332] Sequential element (CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/iic_ack3_reg) is unused and will be removed from module camera_module.
+WARNING: [Synth 8-3332] Sequential element (CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/iic_ack1_reg) is unused and will be removed from module camera_module.
+WARNING: [Synth 8-3332] Sequential element (CMOS_IIC_module/U_IIC_ctrl/u_iic_driver/read_done_reg_reg) is unused and will be removed from module camera_module.
+WARNING: [Synth 8-3332] Sequential element (pixel_x_delay_1_reg[11]) is unused and will be removed from module median_filter_rgb888.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[15]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[14]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[13]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[12]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[11]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[10]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[9]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[8]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[7]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[6]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[5]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[4]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[3]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[2]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[1]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_G1_reg[0]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[12]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[11]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[10]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[9]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[8]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[7]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[6]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[5]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[4]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[3]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[2]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[1]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_B1_reg[0]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[14]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[13]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[12]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[11]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[10]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[9]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[8]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[7]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[6]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[5]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[4]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[3]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[2]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[1]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R1_reg[0]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[15]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[14]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[13]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[12]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[11]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[10]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[9]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[8]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[7]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[6]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[5]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[4]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[3]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[2]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[1]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y0_reg[0]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y1_reg[7]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y1_reg[6]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y1_reg[5]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y1_reg[4]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y1_reg[3]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y1_reg[2]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y1_reg[1]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Y1_reg[0]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cr0_reg[15]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cr0_reg[6]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cr0_reg[5]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cr0_reg[4]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cr0_reg[3]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cr0_reg[2]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cr0_reg[1]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cr0_reg[0]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cb0_reg[15]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cb0_reg[6]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cb0_reg[5]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cb0_reg[4]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cb0_reg[3]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cb0_reg[2]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cb0_reg[1]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (img_Cb0_reg[0]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cmos_R2_reg[14]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (pixel_x_delay_1_reg[11]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (pixel_x_delay_2_reg[11]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (pixel_x_delay_3_reg[11]) is unused and will be removed from module RGB888_to_YCrCb.
+WARNING: [Synth 8-3332] Sequential element (cb_average/mean_value_expend_reg[9]) is unused and will be removed from module take_color.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:25 ; elapsed = 00:05:36 . Memory (MB): peak = 929.215 ; gain = 613.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:36 ; elapsed = 00:05:49 . Memory (MB): peak = 929.215 ; gain = 613.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:42 ; elapsed = 00:05:54 . Memory (MB): peak = 946.891 ; gain = 631.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:52 ; elapsed = 00:06:04 . Memory (MB): peak = 968.379 ; gain = 652.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'U_camera_modulei_91' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:53 ; elapsed = 00:06:06 . Memory (MB): peak = 968.379 ; gain = 652.605
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:53 ; elapsed = 00:06:06 . Memory (MB): peak = 968.379 ; gain = 652.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:54 ; elapsed = 00:06:07 . Memory (MB): peak = 968.379 ; gain = 652.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:54 ; elapsed = 00:06:07 . Memory (MB): peak = 968.379 ; gain = 652.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:54 ; elapsed = 00:06:07 . Memory (MB): peak = 968.379 ; gain = 652.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:54 ; elapsed = 00:06:07 . Memory (MB): peak = 968.379 ; gain = 652.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |   155|
+|3     |LUT1       |    15|
+|4     |LUT2       |   218|
+|5     |LUT3       |   201|
+|6     |LUT4       |   685|
+|7     |LUT5       |   108|
+|8     |LUT6       |   492|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |    19|
+|11    |RAMB18E1   |     1|
+|12    |RAMB18E1_1 |     2|
+|13    |RAMB18E1_2 |     1|
+|14    |RAMB18E1_3 |     2|
+|15    |RAMB36E1   |     7|
+|16    |RAMB36E1_1 |     7|
+|17    |RAMB36E1_2 |     1|
+|18    |RAMB36E1_3 |    19|
+|19    |SRL16E     |    42|
+|20    |SRLC32E    |  1000|
+|21    |FDCE       |  1144|
+|22    |FDPE       |     4|
+|23    |FDRE       |   643|
+|24    |FDSE       |     1|
+|25    |IBUF       |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:54 ; elapsed = 00:06:07 . Memory (MB): peak = 968.379 ; gain = 652.605
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 644 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:05:49 . Memory (MB): peak = 968.379 ; gain = 652.605
+Synthesis Optimization Complete : Time (s): cpu = 00:05:54 ; elapsed = 00:06:07 . Memory (MB): peak = 968.379 ; gain = 652.605
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 216 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+292 Infos, 351 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:58 ; elapsed = 00:06:12 . Memory (MB): peak = 968.379 ; gain = 664.078
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_ball_locator_0_1_synth_1/mb_demo_ball_locator_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_ball_locator_0_1/mb_demo_ball_locator_0_1.xci
+INFO: [Coretcl 2-1174] Renamed 215 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_ball_locator_0_1_synth_1/mb_demo_ball_locator_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mb_demo_ball_locator_0_1_utilization_synth.rpt -pb mb_demo_ball_locator_0_1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 968.379 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 24 14:17:38 2018...

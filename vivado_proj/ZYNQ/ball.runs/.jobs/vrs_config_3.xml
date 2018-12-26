@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="pynq_design_processing_system7_0_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ/ball.runs/pynq_design_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pynq_design_axi_timer_0_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ/ball.runs/pynq_design_axi_timer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pynq_design_rst_ps7_0_100M_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ/ball.runs/pynq_design_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pynq_design_xbar_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ/ball.runs/pynq_design_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pynq_design_ball_locator_0_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ/ball.runs/pynq_design_ball_locator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pynq_design_axi_iic_0_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ/ball.runs/pynq_design_axi_iic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pynq_design_servo_0_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ/ball.runs/pynq_design_servo_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pynq_design_auto_pc_0_synth_1" LaunchDir="C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ/ball.runs/pynq_design_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
