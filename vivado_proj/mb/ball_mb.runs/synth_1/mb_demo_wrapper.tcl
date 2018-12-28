@@ -18,9 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param general.maxThreads 8
-set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -34,8 +31,9 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_repo_paths {
-  c:/MyFiles/FPGA_Learning/MyMaterial/vivado-library-master
-  c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/repo
+  c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/repo/my_library
+  c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/repo/alinx
+  c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/repo/vivado-library
 } [current_project]
 set_property ip_output_repo c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

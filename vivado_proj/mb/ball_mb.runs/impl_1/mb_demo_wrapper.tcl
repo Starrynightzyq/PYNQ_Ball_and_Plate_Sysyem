@@ -60,21 +60,115 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+
+start_step init_design
+set ACTIVE_STEP init_design
+set rc [catch {
+  create_msg_db init_design.pb
+  set_param general.maxThreads 8
+  create_project -in_memory -part xc7a35tcpg236-1
+  set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.cache/wt [current_project]
+  set_property parent.project_path C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.xpr [current_project]
+  set_property ip_repo_paths {
+  C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/repo/my_library
+  C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/repo/alinx
+  C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/repo/vivado-library
+} [current_project]
+  set_property ip_output_repo C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.cache/ip [current_project]
+  set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  add_files -quiet C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/synth_1/mb_demo_wrapper.dcp
+  set_msg_config -source 4 -id {BD 41-1661} -limit 0
+  set_param project.isImplRun true
+  add_files C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/mb_demo.bd
+  set_param project.isImplRun false
+  read_xdc C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/constrs_1/imports/new/mb_demo.xdc
+  set_param project.isImplRun true
+  link_design -top mb_demo_wrapper -part xc7a35tcpg236-1
+  set_param project.isImplRun false
+  write_hwdef -force -file mb_demo_wrapper.hwdef
+  close_msg_db -file init_design.pb
+} RESULT]
+if {$rc} {
+  step_failed init_design
+  return -code error $RESULT
+} else {
+  end_step init_design
+  unset ACTIVE_STEP 
+}
+
+start_step opt_design
+set ACTIVE_STEP opt_design
+set rc [catch {
+  create_msg_db opt_design.pb
+  opt_design 
+  write_checkpoint -force mb_demo_wrapper_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file mb_demo_wrapper_drc_opted.rpt -pb mb_demo_wrapper_drc_opted.pb -rpx mb_demo_wrapper_drc_opted.rpx"
+  close_msg_db -file opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed opt_design
+  return -code error $RESULT
+} else {
+  end_step opt_design
+  unset ACTIVE_STEP 
+}
+
+start_step place_design
+set ACTIVE_STEP place_design
+set rc [catch {
+  create_msg_db place_design.pb
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+    implement_debug_core 
+  } 
+  place_design 
+  write_checkpoint -force mb_demo_wrapper_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file mb_demo_wrapper_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file mb_demo_wrapper_utilization_placed.rpt -pb mb_demo_wrapper_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file mb_demo_wrapper_control_sets_placed.rpt"
+  close_msg_db -file place_design.pb
+} RESULT]
+if {$rc} {
+  step_failed place_design
+  return -code error $RESULT
+} else {
+  end_step place_design
+  unset ACTIVE_STEP 
+}
+
+start_step route_design
+set ACTIVE_STEP route_design
+set rc [catch {
+  create_msg_db route_design.pb
+  route_design 
+  write_checkpoint -force mb_demo_wrapper_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file mb_demo_wrapper_drc_routed.rpt -pb mb_demo_wrapper_drc_routed.pb -rpx mb_demo_wrapper_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file mb_demo_wrapper_methodology_drc_routed.rpt -pb mb_demo_wrapper_methodology_drc_routed.pb -rpx mb_demo_wrapper_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file mb_demo_wrapper_power_routed.rpt -pb mb_demo_wrapper_power_summary_routed.pb -rpx mb_demo_wrapper_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file mb_demo_wrapper_route_status.rpt -pb mb_demo_wrapper_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file mb_demo_wrapper_timing_summary_routed.rpt -pb mb_demo_wrapper_timing_summary_routed.pb -rpx mb_demo_wrapper_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file mb_demo_wrapper_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file mb_demo_wrapper_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file mb_demo_wrapper_bus_skew_routed.rpt -pb mb_demo_wrapper_bus_skew_routed.pb -rpx mb_demo_wrapper_bus_skew_routed.rpx"
+  close_msg_db -file route_design.pb
+} RESULT]
+if {$rc} {
+  write_checkpoint -force mb_demo_wrapper_routed_error.dcp
+  step_failed route_design
+  return -code error $RESULT
+} else {
+  end_step route_design
+  unset ACTIVE_STEP 
+}
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param general.maxThreads 8
-  open_checkpoint mb_demo_wrapper_routed.dcp
-  set_property webtalk.parent_dir C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.cache/wt [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_microblaze_0_0/data/mb_bootloop_le.elf
-  set_property SCOPED_TO_REF mb_demo [get_files -all c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_microblaze_0_0/data/mb_bootloop_le.elf]
-  set_property SCOPED_TO_CELLS microblaze_0 [get_files -all c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_microblaze_0_0/data/mb_bootloop_le.elf]
   catch { write_mem_info -force mb_demo_wrapper.mmi }
   catch { write_bmm -force mb_demo_wrapper_bd.bmm }
   write_bitstream -force mb_demo_wrapper.bit -bin_file

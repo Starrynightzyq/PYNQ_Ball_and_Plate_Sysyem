@@ -48,7 +48,7 @@
 
 
 // IP VLNV: starrynightzyq.com:user:ball_locator:1.0
-// IP Revision: 7
+// IP Revision: 9
 
 (* X_CORE_INFO = "ball_locator_v1_0,Vivado 2018.2" *)
 (* CHECK_LICENSE_TYPE = "mb_demo_ball_locator_0_1,ball_locator_v1_0,{}" *)

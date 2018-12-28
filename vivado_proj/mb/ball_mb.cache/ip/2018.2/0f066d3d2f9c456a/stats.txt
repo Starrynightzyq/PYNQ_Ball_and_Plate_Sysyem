@@ -1,4 +1,4 @@
-NumberHits:0
-Timestamp: Mon Dec 24 00:47:00 UTC 2018
+NumberHits:1
+Timestamp: Thu Dec 27 07:10:29 UTC 2018
 VLNV: xilinx.com:ip:lmb_bram_if_cntlr:4.0
 SynthRuntime: 63

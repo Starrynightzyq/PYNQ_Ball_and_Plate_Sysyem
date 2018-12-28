@@ -1,0 +1,18 @@
+/*
+ * iic_driver.h
+ *
+ *  Created on: 2018��12��28��
+ *      Author: admin
+ */
+
+#ifndef SRC_IIC_DRIVER_IIC_DRIVER_H_
+#define SRC_IIC_DRIVER_IIC_DRIVER_H_
+
+#include "xscugic.h"
+#include "xiic.h"
+
+#ifdef XSCUGIC_H
+#define XIntc XScuGic
+#endif
+
+#endif /* SRC_IIC_DRIVER_IIC_DRIVER_H_ */

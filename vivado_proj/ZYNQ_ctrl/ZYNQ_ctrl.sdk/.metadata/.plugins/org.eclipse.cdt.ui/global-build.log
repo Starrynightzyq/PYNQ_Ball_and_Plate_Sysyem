@@ -1,0 +1,2531 @@
+16:51:26 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iic"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+16:51:54 **** Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19348	   1144	  22568	  43060	   a834	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:51:57 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:53:55 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:54:14 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:54:31 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19348	   1144	  22568	  43060	   a834	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:55:30 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:57:28 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:57:30 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:08:08 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:12:24 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:12:56 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:13:10 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:13:59 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:14:36 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:16:06 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:16:43 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:19:16 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:19:57 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:58:1: error: unknown type name 'XScuGic'
+ XScuGic InterruptController;       /* Instance of the Interrupt Controller */
+ ^~~~~~~
+../src/helloworld.c:61:26: error: unknown type name 'XScuGic'
+ int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
+                          ^~~~~~~
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:79:9: error: 'XST_SUCCESS' undeclared (first use in this function)
+  return XST_SUCCESS;
+         ^~~~~~~~~~~
+../src/helloworld.c:79:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: At top level:
+../src/helloworld.c:98:26: error: unknown type name 'XScuGic'
+ int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr)
+                          ^~~~~~~
+../src/helloworld.c:117:29: error: unknown type name 'XScuGic'
+ int InitInterruptController(XScuGic *XScuGicInstancePtr, u16 DeviceId) {
+                             ^~~~~~~
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:80:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] ´íÎó 1
+17:20:31 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitInterruptController':
+../src/helloworld.c:133:2: error: 'Status' undeclared (first use in this function); did you mean 'XStatus'?
+  Status = XScuGic_CfgInitialize(XScuGicInstancePtr, GicConfig,
+  ^~~~~~
+  XStatus
+../src/helloworld.c:133:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] ´íÎó 1
+17:21:10 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22996	   2720	  22600	  48316	   bcbc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:21:45 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22996	   2720	  22600	  48316	   bcbc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:23:07 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23024	   2720	  22600	  48344	   bcd8	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:24:49 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22996	   2720	  22600	  48316	   bcbc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:24:56 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22996	   2720	  22600	  48316	   bcbc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:25:29 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22996	   2720	  22600	  48316	   bcbc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:26:03 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22996	   2720	  22600	  48316	   bcbc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:26:07 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22996	   2720	  22600	  48316	   bcbc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:26:36 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23004	   2720	  22600	  48324	   bcc4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:27:45 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:28:34 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:89: error: unknown type name 'XIntc'
+ int IicInit(XScuGic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                         ^~~~~
+../src/iic_driver/iic_driver.c:76:66: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XScuGic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                                  ^~~~~
+../src/iic_driver/iic_driver.c: In function 'IicWriteData':
+../src/iic_driver/iic_driver.c:188:13: error: 'XScuGic {aka struct <anonymous>}' has no member named 'Stats'
+  InstancePtr->Stats.TxErrors = 0;
+             ^~
+../src/iic_driver/iic_driver.c:207:11: warning: implicit declaration of function 'XScuGic_Start'; did you mean 'XScuGic_Stop'? [-Wimplicit-function-declaration]
+  Status = XScuGic_Start(InstancePtr);
+           ^~~~~~~~~~~~~
+           XScuGic_Stop
+../src/iic_driver/iic_driver.c:215:11: warning: implicit declaration of function 'XScuGic_MasterSend'; did you mean 'XScuGic_WriteReg'? [-Wimplicit-function-declaration]
+  Status = XScuGic_MasterSend(InstancePtr, Buffer, ByteCount+1);
+           ^~~~~~~~~~~~~~~~~~
+           XScuGic_WriteReg
+../src/iic_driver/iic_driver.c:223:32: warning: implicit declaration of function 'XScuGic_IsIicBusy'; did you mean 'XScuGic_SelfTest'? [-Wimplicit-function-declaration]
+  while ((TransmitComplete) || (XScuGic_IsIicBusy(InstancePtr) == TRUE)) {
+                                ^~~~~~~~~~~~~~~~~
+                                XScuGic_SelfTest
+../src/iic_driver/iic_driver.c:233:18: error: 'XScuGic {aka struct <anonymous>}' has no member named 'Stats'
+   if (InstancePtr->Stats.TxErrors != 0) {
+                  ^~
+../src/iic_driver/iic_driver.c:253:17: error: 'XScuGic {aka struct <anonymous>}' has no member named 'Stats'
+      InstancePtr->Stats.TxErrors = 0;
+                 ^~
+../src/iic_driver/iic_driver.c:264:9: error: void value not ignored as it ought to be
+  Status = XScuGic_Stop(InstancePtr);
+         ^
+../src/iic_driver/iic_driver.c: In function 'IicReadData':
+../src/iic_driver/iic_driver.c:317:11: warning: implicit declaration of function 'XScuGic_MasterRecv'; did you mean 'XScuGic_WriteReg'? [-Wimplicit-function-declaration]
+  Status = XScuGic_MasterRecv(InstancePtr, ReadBuffer, ByteCount);
+           ^~~~~~~~~~~~~~~~~~
+           XScuGic_WriteReg
+../src/iic_driver/iic_driver.c:332:9: error: void value not ignored as it ought to be
+  Status = XScuGic_Stop(InstancePtr);
+         ^
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:29:12 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:89: error: unknown type name 'XIntc'
+ int IicInit(XScuGic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                         ^~~~~
+../src/iic_driver/iic_driver.c:76:66: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XScuGic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                                  ^~~~~
+../src/iic_driver/iic_driver.c: In function 'IicWriteData':
+../src/iic_driver/iic_driver.c:188:13: error: 'XScuGic {aka struct <anonymous>}' has no member named 'Stats'
+  InstancePtr->Stats.TxErrors = 0;
+             ^~
+../src/iic_driver/iic_driver.c:207:11: warning: implicit declaration of function 'XIic_Start'; did you mean 'va_start'? [-Wimplicit-function-declaration]
+  Status = XIic_Start(InstancePtr);
+           ^~~~~~~~~~
+           va_start
+../src/iic_driver/iic_driver.c:215:11: warning: implicit declaration of function 'XIic_MasterSend' [-Wimplicit-function-declaration]
+  Status = XIic_MasterSend(InstancePtr, Buffer, ByteCount+1);
+           ^~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c:223:32: warning: implicit declaration of function 'XIic_IsIicBusy' [-Wimplicit-function-declaration]
+  while ((TransmitComplete) || (XIic_IsIicBusy(InstancePtr) == TRUE)) {
+                                ^~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c:233:18: error: 'XScuGic {aka struct <anonymous>}' has no member named 'Stats'
+   if (InstancePtr->Stats.TxErrors != 0) {
+                  ^~
+../src/iic_driver/iic_driver.c:253:17: error: 'XScuGic {aka struct <anonymous>}' has no member named 'Stats'
+      InstancePtr->Stats.TxErrors = 0;
+                 ^~
+../src/iic_driver/iic_driver.c:264:11: warning: implicit declaration of function 'XIic_Stop'; did you mean 'XScuGic_Stop'? [-Wimplicit-function-declaration]
+  Status = XIic_Stop(InstancePtr);
+           ^~~~~~~~~
+           XScuGic_Stop
+../src/iic_driver/iic_driver.c: In function 'IicReadData':
+../src/iic_driver/iic_driver.c:317:11: warning: implicit declaration of function 'XIic_MasterRecv' [-Wimplicit-function-declaration]
+  Status = XIic_MasterRecv(InstancePtr, ReadBuffer, ByteCount);
+           ^~~~~~~~~~~~~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:29:48 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:13: error: unknown type name 'XIic'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+             ^~~~
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+../src/iic_driver/iic_driver.c:76:25: error: unknown type name 'XIic'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                         ^~~~
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+../src/iic_driver/iic_driver.c:122:22: error: unknown type name 'XIic'
+ void Iic_SendHandler(XIic *InstancePtr)
+                      ^~~~
+../src/iic_driver/iic_driver.c:140:25: error: unknown type name 'XIic'
+ void Iic_ReceiveHandler(XIic *InstancePtr)
+                         ^~~~
+../src/iic_driver/iic_driver.c:159:24: error: unknown type name 'XIic'
+ void Iic_StatusHandler(XIic *InstancePtr, int Event)
+                        ^~~~
+../src/iic_driver/iic_driver.c:178:18: error: unknown type name 'XIic'
+ int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount)
+                  ^~~~
+../src/iic_driver/iic_driver.c:289:17: error: unknown type name 'XIic'
+ int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount)
+                 ^~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:30:05 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'; did you mean 'XIic'?
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+                                                                                      XIic
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'; did you mean 'XIic'?
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+                                                               XIic
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:32:04 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'IicInit':
+../src/iic_driver/iic_driver.c:53:11: warning: implicit declaration of function 'iic_setup_interrupt' [-Wimplicit-function-declaration]
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: At top level:
+../src/iic_driver/iic_driver.c:76:5: error: conflicting types for 'iic_setup_interrupt'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+     ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c:76:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+ ^~~
+../src/iic_driver/iic_driver.c:53:11: note: previous implicit declaration of 'iic_setup_interrupt' was here
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:83:11: warning: implicit declaration of function 'XIntc_Connect'; did you mean 'XScuGic_Connect'? [-Wimplicit-function-declaration]
+  Status = XIntc_Connect(IntcInstancePtr, Iic_Intc_Id,
+           ^~~~~~~~~~~~~
+           XScuGic_Connect
+../src/iic_driver/iic_driver.c:93:2: warning: implicit declaration of function 'XIntc_Enable'; did you mean 'XScuGic_Enable'? [-Wimplicit-function-declaration]
+  XIntc_Enable(IntcInstancePtr, Iic_Intc_Id);
+  ^~~~~~~~~~~~
+  XScuGic_Enable
+../src/iic_driver/iic_driver.c:99:20: error: 'Iic_SendHandler' undeclared (first use in this function); did you mean 'XIic_SetSendHandler'?
+     (XIic_Handler) Iic_SendHandler);
+                    ^~~~~~~~~~~~~~~
+                    XIic_SetSendHandler
+../src/iic_driver/iic_driver.c:99:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/iic_driver/iic_driver.c:101:20: error: 'Iic_ReceiveHandler' undeclared (first use in this function); did you mean 'Iic_SendHandler'?
+     (XIic_Handler) Iic_ReceiveHandler);
+                    ^~~~~~~~~~~~~~~~~~
+                    Iic_SendHandler
+../src/iic_driver/iic_driver.c:103:28: error: 'Iic_StatusHandler' undeclared (first use in this function); did you mean 'XIic_StatusHandler'?
+       (XIic_StatusHandler) Iic_StatusHandler);
+                            ^~~~~~~~~~~~~~~~~
+                            XIic_StatusHandler
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:38:20 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'; did you mean 'XIic'?
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+                                                                                      XIic
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'; did you mean 'XIic'?
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+                                                               XIic
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:38:27 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:33:86: error: unknown type name 'XIntc'; did you mean 'XIic'?
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr) {
+                                                                                      ^~~~~
+                                                                                      XIic
+../src/iic_driver/iic_driver.c:76:63: error: unknown type name 'XIntc'; did you mean 'XIic'?
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, XIntc *IntcInstancePtr) {
+                                                               ^~~~~
+                                                               XIic
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:38:57 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'IicInit':
+../src/iic_driver/iic_driver.c:53:11: warning: implicit declaration of function 'iic_setup_interrupt' [-Wimplicit-function-declaration]
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: At top level:
+../src/iic_driver/iic_driver.c:76:5: error: conflicting types for 'iic_setup_interrupt'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+     ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c:76:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+ ^~~
+../src/iic_driver/iic_driver.c:53:11: note: previous implicit declaration of 'iic_setup_interrupt' was here
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:84:11: warning: implicit declaration of function 'XIntc_Connect'; did you mean 'XScuGic_Connect'? [-Wimplicit-function-declaration]
+  Status = XIntc_Connect(IntcInstancePtr, Iic_Intc_Id,
+           ^~~~~~~~~~~~~
+           XScuGic_Connect
+../src/iic_driver/iic_driver.c:94:2: warning: implicit declaration of function 'XIntc_Enable'; did you mean 'XScuGic_Enable'? [-Wimplicit-function-declaration]
+  XIntc_Enable(IntcInstancePtr, Iic_Intc_Id);
+  ^~~~~~~~~~~~
+  XScuGic_Enable
+../src/iic_driver/iic_driver.c:100:20: error: 'Iic_SendHandler' undeclared (first use in this function); did you mean 'XIic_SetSendHandler'?
+     (XIic_Handler) Iic_SendHandler);
+                    ^~~~~~~~~~~~~~~
+                    XIic_SetSendHandler
+../src/iic_driver/iic_driver.c:100:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/iic_driver/iic_driver.c:102:20: error: 'Iic_ReceiveHandler' undeclared (first use in this function); did you mean 'Iic_SendHandler'?
+     (XIic_Handler) Iic_ReceiveHandler);
+                    ^~~~~~~~~~~~~~~~~~
+                    Iic_SendHandler
+../src/iic_driver/iic_driver.c:104:28: error: 'Iic_StatusHandler' undeclared (first use in this function); did you mean 'XIic_StatusHandler'?
+       (XIic_StatusHandler) Iic_StatusHandler);
+                            ^~~~~~~~~~~~~~~~~
+                            XIic_StatusHandler
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:39:42 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'IicInit':
+../src/iic_driver/iic_driver.c:53:11: warning: implicit declaration of function 'iic_setup_interrupt' [-Wimplicit-function-declaration]
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: At top level:
+../src/iic_driver/iic_driver.c:76:5: error: conflicting types for 'iic_setup_interrupt'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+     ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c:76:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+ ^~~
+../src/iic_driver/iic_driver.c:53:11: note: previous implicit declaration of 'iic_setup_interrupt' was here
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:77:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:41:55 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'IicInit':
+../src/iic_driver/iic_driver.c:53:11: warning: implicit declaration of function 'iic_setup_interrupt' [-Wimplicit-function-declaration]
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: At top level:
+../src/iic_driver/iic_driver.c:76:5: error: conflicting types for 'iic_setup_interrupt'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+     ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c:76:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+ ^~~
+../src/iic_driver/iic_driver.c:53:11: note: previous implicit declaration of 'iic_setup_interrupt' was here
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:77:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:42:08 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'IicInit':
+../src/iic_driver/iic_driver.c:53:11: warning: implicit declaration of function 'iic_setup_interrupt' [-Wimplicit-function-declaration]
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: At top level:
+../src/iic_driver/iic_driver.c:76:5: error: conflicting types for 'iic_setup_interrupt'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+     ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c:76:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+ ^~~
+../src/iic_driver/iic_driver.c:53:11: note: previous implicit declaration of 'iic_setup_interrupt' was here
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:42:37 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'IicInit':
+../src/iic_driver/iic_driver.c:53:11: warning: implicit declaration of function 'iic_setup_interrupt' [-Wimplicit-function-declaration]
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: At top level:
+../src/iic_driver/iic_driver.c:76:5: error: conflicting types for 'iic_setup_interrupt'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+     ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c:76:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+ ^~~
+../src/iic_driver/iic_driver.c:53:11: note: previous implicit declaration of 'iic_setup_interrupt' was here
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:43:26 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'IicInit':
+../src/iic_driver/iic_driver.c:53:11: warning: implicit declaration of function 'iic_setup_interrupt' [-Wimplicit-function-declaration]
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: At top level:
+../src/iic_driver/iic_driver.c:76:5: error: conflicting types for 'iic_setup_interrupt'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+     ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c:76:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+ ^~~
+../src/iic_driver/iic_driver.c:53:11: note: previous implicit declaration of 'iic_setup_interrupt' was here
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:116:20: error: 'Iic_SendHandler' undeclared (first use in this function); did you mean 'XIic_SetSendHandler'?
+     (XIic_Handler) Iic_SendHandler);
+                    ^~~~~~~~~~~~~~~
+                    XIic_SetSendHandler
+../src/iic_driver/iic_driver.c:116:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/iic_driver/iic_driver.c:118:20: error: 'Iic_ReceiveHandler' undeclared (first use in this function); did you mean 'Iic_SendHandler'?
+     (XIic_Handler) Iic_ReceiveHandler);
+                    ^~~~~~~~~~~~~~~~~~
+                    Iic_SendHandler
+../src/iic_driver/iic_driver.c:120:28: error: 'Iic_StatusHandler' undeclared (first use in this function); did you mean 'XIic_StatusHandler'?
+       (XIic_StatusHandler) Iic_StatusHandler);
+                            ^~~~~~~~~~~~~~~~~
+                            XIic_StatusHandler
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:45:07 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37096	   3808	  22664	  63568	   f850	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:46:05 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37096	   3808	  22664	  63568	   f850	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:47:00 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34288	   3808	  22664	  60760	   ed58	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:47:30 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:36:86: error: unknown type name 'XIntc'; did you mean 'XIic'?
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, XIntc *IntcInstancePtr);
+                                                                                      ^~~~~
+                                                                                      XIic
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+17:47:37 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34288	   3808	  22664	  60760	   ed58	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:48:22 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34288	   3808	  22664	  60760	   ed58	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:48:25 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34288	   3808	  22664	  60760	   ed58	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:48:43 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34288	   3808	  22664	  60760	   ed58	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:49:15 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:56:10: fatal error: iic_driver.h: No such file or directory
+ #include "iic_driver.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/helloworld.o] ´íÎó 1
+17:49:30 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34288	   3808	  22664	  60760	   ed58	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:50:23 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:87:2: error: too few arguments to function 'IicInit'
+  IicInit()
+  ^~~~~~~
+In file included from ../src/helloworld.c:56:0:
+../src/./iic_driver/iic_driver.h:36:5: note: declared here
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr);
+     ^~~~~~~
+../src/helloworld.c:89:2: error: expected ';' before 'return'
+  return XST_SUCCESS;
+  ^~~~~~
+../src/helloworld.c:90:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] ´íÎó 1
+17:51:26 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34332	   3808	  22760	  60900	   ede4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:52:23 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'AT24C_test':
+../src/helloworld.c:153:24: error: 'TEST_BUFFER_SIZE' undeclared (first use in this function)
+  static u8 WriteBuffer[TEST_BUFFER_SIZE];
+                        ^~~~~~~~~~~~~~~~
+../src/helloworld.c:153:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:161:5: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+     sleep(1);
+     ^~~~~
+     strsep
+../src/helloworld.c:154:12: warning: unused variable 'ReadBuffer' [-Wunused-variable]
+  static u8 ReadBuffer[TEST_BUFFER_SIZE];
+            ^~~~~~~~~~
+../src/helloworld.c:153:12: warning: unused variable 'WriteBuffer' [-Wunused-variable]
+  static u8 WriteBuffer[TEST_BUFFER_SIZE];
+            ^~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+17:52:56 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'AT24C_test':
+../src/helloworld.c:164:5: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+     sleep(1);
+     ^~~~~
+     strsep
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37712	   3808	  22792	  64312	   fb38	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:53:09 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37712	   3808	  22792	  64312	   fb38	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:53:48 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:2: warning: implicit declaration of function 'AT24C_test' [-Wimplicit-function-declaration]
+  AT24C_test();
+  ^~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:160:6: warning: conflicting types for 'AT24C_test'
+ void AT24C_test() {
+      ^~~~~~~~~~
+../src/helloworld.c:88:2: note: previous implicit declaration of 'AT24C_test' was here
+  AT24C_test();
+  ^~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37796	   3808	  22792	  64396	   fb8c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:53:58 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37796	   3808	  22792	  64396	   fb8c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:54:11 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37796	   3808	  22792	  64396	   fb8c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+17:55:58 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+20:43:53 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+In file included from ../src/mpu6500/AHRS_Hardware.h:11:0,
+                 from ../src/mpu6500/AHRS_Hardware.c:8:
+../src/mpu6500/mpu6500.h:11:10: fatal error: ../iic_my/iic_my.h: No such file or directory
+ #include "../iic_my/iic_my.h"
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/mpu6500/AHRS_Hardware.o] ´íÎó 1
+20:44:28 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+In file included from ../src/mpu6500/AHRS_Hardware.h:11:0,
+                 from ../src/mpu6500/AHRS_Hardware.c:8:
+../src/mpu6500/mpu6500.h:11:10: fatal error: ../src/mpu6500/ã€‚ã??/iic_driver/iic_driver.h: Invalid argument
+ #include "ã€‚ã??/iic_driver/iic_driver.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/mpu6500/AHRS_Hardware.o] ´íÎó 1
+20:44:41 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+In file included from ../src/mpu6500/AHRS_Hardware.c:8:0:
+../src/mpu6500/AHRS_Hardware.h:13:10: fatal error: ../DronePara.h: No such file or directory
+ #include "../DronePara.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/mpu6500/AHRS_Hardware.o] ´íÎó 1
+20:45:02 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mpu6500/AHRS_Hardware.o: In function `safe_asin':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:27: undefined reference to `asin'
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:125: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:125: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:126: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:126: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:127: undefined reference to `RT_Info'
+./src/mpu6500/AHRS_Hardware.o:C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:127: more undefined references to `RT_Info' follow
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:135: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:135: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:136: undefined reference to `RT_Info'
+./src/mpu6500/AHRS_Hardware.o:C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:136: more undefined references to `RT_Info' follow
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:146: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:146: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `RT_Info'
+./src/mpu6500/MahonyAHRS.o: In function `MahonyAHRSupdate':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/MahonyAHRS.c:78: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+20:46:08 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mpu6500/AHRS_Hardware.o: In function `safe_asin':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:27: undefined reference to `asin'
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:125: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:125: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:126: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:126: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:127: undefined reference to `RT_Info'
+./src/mpu6500/AHRS_Hardware.o:C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:127: more undefined references to `RT_Info' follow
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:135: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:135: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:136: undefined reference to `RT_Info'
+./src/mpu6500/AHRS_Hardware.o:C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:136: more undefined references to `RT_Info' follow
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:146: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:146: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `RT_Info'
+./src/mpu6500/MahonyAHRS.o: In function `MahonyAHRSupdate':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/MahonyAHRS.c:78: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+20:46:57 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mpu6500/AHRS_Hardware.o: In function `safe_asin':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:27: undefined reference to `asin'
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:125: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:125: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:126: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:126: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:127: undefined reference to `RT_Info'
+./src/mpu6500/AHRS_Hardware.o:C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:127: more undefined references to `RT_Info' follow
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:130: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:131: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `OffsetData'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:132: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:135: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:135: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:136: undefined reference to `RT_Info'
+./src/mpu6500/AHRS_Hardware.o:C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:136: more undefined references to `RT_Info' follow
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:146: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:146: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `RT_Info'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `RT_Info'
+./src/mpu6500/MahonyAHRS.o: In function `MahonyAHRSupdate':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/MahonyAHRS.c:78: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+20:48:56 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:74:1: error: unknown type name 'DroneRTInfo'
+ DroneRTInfo RT_Info;
+ ^~~~~~~~~~~
+../src/helloworld.c:75:1: error: unknown type name 'OffsetInfo'; did you mean 'offsetof'?
+ OffsetInfo OffsetData;
+ ^~~~~~~~~~
+ offsetof
+make: *** [src/helloworld.o] ´íÎó 1
+20:49:28 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mpu6500/AHRS_Hardware.o: In function `safe_asin':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:27: undefined reference to `asin'
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `atan2'
+./src/mpu6500/MahonyAHRS.o: In function `MahonyAHRSupdate':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/MahonyAHRS.c:78: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+20:49:41 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mpu6500/AHRS_Hardware.o: In function `safe_asin':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:27: undefined reference to `asin'
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `atan2'
+./src/mpu6500/MahonyAHRS.o: In function `MahonyAHRSupdate':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/MahonyAHRS.c:78: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+20:50:53 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mpu6500/AHRS_Hardware.o: In function `safe_asin':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:27: undefined reference to `asin'
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `atan2'
+./src/mpu6500/MahonyAHRS.o: In function `MahonyAHRSupdate':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/MahonyAHRS.c:78: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+20:51:09 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mpu6500/AHRS_Hardware.o: In function `safe_asin':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:27: undefined reference to `asin'
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `atan2'
+./src/mpu6500/MahonyAHRS.o: In function `MahonyAHRSupdate':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/MahonyAHRS.c:78: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+20:58:00 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mpu6500/AHRS_Hardware.o: In function `safe_asin':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:27: undefined reference to `asin'
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:144: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:148: undefined reference to `atan2'
+./src/mpu6500/MahonyAHRS.o: In function `MahonyAHRSupdate':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/MahonyAHRS.c:78: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+20:58:26 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mpu6500/AHRS_Hardware.o: In function `safe_asin':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:28: undefined reference to `asin'
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:145: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:149: undefined reference to `atan2'
+./src/mpu6500/MahonyAHRS.o: In function `MahonyAHRSupdate':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/MahonyAHRS.c:78: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+20:58:48 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mpu6500/AHRS_Hardware.o: In function `safe_asin':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:28: undefined reference to `asin'
+./src/mpu6500/AHRS_Hardware.o: In function `IMU_getInfo':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:145: undefined reference to `atan2'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/AHRS_Hardware.c:149: undefined reference to `atan2'
+./src/mpu6500/MahonyAHRS.o: In function `MahonyAHRSupdate':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/mpu6500/MahonyAHRS.c:78: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+21:03:54 **** Clean-only build of configuration Debug for project iic_test ****
+make clean 
+rm -rf  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o  ./src/mpu6500/AHRS_Hardware.d ./src/mpu6500/MahonyAHRS.d ./src/mpu6500/mpu6500.d  ./src/iic_driver/iic_driver.d  ./src/helloworld.d ./src/platform.d  iic_test.elf.size  iic_test.elf
+ 
+21:03:55 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50176	   3824	  23272	  77272	  12dd8	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:08:43 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50176	   3824	  23272	  77272	  12dd8	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:19:04 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:72:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(str, "%f", pi);
+     ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:72:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:72:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  90076	   4216	  23968	 118260	  1cdf4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:19:30 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:72:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(str, "%f", pi);
+     ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:72:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:72:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:72:5: warning: 'str' is used uninitialized in this function [-Wuninitialized]
+     sprintf(str, "%f", pi);
+     ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  90076	   4216	  23968	 118260	  1cdf4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:20:10 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:72:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(str, "%f", pi);
+     ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:72:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:72:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:73:5: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+     puts(str);
+     ^~~~
+../src/mpu6500/AHRS_Hardware.c:72:5: warning: 'str' is used uninitialized in this function [-Wuninitialized]
+     sprintf(str, "%f", pi);
+     ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95436	   4216	  23968	 123620	  1e2e4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:21:26 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'MPU6500_test':
+../src/helloworld.c:214:5: warning: implicit declaration of function 'AHRS_HardWareinit' [-Wimplicit-function-declaration]
+     AHRS_HardWareinit(&IicInstance);
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:218:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95548	   4216	  23968	 123732	  1e354	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:21:51 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'MPU6500_test':
+../src/helloworld.c:214:5: warning: implicit declaration of function 'AHRS_HardWareinit' [-Wimplicit-function-declaration]
+     AHRS_HardWareinit(&IicInstance);
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:218:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95548	   4216	  23968	 123732	  1e354	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:22:37 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'MPU6500_test':
+../src/helloworld.c:215:5: warning: implicit declaration of function 'AHRS_HardWareinit' [-Wimplicit-function-declaration]
+     AHRS_HardWareinit(&IicInstance);
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:219:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95548	   4216	  23968	 123732	  1e354	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:23:45 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:25:04 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:25:52 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'MPU6500_test':
+../src/helloworld.c:215:5: warning: implicit declaration of function 'AHRS_HardWareinit' [-Wimplicit-function-declaration]
+     AHRS_HardWareinit(&IicInstance);
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:219:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95548	   4216	  23968	 123732	  1e354	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:26:03 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:29:08 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:64:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf(str, "%f", values[i]);
+         ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:64:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:64:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:65:9: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+         puts(str);
+         ^~~~
+../src/mpu6500/AHRS_Hardware.c:64:9: warning: 'str' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         sprintf(str, "%f", values[i]);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95484	   4216	  23968	 123668	  1e314	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:29:31 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50216	   3824	  23272	  77312	  12e00	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:29:35 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:64:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf(str, "%f", values[i]);
+         ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:64:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:64:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:65:9: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+         puts(str);
+         ^~~~
+../src/mpu6500/AHRS_Hardware.c:64:9: warning: 'str' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         sprintf(str, "%f", values[i]);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95484	   4216	  23968	 123668	  1e314	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:29:44 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:30:33 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:31:31 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'MPU6500_test':
+../src/helloworld.c:215:5: warning: implicit declaration of function 'AHRS_HardWareinit' [-Wimplicit-function-declaration]
+     AHRS_HardWareinit(&IicInstance);
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:219:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95556	   4216	  23968	 123740	  1e35c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:31:38 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:32:18 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:38:04 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50296	   3824	  23272	  77392	  12e50	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:38:16 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50224	   3824	  23272	  77320	  12e08	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:46:30 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:47:46 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:56:32 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50224	   3824	  23272	  77320	  12e08	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:56:44 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getInfo':
+../src/mpu6500/AHRS_Hardware.c:130:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf(str, "%f", values[i]);
+         ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:130:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:130:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:130:28: error: 'values' undeclared (first use in this function); did you mean '_glue'?
+         sprintf(str, "%f", values[i]);
+                            ^~~~~~
+                            _glue
+../src/mpu6500/AHRS_Hardware.c:130:28: note: each undeclared identifier is reported only once for each function it appears in
+../src/mpu6500/AHRS_Hardware.c:130:35: error: 'i' undeclared (first use in this function)
+         sprintf(str, "%f", values[i]);
+                                   ^
+../src/mpu6500/AHRS_Hardware.c:131:9: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+         puts(str);
+         ^~~~
+make: *** [src/mpu6500/AHRS_Hardware.o] ´íÎó 1
+21:57:50 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getInfo':
+../src/mpu6500/AHRS_Hardware.c:130:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf(str, "%f %f %f", RT_Info.rateRoll, RT_Info.ratePitch, RT_Info.rateYaw);
+         ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:130:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:130:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:131:9: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+         puts(str);
+         ^~~~
+../src/mpu6500/AHRS_Hardware.c:130:9: warning: 'str' is used uninitialized in this function [-Wuninitialized]
+         sprintf(str, "%f %f %f", RT_Info.rateRoll, RT_Info.ratePitch, RT_Info.rateYaw);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95564	   4216	  23968	 123748	  1e364	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:57:59 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+22:00:18 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getInfo':
+../src/mpu6500/AHRS_Hardware.c:157:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf(str, "%f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+         ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:157:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:157:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:158:9: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+         puts(str);
+         ^~~~
+../src/mpu6500/AHRS_Hardware.c:157:9: warning: 'str' is used uninitialized in this function [-Wuninitialized]
+         sprintf(str, "%f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95564	   4216	  23968	 123748	  1e364	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+22:00:27 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+22:14:36 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50224	   3824	  23272	  77320	  12e08	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+22:14:38 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50224	   3824	  23272	  77320	  12e08	iic_test.elf
+Finished building: iic_test.elf.size
+ 

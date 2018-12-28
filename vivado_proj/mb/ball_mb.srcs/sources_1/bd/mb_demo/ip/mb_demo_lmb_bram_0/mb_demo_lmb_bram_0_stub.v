@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Mon Dec 24 08:49:58 2018
+// Date        : Mon Dec 24 08:49:57 2018
 // Host        : ZYQ-Mac-Win running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_lmb_bram_0/mb_demo_lmb_bram_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top mb_demo_lmb_bram_0 -prefix
+//               mb_demo_lmb_bram_0_ mb_demo_lmb_bram_0_stub.v
 // Design      : mb_demo_lmb_bram_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

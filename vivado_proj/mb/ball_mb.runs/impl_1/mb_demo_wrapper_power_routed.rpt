@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Wed Dec 26 20:02:07 2018
+| Date             : Thu Dec 27 15:17:24 2018
 | Host             : ZYQ-Mac-Win running 64-bit major release  (build 9200)
 | Command          : report_power -file mb_demo_wrapper_power_routed.rpt -pb mb_demo_wrapper_power_summary_routed.pb -rpx mb_demo_wrapper_power_routed.rpx
 | Design           : mb_demo_wrapper
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.025 |       12 |       --- |             --- |
-| Slice Logic              |     0.009 |    17060 |       --- |             --- |
-|   LUT as Logic           |     0.007 |     5655 |     20800 |           27.19 |
+| Slice Logic              |     0.009 |    17076 |       --- |             --- |
+|   LUT as Logic           |     0.007 |     5661 |     20800 |           27.22 |
 |   LUT as Distributed RAM |     0.001 |      120 |      9600 |            1.25 |
 |   CARRY4                 |    <0.001 |      356 |      8150 |            4.37 |
-|   Register               |    <0.001 |     7091 |     41600 |           17.05 |
+|   Register               |    <0.001 |     7093 |     41600 |           17.05 |
 |   LUT as Shift Register  |    <0.001 |     1210 |      9600 |           12.60 |
 |   F7/F8 Muxes            |    <0.001 |      173 |     32600 |            0.53 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |    <0.001 |     1067 |       --- |             --- |
-| Signals                  |     0.011 |    11239 |       --- |             --- |
+| Signals                  |     0.011 |    11256 |       --- |             --- |
 | Block RAM                |     0.014 |       46 |        50 |           92.00 |
 | MMCM                     |     0.212 |        2 |         5 |           40.00 |
 | I/O                      |     0.003 |       55 |       106 |           51.89 |
@@ -158,9 +158,9 @@ Table of Contents
 | mb_demo_wrapper                                                                    |     0.274 |
 |   OV7725_IIC_scl_iobuf                                                             |     0.000 |
 |   OV7725_IIC_sda_iobuf                                                             |     0.000 |
-|   dbg_hub                                                                          |     0.002 |
-|     inst                                                                           |     0.002 |
-|       BSCANID.u_xsdbm_id                                                           |     0.002 |
+|   dbg_hub                                                                          |     0.001 |
+|     inst                                                                           |     0.001 |
+|       BSCANID.u_xsdbm_id                                                           |     0.001 |
 |         CORE_XSDB.UUT_MASTER                                                       |     0.001 |
 |           U_ICON_INTERFACE                                                         |    <0.001 |
 |             U_CMD1                                                                 |    <0.001 |
@@ -320,10 +320,10 @@ Table of Contents
 |               MEM_DECODE_GEN[0].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I        |     0.000 |
 |         TC_CORE_I                                                                  |     0.003 |
 |           COUNTER_0_I                                                              |     0.001 |
-|             COUNTER_I                                                              |     0.001 |
+|             COUNTER_I                                                              |    <0.001 |
 |           GEN_SECOND_TIMER.COUNTER_1_I                                             |     0.001 |
 |             COUNTER_I                                                              |     0.001 |
-|           READ_MUX_I                                                               |     0.000 |
+|           READ_MUX_I                                                               |    <0.001 |
 |           TIMER_CONTROL_I                                                          |    <0.001 |
 |             INPUT_DOUBLE_REGS                                                      |    <0.001 |
 |             INPUT_DOUBLE_REGS2                                                     |    <0.001 |
@@ -533,7 +533,7 @@ Table of Contents
 |                     gen_output_regs.output_regs                                    |    <0.001 |
 |             U_take_color                                                           |     0.004 |
 |               cb_average                                                           |     0.002 |
-|                 average_shift_RAM_3x3                                              |     0.001 |
+|                 average_shift_RAM_3x3                                              |    <0.001 |
 |                   U1_shift_ram                                                     |    <0.001 |
 |                     U0                                                             |    <0.001 |
 |                       i_synth                                                      |    <0.001 |
@@ -545,7 +545,7 @@ Table of Contents
 |                         i_bb_inst                                                  |    <0.001 |
 |                           gen_output_regs.output_regs                              |    <0.001 |
 |               cr_average                                                           |     0.002 |
-|                 average_shift_RAM_3x3                                              |     0.001 |
+|                 average_shift_RAM_3x3                                              |    <0.001 |
 |                   U1_shift_ram                                                     |    <0.001 |
 |                     U0                                                             |    <0.001 |
 |                       i_synth                                                      |    <0.001 |
@@ -795,8 +795,8 @@ Table of Contents
 |       U0                                                                           |     0.013 |
 |         MicroBlaze_Core_I                                                          |     0.013 |
 |           Performance.Core                                                         |     0.013 |
-|             Data_Flow_I                                                            |     0.006 |
-|               ALU_I                                                                |    <0.001 |
+|             Data_Flow_I                                                            |     0.007 |
+|               ALU_I                                                                |     0.001 |
 |                 Using_FPGA.ALL_Bits[0].ALU_Bit_I1                                  |    <0.001 |
 |                   Last_Bit.I_ALU_LUT_2                                             |    <0.001 |
 |                   Last_Bit.I_ALU_LUT_V5                                            |    <0.001 |
@@ -960,7 +960,7 @@ Table of Contents
 |                 Gen_Bits[7].MEM_EX_Result_Inst                                     |    <0.001 |
 |                 Gen_Bits[8].MEM_EX_Result_Inst                                     |    <0.001 |
 |                 Gen_Bits[9].MEM_EX_Result_Inst                                     |    <0.001 |
-|               Operand_Select_I                                                     |     0.002 |
+|               Operand_Select_I                                                     |     0.001 |
 |                 Gen_Bit[0].MUXF7_I1                                                |    <0.001 |
 |                 Gen_Bit[10].MUXF7_I1                                               |    <0.001 |
 |                 Gen_Bit[11].MUXF7_I1                                               |    <0.001 |
@@ -1034,7 +1034,7 @@ Table of Contents
 |                 Part_Of_Zero_Carry_Start                                           |    <0.001 |
 |                 Zero_Detecting[2].I_Part_Of_Zero_Detect                            |     0.000 |
 |                 Zero_Detecting[3].I_Part_Of_Zero_Detect                            |    <0.001 |
-|               exception_registers_I1                                               |    <0.001 |
+|               exception_registers_I1                                               |     0.001 |
 |                 CarryIn_MUXCY                                                      |    <0.001 |
 |                 Using_FPGA_LUT6.Gen_Ret_Addr[0].I_RET_ADDR_WB                      |    <0.001 |
 |                   Using_FPGA.Native                                                |    <0.001 |
@@ -1519,8 +1519,8 @@ Table of Contents
 |           Reset_DFF                                                                |    <0.001 |
 |           Using_Async_Wakeup_0.Wakeup_DFF                                          |    <0.001 |
 |           Using_Async_Wakeup_1.Wakeup_DFF                                          |    <0.001 |
-|     microblaze_0_axi_intc                                                          |     0.002 |
-|       U0                                                                           |     0.002 |
+|     microblaze_0_axi_intc                                                          |     0.001 |
+|       U0                                                                           |     0.001 |
 |         AXI_LITE_IPIF_I                                                            |    <0.001 |
 |           I_SLAVE_ATTACHMENT                                                       |    <0.001 |
 |             I_DECODER                                                              |    <0.001 |
@@ -1562,7 +1562,7 @@ Table of Contents
 |       xbar                                                                         |     0.001 |
 |         inst                                                                       |     0.001 |
 |           gen_sasd.crossbar_sasd_0                                                 |     0.001 |
-|             addr_arbiter_inst                                                      |     0.001 |
+|             addr_arbiter_inst                                                      |    <0.001 |
 |             gen_decerr.decerr_slave_inst                                           |    <0.001 |
 |             reg_slice_r                                                            |    <0.001 |
 |             splitter_ar                                                            |    <0.001 |

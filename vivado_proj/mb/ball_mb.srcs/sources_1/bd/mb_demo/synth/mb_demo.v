@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-//Date        : Wed Dec 26 19:49:50 2018
+//Date        : Thu Dec 27 15:10:26 2018
 //Host        : ZYQ-Mac-Win running 64-bit major release  (build 9200)
 //Command     : generate_target mb_demo.bd
 //Design      : mb_demo
@@ -1127,12 +1127,12 @@ module mb_demo
     vga_vsync_0);
   input [7:0]OV7725_D_0;
   input OV7725_HREF_0;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) input OV7725_IIC_scl_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) output OV7725_IIC_scl_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) output OV7725_IIC_scl_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) input OV7725_IIC_sda_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) output OV7725_IIC_sda_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC " *) output OV7725_IIC_sda_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC SCL_I" *) input OV7725_IIC_scl_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC SCL_O" *) output OV7725_IIC_scl_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC SCL_T" *) output OV7725_IIC_scl_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC SDA_I" *) input OV7725_IIC_sda_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC SDA_O" *) output OV7725_IIC_sda_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 OV7725_IIC SDA_T" *) output OV7725_IIC_sda_t;
   input OV7725_PCLK_0;
   output OV7725_PWND_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.OV7725_RST_0 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.OV7725_RST_0, POLARITY ACTIVE_LOW" *) output OV7725_RST_0;

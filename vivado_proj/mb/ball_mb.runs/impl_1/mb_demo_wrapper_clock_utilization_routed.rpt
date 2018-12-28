@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Dec 26 20:02:10 2018
+| Date         : Thu Dec 27 15:17:28 2018
 | Host         : ZYQ-Mac-Win running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file mb_demo_wrapper_clock_utilization_routed.rpt
 | Design       : mb_demo_wrapper
@@ -54,7 +54,7 @@ Table of Contents
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                                                      | Driver Pin                                                                                           | Net                                                                                                         |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 4 |        3152 |               0 |       10.000 | clk_100M_mb_demo_clk_wiz_1_0                                                               | mb_demo_i/clk_wiz_1/inst/clkout1_buf/O                                                               | mb_demo_i/clk_wiz_1/inst/clk_100M                                                                           |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 4 |        3154 |               0 |       10.000 | clk_100M_mb_demo_clk_wiz_1_0                                                               | mb_demo_i/clk_wiz_1/inst/clkout1_buf/O                                                               | mb_demo_i/clk_wiz_1/inst/clk_100M                                                                           |
 | g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 4 |        2262 |               0 |       10.000 | clk_out1_clk_wiz_1                                                                         | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clkout1_buf/O | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out1             |
 | g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y3 | n/a          |                 3 |        2075 |               0 |              |                                                                                            | OV7725_PCLK_0_IBUF_BUFG_inst/O                                                                       | OV7725_PCLK_0_IBUF_BUFG                                                                                     |
 | g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y4 | n/a          |                 2 |         461 |               0 |       33.000 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck/O                                 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                                                      |
@@ -92,7 +92,7 @@ Table of Contents
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
 | Local Id | Driver Type/Pin | Constraint | Site/BEL         | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                                                                                                           | Net                                                                                            |
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------||
-| 0        | FDCE/Q          | None       | SLICE_X31Y46/DFF | X0Y0         |          56 |              19 |              |       | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_color_comparator/shift_clk_en_buf_reg[0]/Q | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_color_comparator/CLK - Static -
+| 0        | FDCE/Q          | None       | SLICE_X31Y46/AFF | X0Y0         |          56 |              19 |              |       | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_color_comparator/shift_clk_en_buf_reg[0]/Q | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_color_comparator/CLK - Static -
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------||
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents the clock pin loads (pin count)
@@ -107,10 +107,10 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1121 |  1200 |  625 |   400 |    0 |    20 |    8 |    10 |    0 |    20 |
-| X1Y0              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2928 |  1500 | 1435 |   450 |    2 |    40 |   18 |    20 |    0 |    20 |
-| X0Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  739 |  1200 |  246 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2263 |  1500 |  725 |   450 |    0 |    40 |   17 |    20 |    0 |    20 |
+| X0Y0              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1114 |  1200 |  689 |   400 |    0 |    20 |   10 |    10 |    0 |    20 |
+| X1Y0              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2955 |  1500 | 1429 |   450 |    1 |    40 |   17 |    20 |    0 |    20 |
+| X0Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  530 |  1200 |  160 |   400 |    1 |    20 |    4 |    10 |    0 |    20 |
+| X1Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2454 |  1500 |  811 |   450 |    0 |    40 |   12 |    20 |    0 |    20 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1800 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |   950 |    0 |   300 |    0 |    10 |    0 |     5 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
@@ -125,7 +125,7 @@ All Modules
 |    | X0 | X1 |
 +----+----+----+
 | Y2 |  0 |  0 |
-| Y1 |  5 |  4 |
+| Y1 |  4 |  5 |
 | Y0 |  6 |  6 |
 +----+----+----+
 
@@ -136,7 +136,7 @@ All Modules
 +-----------+-----------------+-------------------+------------------------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock                        | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                               |
 +-----------+-----------------+-------------------+------------------------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------+
-| g0        | BUFG/O          | n/a               | clk_100M_mb_demo_clk_wiz_1_0 |      10.000 | {0.000 5.000} |        3095 |        0 |              1 |        0 | mb_demo_i/clk_wiz_1/inst/clk_100M |
+| g0        | BUFG/O          | n/a               | clk_100M_mb_demo_clk_wiz_1_0 |      10.000 | {0.000 5.000} |        3097 |        0 |              1 |        0 | mb_demo_i/clk_wiz_1/inst/clk_100M |
 +-----------+-----------------+-------------------+------------------------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -148,8 +148,8 @@ All Modules
 |    | X0   | X1    |
 +----+------+-------+
 | Y2 |    0 |     0 |
-| Y1 |  461 |  2324 |
-| Y0 |   13 |   298 |
+| Y1 |  351 |  2422 |
+| Y0 |    9 |   316 |
 +----+------+-------+
 
 
@@ -171,8 +171,8 @@ All Modules
 |    | X0   | X1    |
 +----+------+-------+
 | Y2 |    0 |     0 |
-| Y1 |  126 |     9 |
-| Y0 |  644 |  1481 |
+| Y1 |  130 |     5 |
+| Y0 |  750 |  1375 |
 +----+------+-------+
 
 
@@ -194,8 +194,8 @@ All Modules
 |    | X0   | X1    |
 +----+------+-------+
 | Y2 |    0 |     0 |
-| Y1 |    6 |     0 |
-| Y0 |  284 |  1709 |
+| Y1 |    0 |     6 |
+| Y0 |  183 |  1810 |
 +----+------+-------+
 
 
@@ -213,13 +213,13 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+------+------+
-|    | X0   | X1   |
-+----+------+------+
-| Y2 |    0 |    0 |
-| Y1 |    0 |    0 |
-| Y0 |  346 |  112 |
-+----+------+------+
++----+------+-----+
+|    | X0   | X1  |
++----+------+-----+
+| Y2 |    0 |   0 |
+| Y1 |    0 |   0 |
+| Y0 |  386 |  72 |
++----+------+-----+
 
 
 11. Device Cell Placement Summary for Global Clock g4
@@ -240,8 +240,8 @@ All Modules
 |    | X0   | X1  |
 +----+------+-----+
 | Y2 |    0 |   0 |
-| Y1 |    7 |   9 |
-| Y0 |  169 |  72 |
+| Y1 |   10 |   5 |
+| Y0 |  181 |  61 |
 +----+------+-----+
 
 
@@ -259,13 +259,13 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+------+-----+
-|    | X0   | X1  |
-+----+------+-----+
-| Y2 |    0 |   0 |
-| Y1 |  168 |  64 |
-| Y0 |    0 |   0 |
-+----+------+-----+
++----+-----+------+
+|    | X0  | X1   |
++----+-----+------+
+| Y2 |   0 |    0 |
+| Y1 |  89 |  143 |
+| Y0 |   0 |    0 |
++----+-----+------+
 
 
 13. Device Cell Placement Summary for Global Clock g6
@@ -320,11 +320,11 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                         |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          13 |               0 |  12 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | mb_demo_i/clk_wiz_1/inst/clk_100M                                                                           |
-| g1        | n/a   | BUFG/O          | None       |         644 |               0 | 395 |    241 |    8 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out1             |
-| g2        | n/a   | BUFG/O          | None       |         284 |               0 | 284 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | OV7725_PCLK_0_IBUF_BUFG                                                                                     |
-| g3        | n/a   | BUFG/O          | None       |         346 |               0 | 346 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                                                      |
-| g4        | n/a   | BUFG/O          | None       |         168 |               1 |  72 |     88 |    8 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out2             |
+| g0        | n/a   | BUFG/O          | None       |           9 |               0 |   8 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | mb_demo_i/clk_wiz_1/inst/clk_100M                                                                           |
+| g1        | n/a   | BUFG/O          | None       |         750 |               0 | 445 |    295 |   10 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out1             |
+| g2        | n/a   | BUFG/O          | None       |         183 |               0 | 183 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | OV7725_PCLK_0_IBUF_BUFG                                                                                     |
+| g3        | n/a   | BUFG/O          | None       |         386 |               0 | 386 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                                                      |
+| g4        | n/a   | BUFG/O          | None       |         180 |               1 |  76 |     94 |   10 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out2             |
 | g6        | n/a   | BUFG/O          | None       |           1 |               0 |   0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clkfbout_buf_clk_wiz |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -338,11 +338,11 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                             |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         298 |               0 |  278 |     20 |    0 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/clk_wiz_1/inst/clk_100M                                                               |
-| g1        | n/a   | BUFG/O          | None       |        1481 |               0 |  872 |    588 |   19 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out1 |
-| g2        | n/a   | BUFG/O          | None       |        1709 |               0 | 1646 |     62 |    1 |   0 |  0 |    0 |   0 |       0 | OV7725_PCLK_0_IBUF_BUFG                                                                         |
-| g3        | n/a   | BUFG/O          | None       |         112 |               0 |  112 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                                          |
-| g4        | n/a   | BUFG/O          | None       |          72 |               0 |   19 |     32 |   19 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out2 |
+| g0        | n/a   | BUFG/O          | None       |         316 |               0 |  298 |     18 |    0 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/clk_wiz_1/inst/clk_100M                                                               |
+| g1        | n/a   | BUFG/O          | None       |        1375 |               0 |  822 |    534 |   17 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out1 |
+| g2        | n/a   | BUFG/O          | None       |        1810 |               0 | 1747 |     62 |    1 |   0 |  0 |    0 |   0 |       0 | OV7725_PCLK_0_IBUF_BUFG                                                                         |
+| g3        | n/a   | BUFG/O          | None       |          72 |               0 |   72 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                                          |
+| g4        | n/a   | BUFG/O          | None       |          61 |               0 |   16 |     26 |   17 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out2 |
 | g7        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | mb_demo_i/clk_wiz_1/inst/clkfbout_buf_mb_demo_clk_wiz_1_0                                       |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -356,11 +356,10 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                             |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         461 |               0 | 458 |      3 |    0 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/clk_wiz_1/inst/clk_100M                                                               |
-| g1        | n/a   | BUFG/O          | None       |         126 |               0 | 111 |     13 |    0 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out1 |
-| g2        | n/a   | BUFG/O          | None       |           6 |               0 |   6 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | OV7725_PCLK_0_IBUF_BUFG                                                                         |
-| g4        | n/a   | BUFG/O          | None       |           7 |               0 |   7 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out2 |
-| g5        | n/a   | BUFG/O          | None       |         168 |               0 | 154 |     14 |    0 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_31                                       |
+| g0        | n/a   | BUFG/O          | None       |         351 |               0 | 331 |     20 |    0 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/clk_wiz_1/inst/clk_100M                                                               |
+| g1        | n/a   | BUFG/O          | None       |         130 |               0 | 111 |     13 |    5 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out1 |
+| g4        | n/a   | BUFG/O          | None       |          10 |               0 |   6 |      0 |    4 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out2 |
+| g5        | n/a   | BUFG/O          | None       |          89 |               0 |  82 |      7 |    0 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_31                                       |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -373,10 +372,11 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                             |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        2324 |               0 | 2207 |    109 |    8 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/clk_wiz_1/inst/clk_100M                                                               |
-| g1        | n/a   | BUFG/O          | None       |           9 |               0 |    0 |      0 |    9 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out1 |
-| g4        | n/a   | BUFG/O          | None       |           9 |               0 |    0 |      0 |    9 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out2 |
-| g5        | n/a   | BUFG/O          | None       |          64 |               0 |   56 |      8 |    0 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_31                                       |
+| g0        | n/a   | BUFG/O          | None       |        2422 |               0 | 2320 |     94 |    8 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/clk_wiz_1/inst/clk_100M                                                               |
+| g1        | n/a   | BUFG/O          | None       |           5 |               0 |    0 |      0 |    4 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out1 |
+| g2        | n/a   | BUFG/O          | None       |           6 |               0 |    6 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | OV7725_PCLK_0_IBUF_BUFG                                                                         |
+| g4        | n/a   | BUFG/O          | None       |           5 |               0 |    0 |      0 |    4 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/ball_locator_0/inst/ball_locator_v1_0_S_AXI_inst/U_ov7725_top/U_clk_wiz/inst/clk_out2 |
+| g5        | n/a   | BUFG/O          | None       |         143 |               0 |  128 |     15 |    0 |   0 |  0 |    0 |   0 |       0 | mb_demo_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_31                                       |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -440,5 +440,5 @@ resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}] -add 
 #startgroup
 create_pblock {CLKAG_OV7725_PCLK_0_IBUF_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_OV7725_PCLK_0_IBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="OV7725_PCLK_0_IBUF_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_OV7725_PCLK_0_IBUF_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks {CLKAG_OV7725_PCLK_0_IBUF_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
