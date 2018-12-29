@@ -53,34 +53,41 @@
 #include "xil_printf.h"
 #include "xil_types.h"
 #include "xscugic.h"
+#include "xscutimer.h"
 #include "sleep.h"
 #include "./iic_driver/iic_driver.h"
+#include "./mpu6500/AHRS_Hardware.h"
+#include "timer_driver/timer_driver.h"
 #include "DronePara.h"
+#include "flag.h"
 
 #define INTC_DEVICE_ID			XPAR_SCUGIC_0_DEVICE_ID
 #define UARTLITE_0_DEVICE_ID 	XPAR_UARTLITE_0_DEVICE_ID
 #define UARTLITE_0_INT_ID		XPAR_FABRIC_UARTLITE_0_VEC_ID
 #define IICAXI_0_DEVICE_ID		XPAR_IIC_0_DEVICE_ID
 #define IICAXI_0_INT_ID			XPAR_FABRIC_IIC_0_VEC_ID
+#define TIMER_0_DEVICE_ID		XPAR_XSCUTIMER_0_DEVICE_ID
+#define TIMER_0_INT_ID			XPAR_SCUTIMER_INTR
 
-#define MPU6500_IIC_ADDR		0x68	 /*The 7 bit MPU6500 address*/
-#define AT24C02_IIC_ADDR 		(0xA0 >> 1)  /*AT24C02  address*/
+#define TIMER_0_LOAD_VALUE		0xFFFFFFFF
 
 #define TEST_BUFFER_SIZE 10
 
 XScuGic InterruptController; 	     /* Instance of the Interrupt Controller */
 XIic IicInstance;	/* The instance of the mpu6500 IIC device. */
+XScuTimer TimerInstance;	/* Cortex A9 Scu Private Timer Instance */
 
 //全局变量
 DroneRTInfo RT_Info;
 OffsetInfo OffsetData;
+flag FlagInstance;
 
 int Init_System(void);
 int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
 int InitInterruptController(XScuGic *XScuGicInstancePtr, u16 DeviceId);
 
 void AT24C_test();
-void MPU6500_test();
+void MPU6500_Task();
 
 int main()
 {
@@ -91,10 +98,12 @@ int main()
     Init_System();
 
 
-	print("AT24C Test ...\n\r");
+	print("MPU6500 Test ...\n\r");
 
 //	AT24C_test();
-	MPU6500_test();
+	while(1) {
+		MPU6500_Task();
+	}
 
     cleanup_platform();
     return 0;
@@ -102,9 +111,17 @@ int main()
 
 
 int Init_System(void) {
+	InitFlag(&FlagInstance);
+
 	InitInterruptController(&InterruptController, INTC_DEVICE_ID);
 
 	IicInit(&IicInstance, IICAXI_0_DEVICE_ID, IICAXI_0_INT_ID, MPU6500_IIC_ADDR, &InterruptController);
+
+	InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &InterruptController, TIMER_0_LOAD_VALUE);
+
+	xil_printf("Init the mpu 6500...\r\n");
+    AHRS_HardWareinit(&IicInstance);
+    xil_printf("Init the mpu 6500 done\r\n");
 
 	return XST_SUCCESS;
 }
@@ -209,16 +226,10 @@ void AT24C_test() {
     xil_printf("Compare End\n\r");
 }
 
-void MPU6500_test() {
-
-	xil_printf("Init the mpu 6500\r\n");
-    AHRS_HardWareinit(&IicInstance);
-
-    xil_printf("Start read the mpu 6500\r\n");
-    while(1) {
+void MPU6500_Task() {
+    if(FlagInstance.timer) {
+    	FlagInstance.timer = 0;
     	IMU_getInfo();
-    	xil_printf("one time\r\n");
-    	sleep(1);
     }
 }
 

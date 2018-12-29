@@ -2529,3 +2529,2220 @@ arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
   50224	   3824	  23272	  77320	  12e08	iic_test.elf
 Finished building: iic_test.elf.size
  
+13:04:55 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:173:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void AT24C_test() {
+ ^~~~
+../src/helloworld.c: In function 'MPU6500_test':
+../src/helloworld.c:219:5: warning: implicit declaration of function 'AHRS_HardWareinit' [-Wimplicit-function-declaration]
+     AHRS_HardWareinit(&IicInstance);
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:223:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+13:09:22 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'MPU6500_test':
+../src/helloworld.c:221:5: warning: implicit declaration of function 'AHRS_HardWareinit' [-Wimplicit-function-declaration]
+     AHRS_HardWareinit(&IicInstance);
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:225:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+../src/helloworld.c: In function 'InitTimer':
+../src/helloworld.c:172:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50288	   3824	  23272	  77384	  12e48	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:11:31 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:68:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID  XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/helloworld.c:61:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID   XPAR_SCUGIC_0_DEVICE_ID
+ 
+../src/helloworld.c: In function 'MPU6500_test':
+../src/helloworld.c:229:5: warning: implicit declaration of function 'AHRS_HardWareinit' [-Wimplicit-function-declaration]
+     AHRS_HardWareinit(&IicInstance);
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:233:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50288	   3824	  23272	  77384	  12e48	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:11:58 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'MPU6500_test':
+../src/helloworld.c:226:5: warning: implicit declaration of function 'AHRS_HardWareinit' [-Wimplicit-function-declaration]
+     AHRS_HardWareinit(&IicInstance);
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:230:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50288	   3824	  23272	  77384	  12e48	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:12:49 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'MPU6500_test':
+../src/helloworld.c:226:5: warning: implicit declaration of function 'AHRS_HardWareinit' [-Wimplicit-function-declaration]
+     AHRS_HardWareinit(&IicInstance);
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:230:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50288	   3824	  23272	  77384	  12e48	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:13:39 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50288	   3824	  23272	  77384	  12e48	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:13:49 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50288	   3824	  23272	  77384	  12e48	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:20:27 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:110:61: error: 'MPU6500_IIC_ADDR' undeclared (first use in this function); did you mean 'MPU6500_test'?
+  IicInit(&IicInstance, IICAXI_0_DEVICE_ID, IICAXI_0_INT_ID, MPU6500_IIC_ADDR, &InterruptController);
+                                                             ^~~~~~~~~~~~~~~~
+                                                             MPU6500_test
+../src/helloworld.c:110:61: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'InitTimer':
+../src/helloworld.c:207:11: warning: implicit declaration of function 'TimerSetupIntrSystem' [-Wimplicit-function-declaration]
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:177:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'MPU6500_test':
+../src/helloworld.c:279:5: warning: implicit declaration of function 'AHRS_HardWareinit' [-Wimplicit-function-declaration]
+     AHRS_HardWareinit(&IicInstance);
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:283:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+13:21:26 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitTimer':
+../src/helloworld.c:208:11: warning: implicit declaration of function 'TimerSetupIntrSystem' [-Wimplicit-function-declaration]
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:178:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `InitTimer':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/helloworld.c:208: undefined reference to `TimerSetupIntrSystem'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:23:01 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitTimer':
+../src/helloworld.c:208:11: warning: implicit declaration of function 'TimerSetupIntrSystem' [-Wimplicit-function-declaration]
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:178:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:232:12: error: conflicting types for 'TimerSetupIntrSystem'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:234:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../src/helloworld.c:208:11: note: previous implicit declaration of 'TimerSetupIntrSystem' was here
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'TimerSetupIntrSystem':
+../src/helloworld.c:275:27: error: 'TimerIntrHandler' undeclared (first use in this function); did you mean 'TimerIntrId'?
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^~~~~~~~~~~~~~~~
+                           TimerIntrId
+../src/helloworld.c:275:27: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/helloworld.c:232:12: warning: 'TimerSetupIntrSystem' defined but not used [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+13:23:21 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitTimer':
+../src/helloworld.c:208:11: warning: implicit declaration of function 'TimerSetupIntrSystem' [-Wimplicit-function-declaration]
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:178:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:232:12: error: conflicting types for 'TimerSetupIntrSystem'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:234:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../src/helloworld.c:208:11: note: previous implicit declaration of 'TimerSetupIntrSystem' was here
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'TimerSetupIntrSystem':
+../src/helloworld.c:275:27: error: 'TimerIntrHandler' undeclared (first use in this function); did you mean 'TimerIntrId'?
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^~~~~~~~~~~~~~~~
+                           TimerIntrId
+../src/helloworld.c:275:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'TimerIntrHandler':
+../src/helloworld.c:314:3: error: 'TimerExpired' undeclared (first use in this function)
+   TimerExpired++;
+   ^~~~~~~~~~~~
+At top level:
+../src/helloworld.c:301:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+../src/helloworld.c:232:12: warning: 'TimerSetupIntrSystem' defined but not used [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+13:23:40 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitTimer':
+../src/helloworld.c:208:11: warning: implicit declaration of function 'TimerSetupIntrSystem' [-Wimplicit-function-declaration]
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:178:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:232:12: error: conflicting types for 'TimerSetupIntrSystem'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:234:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../src/helloworld.c:208:11: note: previous implicit declaration of 'TimerSetupIntrSystem' was here
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'TimerSetupIntrSystem':
+../src/helloworld.c:275:27: error: 'TimerIntrHandler' undeclared (first use in this function); did you mean 'TimerIntrId'?
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^~~~~~~~~~~~~~~~
+                           TimerIntrId
+../src/helloworld.c:275:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'TimerIntrHandler':
+../src/helloworld.c:314:3: error: 'TimerExpired' undeclared (first use in this function)
+   TimerExpired++;
+   ^~~~~~~~~~~~
+At top level:
+../src/helloworld.c:301:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+../src/helloworld.c:232:12: warning: 'TimerSetupIntrSystem' defined but not used [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+13:23:56 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitTimer':
+../src/helloworld.c:208:11: warning: implicit declaration of function 'TimerSetupIntrSystem' [-Wimplicit-function-declaration]
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:178:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:232:12: error: conflicting types for 'TimerSetupIntrSystem'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:234:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../src/helloworld.c:208:11: note: previous implicit declaration of 'TimerSetupIntrSystem' was here
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'TimerSetupIntrSystem':
+../src/helloworld.c:275:27: error: 'TimerIntrHandler' undeclared (first use in this function); did you mean 'TimerIntrId'?
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^~~~~~~~~~~~~~~~
+                           TimerIntrId
+../src/helloworld.c:275:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'TimerIntrHandler':
+../src/helloworld.c:314:3: error: 'TimerExpired' undeclared (first use in this function)
+   TimerExpired++;
+   ^~~~~~~~~~~~
+At top level:
+../src/helloworld.c:301:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+../src/helloworld.c:232:12: warning: 'TimerSetupIntrSystem' defined but not used [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+13:24:10 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitTimer':
+../src/helloworld.c:208:11: warning: implicit declaration of function 'TimerSetupIntrSystem' [-Wimplicit-function-declaration]
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:178:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:232:12: error: conflicting types for 'TimerSetupIntrSystem'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:234:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../src/helloworld.c:208:11: note: previous implicit declaration of 'TimerSetupIntrSystem' was here
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'TimerSetupIntrSystem':
+../src/helloworld.c:275:27: error: 'TimerIntrHandler' undeclared (first use in this function); did you mean 'TimerIntrId'?
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^~~~~~~~~~~~~~~~
+                           TimerIntrId
+../src/helloworld.c:275:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'TimerIntrHandler':
+../src/helloworld.c:314:3: error: 'TimerExpired' undeclared (first use in this function)
+   TimerExpired++;
+   ^~~~~~~~~~~~
+At top level:
+../src/helloworld.c:301:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+../src/helloworld.c:232:12: warning: 'TimerSetupIntrSystem' defined but not used [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+13:24:49 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c:9:15: error: unknown type name 'XScuTimer'
+ int InitTimer(XScuTimer * TimerInstancePtr,
+               ^~~~~~~~~
+../src/timer_driver/timer_driver.c:10:3: error: unknown type name 'u16'
+   u16 TimerDeviceId, u32 TimerLoadValue,
+   ^~~
+../src/timer_driver/timer_driver.c:10:22: error: unknown type name 'u32'
+   u16 TimerDeviceId, u32 TimerLoadValue,
+                      ^~~
+../src/timer_driver/timer_driver.c:11:3: error: unknown type name 'u16'
+   u16 TimerIntrId, XScuGic *IntcInstancePtr) {
+   ^~~
+../src/timer_driver/timer_driver.c:11:20: error: unknown type name 'XScuGic'
+   u16 TimerIntrId, XScuGic *IntcInstancePtr) {
+                    ^~~~~~~
+../src/timer_driver/timer_driver.c:68:33: error: unknown type name 'XScuGic'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+                                 ^~~~~~~
+../src/timer_driver/timer_driver.c:69:10: error: unknown type name 'XScuTimer'
+          XScuTimer *TimerInstancePtr, u16 TimerIntrId)
+          ^~~~~~~~~
+../src/timer_driver/timer_driver.c:69:39: error: unknown type name 'u16'
+          XScuTimer *TimerInstancePtr, u16 TimerIntrId)
+                                       ^~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:139:2: error: unknown type name 'XScuTimer'
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+  ^~~~~~~~~
+../src/timer_driver/timer_driver.c:139:33: error: 'XScuTimer' undeclared (first use in this function)
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+                                 ^~~~~~~~~
+../src/timer_driver/timer_driver.c:139:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/timer_driver/timer_driver.c:139:44: error: expected expression before ')' token
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+                                            ^
+../src/timer_driver/timer_driver.c:148:6: warning: implicit declaration of function 'XScuTimer_IsExpired' [-Wimplicit-function-declaration]
+  if (XScuTimer_IsExpired(TimerInstancePtr)) {
+      ^~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:149:3: warning: implicit declaration of function 'XScuTimer_ClearInterruptStatus' [-Wimplicit-function-declaration]
+   XScuTimer_ClearInterruptStatus(TimerInstancePtr);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:150:3: error: 'TimerExpired' undeclared (first use in this function)
+   TimerExpired++;
+   ^~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:152:4: warning: implicit declaration of function 'XScuTimer_DisableAutoReload' [-Wimplicit-function-declaration]
+    XScuTimer_DisableAutoReload(TimerInstancePtr);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+../src/timer_driver/timer_driver.c:137:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:25:52 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c:9:15: error: unknown type name 'XScuTimer'
+ int InitTimer(XScuTimer * TimerInstancePtr,
+               ^~~~~~~~~
+../src/timer_driver/timer_driver.c:10:3: error: unknown type name 'u16'
+   u16 TimerDeviceId, u32 TimerLoadValue,
+   ^~~
+../src/timer_driver/timer_driver.c:10:22: error: unknown type name 'u32'
+   u16 TimerDeviceId, u32 TimerLoadValue,
+                      ^~~
+../src/timer_driver/timer_driver.c:11:3: error: unknown type name 'u16'
+   u16 TimerIntrId, XScuGic *IntcInstancePtr) {
+   ^~~
+../src/timer_driver/timer_driver.c:11:20: error: unknown type name 'XScuGic'
+   u16 TimerIntrId, XScuGic *IntcInstancePtr) {
+                    ^~~~~~~
+../src/timer_driver/timer_driver.c:68:33: error: unknown type name 'XScuGic'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+                                 ^~~~~~~
+../src/timer_driver/timer_driver.c:69:10: error: unknown type name 'XScuTimer'
+          XScuTimer *TimerInstancePtr, u16 TimerIntrId)
+          ^~~~~~~~~
+../src/timer_driver/timer_driver.c:69:39: error: unknown type name 'u16'
+          XScuTimer *TimerInstancePtr, u16 TimerIntrId)
+                                       ^~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:139:2: error: unknown type name 'XScuTimer'
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+  ^~~~~~~~~
+../src/timer_driver/timer_driver.c:139:33: error: 'XScuTimer' undeclared (first use in this function)
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+                                 ^~~~~~~~~
+../src/timer_driver/timer_driver.c:139:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/timer_driver/timer_driver.c:139:44: error: expected expression before ')' token
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+                                            ^
+../src/timer_driver/timer_driver.c:148:6: warning: implicit declaration of function 'XScuTimer_IsExpired' [-Wimplicit-function-declaration]
+  if (XScuTimer_IsExpired(TimerInstancePtr)) {
+      ^~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:149:3: warning: implicit declaration of function 'XScuTimer_ClearInterruptStatus' [-Wimplicit-function-declaration]
+   XScuTimer_ClearInterruptStatus(TimerInstancePtr);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:150:3: error: 'TimerExpired' undeclared (first use in this function)
+   TimerExpired++;
+   ^~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:152:4: warning: implicit declaration of function 'XScuTimer_DisableAutoReload' [-Wimplicit-function-declaration]
+    XScuTimer_DisableAutoReload(TimerInstancePtr);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+../src/timer_driver/timer_driver.c:137:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:26:02 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c:9:15: error: unknown type name 'XScuTimer'
+ int InitTimer(XScuTimer * TimerInstancePtr,
+               ^~~~~~~~~
+../src/timer_driver/timer_driver.c:10:3: error: unknown type name 'u16'
+   u16 TimerDeviceId, u32 TimerLoadValue,
+   ^~~
+../src/timer_driver/timer_driver.c:10:22: error: unknown type name 'u32'
+   u16 TimerDeviceId, u32 TimerLoadValue,
+                      ^~~
+../src/timer_driver/timer_driver.c:11:3: error: unknown type name 'u16'
+   u16 TimerIntrId, XScuGic *IntcInstancePtr) {
+   ^~~
+../src/timer_driver/timer_driver.c:11:20: error: unknown type name 'XScuGic'
+   u16 TimerIntrId, XScuGic *IntcInstancePtr) {
+                    ^~~~~~~
+../src/timer_driver/timer_driver.c:68:33: error: unknown type name 'XScuGic'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+                                 ^~~~~~~
+../src/timer_driver/timer_driver.c:69:10: error: unknown type name 'XScuTimer'
+          XScuTimer *TimerInstancePtr, u16 TimerIntrId)
+          ^~~~~~~~~
+../src/timer_driver/timer_driver.c:69:39: error: unknown type name 'u16'
+          XScuTimer *TimerInstancePtr, u16 TimerIntrId)
+                                       ^~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:139:2: error: unknown type name 'XScuTimer'
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+  ^~~~~~~~~
+../src/timer_driver/timer_driver.c:139:33: error: 'XScuTimer' undeclared (first use in this function)
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+                                 ^~~~~~~~~
+../src/timer_driver/timer_driver.c:139:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/timer_driver/timer_driver.c:139:44: error: expected expression before ')' token
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+                                            ^
+../src/timer_driver/timer_driver.c:148:6: warning: implicit declaration of function 'XScuTimer_IsExpired' [-Wimplicit-function-declaration]
+  if (XScuTimer_IsExpired(TimerInstancePtr)) {
+      ^~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:149:3: warning: implicit declaration of function 'XScuTimer_ClearInterruptStatus' [-Wimplicit-function-declaration]
+   XScuTimer_ClearInterruptStatus(TimerInstancePtr);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:150:3: error: 'TimerExpired' undeclared (first use in this function)
+   TimerExpired++;
+   ^~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:152:4: warning: implicit declaration of function 'XScuTimer_DisableAutoReload' [-Wimplicit-function-declaration]
+    XScuTimer_DisableAutoReload(TimerInstancePtr);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+../src/timer_driver/timer_driver.c:137:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:26:18 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c:9:15: error: unknown type name 'XScuTimer'
+ int InitTimer(XScuTimer * TimerInstancePtr,
+               ^~~~~~~~~
+../src/timer_driver/timer_driver.c:10:3: error: unknown type name 'u16'
+   u16 TimerDeviceId, u32 TimerLoadValue,
+   ^~~
+../src/timer_driver/timer_driver.c:10:22: error: unknown type name 'u32'
+   u16 TimerDeviceId, u32 TimerLoadValue,
+                      ^~~
+../src/timer_driver/timer_driver.c:11:3: error: unknown type name 'u16'
+   u16 TimerIntrId, XScuGic *IntcInstancePtr) {
+   ^~~
+../src/timer_driver/timer_driver.c:11:20: error: unknown type name 'XScuGic'
+   u16 TimerIntrId, XScuGic *IntcInstancePtr) {
+                    ^~~~~~~
+../src/timer_driver/timer_driver.c:68:33: error: unknown type name 'XScuGic'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+                                 ^~~~~~~
+../src/timer_driver/timer_driver.c:69:10: error: unknown type name 'XScuTimer'
+          XScuTimer *TimerInstancePtr, u16 TimerIntrId)
+          ^~~~~~~~~
+../src/timer_driver/timer_driver.c:69:39: error: unknown type name 'u16'
+          XScuTimer *TimerInstancePtr, u16 TimerIntrId)
+                                       ^~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:139:2: error: unknown type name 'XScuTimer'
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+  ^~~~~~~~~
+../src/timer_driver/timer_driver.c:139:33: error: 'XScuTimer' undeclared (first use in this function)
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+                                 ^~~~~~~~~
+../src/timer_driver/timer_driver.c:139:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/timer_driver/timer_driver.c:139:44: error: expected expression before ')' token
+  XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
+                                            ^
+../src/timer_driver/timer_driver.c:148:6: warning: implicit declaration of function 'XScuTimer_IsExpired' [-Wimplicit-function-declaration]
+  if (XScuTimer_IsExpired(TimerInstancePtr)) {
+      ^~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:149:3: warning: implicit declaration of function 'XScuTimer_ClearInterruptStatus' [-Wimplicit-function-declaration]
+   XScuTimer_ClearInterruptStatus(TimerInstancePtr);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:150:3: error: 'TimerExpired' undeclared (first use in this function)
+   TimerExpired++;
+   ^~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:152:4: warning: implicit declaration of function 'XScuTimer_DisableAutoReload' [-Wimplicit-function-declaration]
+    XScuTimer_DisableAutoReload(TimerInstancePtr);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+../src/timer_driver/timer_driver.c:137:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:26:22 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:44:11: warning: implicit declaration of function 'TimerSetupIntrSystem' [-Wimplicit-function-declaration]
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: At top level:
+../src/timer_driver/timer_driver.c:68:12: error: conflicting types for 'TimerSetupIntrSystem'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:70:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../src/timer_driver/timer_driver.c:44:11: note: previous implicit declaration of 'TimerSetupIntrSystem' was here
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerSetupIntrSystem':
+../src/timer_driver/timer_driver.c:80:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function); did you mean 'XST_DEVICE_BUSY'?
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^~~~~~~~~~~~~~
+                                    XST_DEVICE_BUSY
+../src/timer_driver/timer_driver.c:80:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/timer_driver/timer_driver.c:111:27: error: 'TimerIntrHandler' undeclared (first use in this function); did you mean 'TimerIntrId'?
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^~~~~~~~~~~~~~~~
+                           TimerIntrId
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:150:3: error: 'TimerExpired' undeclared (first use in this function); did you mean 'XScuTimer_IsExpired'?
+   TimerExpired++;
+   ^~~~~~~~~~~~
+   XScuTimer_IsExpired
+At top level:
+../src/timer_driver/timer_driver.c:137:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:68:12: warning: 'TimerSetupIntrSystem' defined but not used [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:27:25 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:11:46: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   u16 TimerIntrId, XScuGic *IntcInstancePtr) {
+                                              ^
+../src/timer_driver/timer_driver.c:70:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../src/timer_driver/timer_driver.c:138:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../src/timer_driver/timer_driver.c:155:1: error: expected '{' at end of input
+ }
+ ^
+../src/timer_driver/timer_driver.c:155:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:27:28 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:44:11: warning: implicit declaration of function 'TimerSetupIntrSystem' [-Wimplicit-function-declaration]
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: At top level:
+../src/timer_driver/timer_driver.c:68:12: error: conflicting types for 'TimerSetupIntrSystem'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:70:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../src/timer_driver/timer_driver.c:44:11: note: previous implicit declaration of 'TimerSetupIntrSystem' was here
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerSetupIntrSystem':
+../src/timer_driver/timer_driver.c:80:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function); did you mean 'XST_DEVICE_BUSY'?
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^~~~~~~~~~~~~~
+                                    XST_DEVICE_BUSY
+../src/timer_driver/timer_driver.c:80:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/timer_driver/timer_driver.c:111:27: error: 'TimerIntrHandler' undeclared (first use in this function); did you mean 'TimerIntrId'?
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^~~~~~~~~~~~~~~~
+                           TimerIntrId
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:150:3: error: 'TimerExpired' undeclared (first use in this function); did you mean 'XScuTimer_IsExpired'?
+   TimerExpired++;
+   ^~~~~~~~~~~~
+   XScuTimer_IsExpired
+At top level:
+../src/timer_driver/timer_driver.c:137:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:68:12: warning: 'TimerSetupIntrSystem' defined but not used [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:27:50 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:44:11: warning: implicit declaration of function 'TimerSetupIntrSystem' [-Wimplicit-function-declaration]
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: At top level:
+../src/timer_driver/timer_driver.c:69:12: error: conflicting types for 'TimerSetupIntrSystem'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:71:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../src/timer_driver/timer_driver.c:44:11: note: previous implicit declaration of 'TimerSetupIntrSystem' was here
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerSetupIntrSystem':
+../src/timer_driver/timer_driver.c:81:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function); did you mean 'XST_DEVICE_BUSY'?
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^~~~~~~~~~~~~~
+                                    XST_DEVICE_BUSY
+../src/timer_driver/timer_driver.c:81:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/timer_driver/timer_driver.c:112:27: error: 'TimerIntrHandler' undeclared (first use in this function); did you mean 'TimerIntrId'?
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^~~~~~~~~~~~~~~~
+                           TimerIntrId
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:151:3: error: 'TimerExpired' undeclared (first use in this function); did you mean 'XScuTimer_IsExpired'?
+   TimerExpired++;
+   ^~~~~~~~~~~~
+   XScuTimer_IsExpired
+At top level:
+../src/timer_driver/timer_driver.c:138:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:69:12: warning: 'TimerSetupIntrSystem' defined but not used [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:27:57 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerSetupIntrSystem':
+../src/timer_driver/timer_driver.c:81:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function); did you mean 'XST_DEVICE_BUSY'?
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^~~~~~~~~~~~~~
+                                    XST_DEVICE_BUSY
+../src/timer_driver/timer_driver.c:81:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/timer_driver/timer_driver.c:112:27: error: 'TimerIntrHandler' undeclared (first use in this function); did you mean 'TimerIntrId'?
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^~~~~~~~~~~~~~~~
+                           TimerIntrId
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:151:3: error: 'TimerExpired' undeclared (first use in this function); did you mean 'XScuTimer_IsExpired'?
+   TimerExpired++;
+   ^~~~~~~~~~~~
+   XScuTimer_IsExpired
+At top level:
+../src/timer_driver/timer_driver.c:138:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:28:39 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerSetupIntrSystem':
+../src/timer_driver/timer_driver.c:80:27: error: 'TimerIntrHandler' undeclared (first use in this function); did you mean 'TimerIntrId'?
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^~~~~~~~~~~~~~~~
+                           TimerIntrId
+../src/timer_driver/timer_driver.c:80:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:119:3: error: 'TimerExpired' undeclared (first use in this function); did you mean 'XScuTimer_IsExpired'?
+   TimerExpired++;
+   ^~~~~~~~~~~~
+   XScuTimer_IsExpired
+At top level:
+../src/timer_driver/timer_driver.c:106:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:28:49 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:119:3: error: 'TimerExpired' undeclared (first use in this function); did you mean 'XScuTimer_IsExpired'?
+   TimerExpired++;
+   ^~~~~~~~~~~~
+   XScuTimer_IsExpired
+../src/timer_driver/timer_driver.c:119:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:29:14 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:112:3: error: 'TimerExpired' undeclared (first use in this function); did you mean 'XScuTimer_IsExpired'?
+   TimerExpired++;
+   ^~~~~~~~~~~~
+   XScuTimer_IsExpired
+../src/timer_driver/timer_driver.c:112:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:30:47 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:112:3: error: 'TimerExpired' undeclared (first use in this function); did you mean 'XScuTimer_IsExpired'?
+   TimerExpired++;
+   ^~~~~~~~~~~~
+   XScuTimer_IsExpired
+../src/timer_driver/timer_driver.c:112:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:30:59 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51860	   3832	  23288	  78980	  13484	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:31:22 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51860	   3832	  23288	  78980	  13484	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:31:39 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51860	   3832	  23288	  78980	  13484	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:31:49 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:14:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51860	   3832	  23288	  78980	  13484	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:34:36 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+13:35:32 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+13:35:36 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+13:36:18 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+13:36:36 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+13:37:13 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+13:38:53 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51860	   3832	  23288	  78980	  13484	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:40:17 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:62:0:
+../src/flag.h: In function 'InitFlag':
+../src/flag.h:18:24: error: 'flase' undeclared (first use in this function); did you mean 'flag'?
+  FlagInstance->timer = flase;
+                        ^~~~~
+                        flag
+../src/flag.h:18:24: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/helloworld.c:60:0:
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+13:40:31 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51924	   3832	  23288	  79044	  134c4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:41:09 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51924	   3832	  23288	  79044	  134c4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:41:45 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51924	   3832	  23288	  79044	  134c4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:43:19 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/helloworld.c:104: undefined reference to `MPU6500_test'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:43:30 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/helloworld.c:104: undefined reference to `MPU6500_test'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:45:09 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:104:2: warning: implicit declaration of function 'MPU6500_test'; did you mean 'MPU6500_Task'? [-Wimplicit-function-declaration]
+  MPU6500_test();
+  ^~~~~~~~~~~~
+  MPU6500_Task
+In file included from ../src/helloworld.c:60:0:
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/helloworld.c:104: undefined reference to `MPU6500_test'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:45:46 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:104:2: warning: implicit declaration of function 'MPU6500_test'; did you mean 'MPU6500_Task'? [-Wimplicit-function-declaration]
+  MPU6500_test(&IicInstance, &FlagInstance);
+  ^~~~~~~~~~~~
+  MPU6500_Task
+In file included from ../src/helloworld.c:60:0:
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/helloworld.c:104: undefined reference to `MPU6500_test'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:46:08 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51908	   3832	  23288	  79028	  134b4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:46:30 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51908	   3832	  23288	  79028	  134b4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:18:54 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:121:23: error: 'IicMpu6500' undeclared (first use in this function)
+     AHRS_HardWareinit(IicMpu6500);
+                       ^~~~~~~~~~
+../src/helloworld.c:121:23: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/helloworld.c:60:0:
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+15:19:52 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:121:23: error: 'IicMpu6500' undeclared (first use in this function)
+     AHRS_HardWareinit(IicMpu6500);
+                       ^~~~~~~~~~
+../src/helloworld.c:121:23: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'MPU6500_Task':
+../src/helloworld.c:227:1: error: number of arguments doesn't match prototype
+ void MPU6500_Task() {
+ ^~~~
+../src/helloworld.c:90:6: error: prototype declaration
+ void MPU6500_Task(XIic *IicMpu6500, flag *FlagInstance);
+      ^~~~~~~~~~~~
+../src/helloworld.c:228:20: error: stray '\343' in program
+     if(FlagInstanceã€‚timer) {
+                    ^
+../src/helloworld.c:228:21: error: stray '\200' in program
+     if(FlagInstanceã€‚timer) {
+                     ^
+../src/helloworld.c:228:22: error: stray '\202' in program
+     if(FlagInstanceã€‚timer) {
+                      ^
+../src/helloworld.c:228:8: error: used struct type value where scalar is required
+     if(FlagInstanceã€‚timer) {
+        ^~~~~~~~~~~~
+../src/helloworld.c:228:23: error: expected ')' before 'timer'
+     if(FlagInstanceã€‚timer) {
+                       ^~~~~
+In file included from ../src/helloworld.c:60:0:
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+15:20:04 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:121:23: error: 'IicMpu6500' undeclared (first use in this function)
+     AHRS_HardWareinit(IicMpu6500);
+                       ^~~~~~~~~~
+../src/helloworld.c:121:23: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'MPU6500_Task':
+../src/helloworld.c:227:1: error: number of arguments doesn't match prototype
+ void MPU6500_Task() {
+ ^~~~
+../src/helloworld.c:90:6: error: prototype declaration
+ void MPU6500_Task(XIic *IicMpu6500, flag *FlagInstance);
+      ^~~~~~~~~~~~
+In file included from ../src/helloworld.c:60:0:
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+15:20:15 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:121:23: error: 'IicMpu6500' undeclared (first use in this function)
+     AHRS_HardWareinit(IicMpu6500);
+                       ^~~~~~~~~~
+../src/helloworld.c:121:23: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/helloworld.c:60:0:
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+15:20:30 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51908	   3832	  23288	  79028	  134b4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:21:46 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c:9:8: error: unknown type name 'flag'
+ extern flag FlagInstance;
+        ^~~~
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:16:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+15:22:10 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `InitFlag':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/flag.h:17: multiple definition of `InitFlag'
+./src/timer_driver/timer_driver.o:C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/timer_driver/../flag.h:17: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+15:23:07 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `InitFlag':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/flag.h:17: multiple definition of `InitFlag'
+./src/timer_driver/timer_driver.o:C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/timer_driver/../flag.h:17: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+15:23:45 **** Clean-only build of configuration Debug for project iic_test ****
+make clean 
+rm -rf  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/helloworld.o ./src/platform.o  ./src/timer_driver/timer_driver.d  ./src/mpu6500/AHRS_Hardware.d ./src/mpu6500/MahonyAHRS.d ./src/mpu6500/mpu6500.d  ./src/iic_driver/iic_driver.d  ./src/helloworld.d ./src/platform.d  iic_test.elf.size  iic_test.elf
+ 
+15:23:46 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `InitFlag':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/flag.h:17: multiple definition of `InitFlag'
+./src/timer_driver/timer_driver.o:C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/timer_driver/../flag.h:17: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+15:24:28 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+../src/flag.c:9:6: error: redefinition of 'InitFlag'
+ void InitFlag(flag *FlagInstance) {
+      ^~~~~~~~
+In file included from ../src/flag.c:7:0:
+../src/flag.h:17:6: note: previous definition of 'InitFlag' was here
+ void InitFlag(flag *FlagInstance) {
+      ^~~~~~~~
+make: *** [src/flag.o] ´íÎó 1
+15:24:36 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51908	   3832	  23288	  79028	  134b4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:25:10 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51908	   3832	  23288	  79028	  134b4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:25:25 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51972	   3832	  23288	  79092	  134f4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:26:08 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51988	   3832	  23288	  79108	  13504	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:26:33 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+15:27:10 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51988	   3832	  23288	  79108	  13504	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:27:25 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51988	   3832	  23288	  79108	  13504	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:27:41 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51908	   3832	  23288	  79028	  134b4	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:28:13 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51996	   3832	  23288	  79116	  1350c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:28:18 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+15:29:04 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51996	   3832	  23288	  79116	  1350c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:29:20 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+15:29:35 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51996	   3832	  23288	  79116	  1350c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:30:11 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52004	   3832	  23288	  79124	  13514	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:30:15 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+15:32:34 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:120:84: error: expected expression before 'XScuGic'
+  InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_LOAD_VALUE, TIMER_0_INT_ID, &XScuGic);
+                                                                                    ^~~~~~~
+In file included from ../src/helloworld.c:60:0:
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+15:33:10 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c:12:5: error: conflicting types for 'InitTimer'
+ int InitTimer(XScuTimer * TimerInstancePtr,
+     ^~~~~~~~~
+In file included from ../src/timer_driver/timer_driver.c:7:0:
+../src/timer_driver/timer_driver.h:26:5: note: previous declaration of 'InitTimer' was here
+ int InitTimer(XScuTimer * TimerInstancePtr,
+     ^~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+15:33:25 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:120:84: error: expected expression before 'XScuGic'
+  InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_LOAD_VALUE, TIMER_0_INT_ID, &XScuGic);
+                                                                                    ^~~~~~~
+../src/helloworld.c:72:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define TIMER_0_LOAD_VALUE  0xFFFFFFFF
+                             ^
+../src/helloworld.c:120:47: note: in expansion of macro 'TIMER_0_LOAD_VALUE'
+  InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_LOAD_VALUE, TIMER_0_INT_ID, &XScuGic);
+                                               ^~~~~~~~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:19:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:12,
+                 from ../src/helloworld.c:50:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters_ps.h:272:29: warning: passing argument 4 of 'InitTimer' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPS_SCU_TMR_INT_ID  29U /* SCU Private Timer interrupt */
+                             ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters_ps.h:100:29: note: in expansion of macro 'XPS_SCU_TMR_INT_ID'
+ #define XPAR_SCUTIMER_INTR  XPS_SCU_TMR_INT_ID
+                             ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:70:26: note: in expansion of macro 'XPAR_SCUTIMER_INTR'
+ #define TIMER_0_INT_ID   XPAR_SCUTIMER_INTR
+                          ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:120:67: note: in expansion of macro 'TIMER_0_INT_ID'
+  InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_LOAD_VALUE, TIMER_0_INT_ID, &XScuGic);
+                                                                   ^~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:26:5: note: expected 'XScuGic * {aka struct <anonymous> *}' but argument is of type 'unsigned int'
+ int InitTimer(XScuTimer * TimerInstancePtr,
+     ^~~~~~~~~
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+15:33:43 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:120:64: error: expected expression before 'XScuGic'
+  InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &XScuGic, TIMER_0_LOAD_VALUE);
+                                                                ^~~~~~~
+../src/helloworld.c:120:2: error: too few arguments to function 'InitTimer'
+  InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &XScuGic, TIMER_0_LOAD_VALUE);
+  ^~~~~~~~~
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:26:5: note: declared here
+ int InitTimer(XScuTimer * TimerInstancePtr,
+     ^~~~~~~~~
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+15:34:38 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:120:64: error: expected expression before 'XScuGic'
+  InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &XScuGic, TIMER_0_LOAD_VALUE);
+                                                                ^~~~~~~
+../src/helloworld.c:120:2: error: too few arguments to function 'InitTimer'
+  InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &XScuGic, TIMER_0_LOAD_VALUE);
+  ^~~~~~~~~
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:26:5: note: declared here
+ int InitTimer(XScuTimer * TimerInstancePtr,
+     ^~~~~~~~~
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+15:34:49 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:120:64: error: expected expression before 'XScuGic'
+  InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &XScuGic, TIMER_0_LOAD_VALUE);
+                                                                ^~~~~~~
+../src/helloworld.c:120:2: error: too few arguments to function 'InitTimer'
+  InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &XScuGic, TIMER_0_LOAD_VALUE);
+  ^~~~~~~~~
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:26:5: note: declared here
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+15:37:07 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52004	   3832	  23288	  79124	  13514	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:37:14 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+15:38:00 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52004	   3832	  23288	  79124	  13514	iic_test.elf
+Finished building: iic_test.elf.size
+ 

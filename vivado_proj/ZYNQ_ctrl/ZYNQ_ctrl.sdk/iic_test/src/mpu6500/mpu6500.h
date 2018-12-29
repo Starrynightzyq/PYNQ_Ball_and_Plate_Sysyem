@@ -15,6 +15,9 @@
 
 #define DELAY_US usleep
 
+#define MPU6500_IIC_ADDR		0x68	 /*The 7 bit MPU6500 address*/
+//#define AT24C02_IIC_ADDR 		(0xA0 >> 1)  /*AT24C02  address*/
+
 #define MPU6500_RA_XG_OFFS_TC       0x00 //[7] PWR_MODE, [6:1] XG_OFFS_TC, [0] OTP_BNK_VLD
 #define MPU6500_RA_YG_OFFS_TC       0x01 //[7] PWR_MODE, [6:1] YG_OFFS_TC, [0] OTP_BNK_VLD
 #define MPU6500_RA_ZG_OFFS_TC       0x02 //[7] PWR_MODE, [6:1] ZG_OFFS_TC, [0] OTP_BNK_VLD

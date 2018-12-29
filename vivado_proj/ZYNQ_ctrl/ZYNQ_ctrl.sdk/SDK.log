@@ -549,3 +549,245 @@ con
 
 22:00:33 INFO  : Launch script is exported to file 'C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_iic_test.elf_on_local.tcl'
 22:18:06 INFO  : Disconnected from the channel tcfchan#9.
+12:50:13 INFO  : Registering command handlers for SDK TCF services
+12:50:14 INFO  : Launching XSCT server: xsct.bat -interactive C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\temp_xsdb_launch_script.tcl
+12:50:19 INFO  : XSCT server has started successfully.
+12:50:19 INFO  : Successfully done setting XSCT server connection channel  
+12:50:20 INFO  : Successfully done setting SDK workspace  
+12:50:20 INFO  : Processing command line option -hwspec C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper.hdf.
+12:50:20 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+15:23:50 INFO  : Registering command handlers for SDK TCF services
+15:23:50 INFO  : Launching XSCT server: xsct.bat -interactive C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\temp_xsdb_launch_script.tcl
+15:23:56 INFO  : XSCT server has started successfully.
+15:23:56 INFO  : Successfully done setting XSCT server connection channel  
+15:23:56 INFO  : Successfully done setting SDK workspace  
+15:23:56 INFO  : Processing command line option -hwspec C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper.hdf.
+15:23:56 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+15:26:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:26:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+15:26:21 INFO  : FPGA configured successfully with bitstream "C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:26:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+15:26:35 INFO  : 'fpga -state' command is executed.
+15:26:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:26:35 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:26:35 INFO  : 'jtag frequency' command is executed.
+15:26:35 INFO  : Sourcing of 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:26:35 INFO  : Context for 'APU' is selected.
+15:26:35 INFO  : Hardware design information is loaded from 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:26:35 INFO  : 'configparams force-mem-access 1' command is executed.
+15:26:35 INFO  : Context for 'APU' is selected.
+15:26:35 INFO  : 'stop' command is executed.
+15:26:36 INFO  : 'ps7_init' command is executed.
+15:26:36 INFO  : 'ps7_post_config' command is executed.
+15:26:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:26:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:26:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:26:36 INFO  : The application 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/iic_test/Debug/iic_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:26:36 INFO  : 'configparams force-mem-access 0' command is executed.
+15:26:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/iic_test/Debug/iic_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:26:36 INFO  : Memory regions updated for context APU
+15:26:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:26:36 INFO  : 'con' command is executed.
+15:26:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+15:26:36 INFO  : Launch script is exported to file 'C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_iic_test.elf_on_local.tcl'
+15:28:20 INFO  : Disconnected from the channel tcfchan#1.
+15:28:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+15:28:21 INFO  : 'fpga -state' command is executed.
+15:28:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:22 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:28:22 INFO  : 'jtag frequency' command is executed.
+15:28:22 INFO  : Sourcing of 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:28:22 INFO  : Context for 'APU' is selected.
+15:28:24 INFO  : Hardware design information is loaded from 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:28:24 INFO  : 'configparams force-mem-access 1' command is executed.
+15:28:24 INFO  : Context for 'APU' is selected.
+15:28:24 INFO  : 'stop' command is executed.
+15:28:24 INFO  : 'ps7_init' command is executed.
+15:28:24 INFO  : 'ps7_post_config' command is executed.
+15:28:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:28:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:24 INFO  : The application 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/iic_test/Debug/iic_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:28:24 INFO  : 'configparams force-mem-access 0' command is executed.
+15:28:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/iic_test/Debug/iic_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:28:25 INFO  : Memory regions updated for context APU
+15:28:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:25 INFO  : 'con' command is executed.
+15:28:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+15:28:25 INFO  : Launch script is exported to file 'C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_iic_test.elf_on_local.tcl'
+15:29:21 INFO  : Disconnected from the channel tcfchan#2.
+15:29:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+15:29:22 INFO  : 'fpga -state' command is executed.
+15:29:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:22 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:29:22 INFO  : 'jtag frequency' command is executed.
+15:29:23 INFO  : Sourcing of 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:29:23 INFO  : Context for 'APU' is selected.
+15:29:25 INFO  : Hardware design information is loaded from 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:29:25 INFO  : 'configparams force-mem-access 1' command is executed.
+15:29:25 INFO  : Context for 'APU' is selected.
+15:29:25 INFO  : 'stop' command is executed.
+15:29:25 INFO  : 'ps7_init' command is executed.
+15:29:25 INFO  : 'ps7_post_config' command is executed.
+15:29:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:29:25 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:29:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:29:25 INFO  : The application 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/iic_test/Debug/iic_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:29:25 INFO  : 'configparams force-mem-access 0' command is executed.
+15:29:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/iic_test/Debug/iic_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:29:25 INFO  : Memory regions updated for context APU
+15:29:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:29:26 INFO  : 'con' command is executed.
+15:29:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+15:29:26 INFO  : Launch script is exported to file 'C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_iic_test.elf_on_local.tcl'
+15:30:16 INFO  : Disconnected from the channel tcfchan#3.
+15:30:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+15:30:17 INFO  : 'fpga -state' command is executed.
+15:30:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:18 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:30:18 INFO  : 'jtag frequency' command is executed.
+15:30:18 INFO  : Sourcing of 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:30:18 INFO  : Context for 'APU' is selected.
+15:30:20 INFO  : Hardware design information is loaded from 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:30:20 INFO  : 'configparams force-mem-access 1' command is executed.
+15:30:20 INFO  : Context for 'APU' is selected.
+15:30:20 INFO  : 'stop' command is executed.
+15:30:21 INFO  : 'ps7_init' command is executed.
+15:30:21 INFO  : 'ps7_post_config' command is executed.
+15:30:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:30:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:21 INFO  : The application 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/iic_test/Debug/iic_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:30:21 INFO  : 'configparams force-mem-access 0' command is executed.
+15:30:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/iic_test/Debug/iic_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:30:21 INFO  : Memory regions updated for context APU
+15:30:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:21 INFO  : 'con' command is executed.
+15:30:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+15:30:21 INFO  : Launch script is exported to file 'C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_iic_test.elf_on_local.tcl'
+15:37:16 INFO  : Disconnected from the channel tcfchan#4.
+15:37:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+15:37:17 INFO  : 'fpga -state' command is executed.
+15:37:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:37:17 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:37:17 INFO  : 'jtag frequency' command is executed.
+15:37:17 INFO  : Sourcing of 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:37:17 INFO  : Context for 'APU' is selected.
+15:37:20 INFO  : Hardware design information is loaded from 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:37:20 INFO  : 'configparams force-mem-access 1' command is executed.
+15:37:20 INFO  : Context for 'APU' is selected.
+15:37:20 INFO  : 'stop' command is executed.
+15:37:20 INFO  : 'ps7_init' command is executed.
+15:37:20 INFO  : 'ps7_post_config' command is executed.
+15:37:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:37:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:37:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:37:20 INFO  : The application 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/iic_test/Debug/iic_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:37:20 INFO  : 'configparams force-mem-access 0' command is executed.
+15:37:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/iic_test/Debug/iic_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:37:21 INFO  : Memory regions updated for context APU
+15:37:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:37:21 INFO  : 'con' command is executed.
+15:37:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+15:37:21 INFO  : Launch script is exported to file 'C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_iic_test.elf_on_local.tcl'
+15:40:09 INFO  : Disconnected from the channel tcfchan#5.
