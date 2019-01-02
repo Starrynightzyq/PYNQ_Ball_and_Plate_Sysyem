@@ -1,0 +1,16 @@
+/*
+ * ball.h
+ *
+ *  Created on: 2018Äê8ÔÂ26ÈÕ
+ *      Author: admin
+ */
+
+#ifndef MICROBLAZE_0_LIBSRC_BALL_LOCATOR_V1_0_BALL_H_
+#define MICROBLAZE_0_LIBSRC_BALL_LOCATOR_V1_0_BALL_H_
+
+typedef struct {
+	u8 threshold;
+	u32 coords;
+}
+
+#endif /* MICROBLAZE_0_LIBSRC_BALL_LOCATOR_V1_0_BALL_H_ */

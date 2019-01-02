@@ -4746,3 +4746,1674 @@ arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
   52004	   3832	  23288	  79124	  13514	iic_test.elf
 Finished building: iic_test.elf.size
  
+12:29:32 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iic"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+12:30:04 **** Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52004	   3832	  23288	  79124	  13514	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+12:30:49 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52004	   3832	  23288	  79124	  13514	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+12:30:55 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+12:31:19 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52004	   3832	  23288	  79124	  13514	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+12:31:24 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+12:34:06 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+12:34:40 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52004	   3832	  23288	  79124	  13514	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+12:34:47 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+12:43:48 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52004	   3832	  23288	  79124	  13514	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+12:43:54 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+12:44:30 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+12:45:42 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52004	   3832	  23288	  79124	  13514	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+12:45:47 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+12:52:20 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52004	   3832	  23288	  79124	  13514	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+12:54:27 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:115:15: error: 'flag {aka struct <anonymous>}' has no member named 'timer'
+   FlagInstance.timer = 1;
+               ^
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+12:54:46 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:115:16: error: 'flag {aka struct <anonymous>}' has no member named 'timer'; did you mean 'timer_30Hz'?
+   FlagInstance.timer = 1;
+                ^~~~~
+                timer_30Hz
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+12:55:17 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:115:16: error: 'flag {aka struct <anonymous>}' has no member named 'timer'; did you mean 'timer_30Hz'?
+   FlagInstance.timer = 1;
+                ^~~~~
+                timer_30Hz
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+12:55:33 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'MPU6500_Task':
+../src/helloworld.c:230:21: error: 'flag {aka struct <anonymous>}' has no member named 'timer'; did you mean 'timer_30Hz'?
+     if(FlagInstance.timer) {
+                     ^~~~~
+                     timer_30Hz
+../src/helloworld.c:231:19: error: 'flag {aka struct <anonymous>}' has no member named 'timer'; did you mean 'timer_30Hz'?
+      FlagInstance.timer = 0;
+                   ^~~~~
+                   timer_30Hz
+In file included from ../src/helloworld.c:60:0:
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+12:56:03 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52068	   3832	  23288	  79188	  13554	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:02:06 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52068	   3832	  23288	  79188	  13554	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:02:10 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52068	   3832	  23288	  79188	  13554	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:07:17 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52068	   3832	  23288	  79188	  13554	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:07:35 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+13:08:18 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+../src/task.c: In function 'MPU6500_Task':
+../src/task.c:10:8: error: 'FlagInstance' undeclared (first use in this function)
+     if(FlagInstance.timer_400Hz) {
+        ^~~~~~~~~~~~
+../src/task.c:10:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/task.c:12:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+make: *** [src/task.o] ´íÎó 1
+13:08:22 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+../src/task.c: In function 'MPU6500_Task':
+../src/task.c:10:8: error: 'FlagInstance' undeclared (first use in this function)
+     if(FlagInstance.timer_400Hz) {
+        ^~~~~~~~~~~~
+../src/task.c:10:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/task.c:12:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+make: *** [src/task.o] ´íÎó 1
+13:08:36 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+../src/task.c: In function 'MPU6500_Task':
+../src/task.c:10:8: error: 'FlagInstance' undeclared (first use in this function)
+     if(FlagInstance.timer_400Hz) {
+        ^~~~~~~~~~~~
+../src/task.c:10:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/task.c:12:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+make: *** [src/task.o] ´íÎó 1
+13:08:42 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+../src/task.c: In function 'MPU6500_Task':
+../src/task.c:10:8: error: 'FlagInstance' undeclared (first use in this function)
+     if(FlagInstance.timer_400Hz) {
+        ^~~~~~~~~~~~
+../src/task.c:10:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/task.c:12:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+make: *** [src/task.o] ´íÎó 1
+13:09:05 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+../src/task.c: In function 'MPU6500_Task':
+../src/task.c:10:8: error: 'FlagInstance' undeclared (first use in this function)
+     if(FlagInstance.timer_400Hz) {
+        ^~~~~~~~~~~~
+../src/task.c:10:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/task.c:12:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+make: *** [src/task.o] ´íÎó 1
+13:09:28 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+../src/task.c: In function 'MPU6500_Task':
+../src/task.c:10:8: error: 'FlagInstance' undeclared (first use in this function)
+     if(FlagInstance.timer_400Hz) {
+        ^~~~~~~~~~~~
+../src/task.c:10:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/task.c:12:6: warning: implicit declaration of function 'IMU_getInfo' [-Wimplicit-function-declaration]
+      IMU_getInfo();
+      ^~~~~~~~~~~
+make: *** [src/task.o] ´íÎó 1
+13:09:53 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+../src/task.c: In function 'MPU6500_Task':
+../src/task.c:10:8: error: 'FlagInstance' undeclared (first use in this function)
+     if(FlagInstance.timer_400Hz) {
+        ^~~~~~~~~~~~
+../src/task.c:10:8: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/task.o] ´íÎó 1
+13:10:21 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52068	   3832	  23288	  79188	  13554	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:10:48 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52068	   3832	  23288	  79188	  13554	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:13:07 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:17:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52068	   3832	  23288	  79188	  13554	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:13:53 **** Incremental Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+13:18:52 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:23:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:125:11: warning: operation on 'counter' may be undefined [-Wsequence-point]
+   counter = (counter++)%(1000-1);
+   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52108	   3832	  23288	  79228	  1357c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:19:20 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:23:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52108	   3832	  23288	  79228	  1357c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:22:06 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:23:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+../src/flag.c: In function 'InitFlag':
+../src/flag.c:12:16: error: 'flag {aka struct <anonymous>}' has no member named 'timer_400Hz'; did you mean 'timer_500Hz'?
+  FlagInstance->timer_400Hz = false;
+                ^~~~~~~~~~~
+                timer_500Hz
+make: *** [src/flag.o] ´íÎó 1
+13:22:09 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52108	   3832	  23288	  79228	  1357c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:22:25 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:23:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52172	   3832	  23288	  79292	  135bc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:25:16 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:3: warning: implicit declaration of function 'MPU6500_Task' [-Wimplicit-function-declaration]
+   MPU6500_Task();
+   ^~~~~~~~~~~~
+In file included from ../src/helloworld.c:60:0:
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52172	   3832	  23288	  79292	  135bc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:25:19 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52300	   3832	  23288	  79420	  1363c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:25:34 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\iic_test\Debug/../src/helloworld.c:105: undefined reference to `MPU6500_Task'
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:25:46 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52236	   3832	  23288	  79356	  135fc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:25:57 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52236	   3832	  23288	  79356	  135fc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:26:13 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52236	   3832	  23288	  79356	  135fc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:26:34 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52236	   3832	  23288	  79356	  135fc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:27:23 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:23:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52236	   3832	  23288	  79356	  135fc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:29:28 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:23:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+../src/flag.c: In function 'InitFlag':
+../src/flag.c:13:16: error: 'flag {aka struct <anonymous>}' has no member named 'timer_30Hz'; did you mean 'timer_500Hz'?
+  FlagInstance->timer_30Hz = false;
+                ^~~~~~~~~~
+                timer_500Hz
+make: *** [src/flag.o] ´íÎó 1
+13:29:36 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52236	   3832	  23288	  79356	  135fc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:31:46 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:24:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:142:17: error: 'flag {aka struct <anonymous>}' has no member named 'timer_200Hz'; did you mean 'timer_500Hz'?
+    FlagInstance.timer_200Hz = 1;
+                 ^~~~~~~~~~~
+                 timer_500Hz
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:32:11 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:24:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52300	   3832	  23288	  79420	  1363c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:32:37 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:24:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52364	   3832	  23288	  79484	  1367c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:33:54 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:25:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerIntrHandler':
+../src/timer_driver/timer_driver.c:147:17: error: 'flag {aka struct <anonymous>}' has no member named 'timer_40Hz'; did you mean 'timer_500Hz'?
+    FlagInstance.timer_40Hz = 1;
+                 ^~~~~~~~~~
+                 timer_500Hz
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+13:34:09 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:25:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52428	   3832	  23288	  79548	  136bc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:34:28 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52492	   3832	  23288	  79612	  136fc	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:46:32 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52556	   3832	  23288	  79676	  1373c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+14:26:25 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/iic_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/iicps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/servo_v1_0/src -s clean 
+c:\Xilinx\SDK\2018.2\gnuwin\bin\rm.exe: lstat¡®*.o¡¯Ê§°Ü: Invalid argument
+make[1]: *** [clean] ´íÎó 1
+make: *** [ps7_cortexa9_0/libsrc/servo_v1_0/src/make.clean] ´íÎó 2
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s clean 
+make: ÓÉÓÚ´íÎóÄ¿±ê¡°clean¡±²¢Î´ÖØÐÂ´´½¨¡£
+14:26:28 **** Clean-only build of configuration Debug for project iic_test ****
+make clean 
+rm -rf  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o  ./src/timer_driver/timer_driver.d  ./src/mpu6500/AHRS_Hardware.d ./src/mpu6500/MahonyAHRS.d ./src/mpu6500/mpu6500.d  ./src/iic_driver/iic_driver.d  ./src/flag.d ./src/helloworld.d ./src/platform.d ./src/task.d  iic_test.elf.size  iic_test.elf
+ 
+14:26:28 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/servo_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/servo_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iic"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/servo_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/servo_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling servo..."
+servo.c: In function 'XServo_CfgInitialize':
+servo.c:32:64: warning: unused parameter 'Config' [-Wunused-parameter]
+ int XServo_CfgInitialize(XServo * InstancePtr, XServo_Config * Config,
+                                                                ^~~~~~
+servo_selftest.c: In function 'SERVO_Reg_SelfTest':
+servo_selftest.c:52:54: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( SERVO_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                      ^~
+servo_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+14:26:59 **** Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:25:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52556	   3832	  23288	  79676	  1373c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+14:27:58 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:80:1: error: unknown type name 'XUartLite'
+ XUartLite UartCam;
+ ^~~~~~~~~
+In file included from ../src/helloworld.c:60:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+14:28:25 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52556	   3832	  23368	  79756	  1378c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+14:29:43 **** Clean-only build of configuration Debug for project ball_test ****
+make clean 
+rm -rf  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o  ./src/timer_driver/timer_driver.d  ./src/mpu6500/AHRS_Hardware.d ./src/mpu6500/MahonyAHRS.d ./src/mpu6500/mpu6500.d  ./src/iic_driver/iic_driver.d  ./src/flag.d ./src/helloworld.d ./src/platform.d ./src/task.d  iic_test.elf.size  iic_test.elf
+ 
+14:29:44 **** Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:25:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52556	   3832	  23368	  79756	  1378c	ball_test.elf
+Finished building: ball_test.elf.size
+ 

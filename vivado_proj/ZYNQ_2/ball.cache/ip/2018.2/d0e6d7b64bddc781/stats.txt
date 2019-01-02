@@ -1,4 +1,0 @@
-NumberHits:0
-Timestamp: Mon Dec 24 08:49:15 UTC 2018
-VLNV: xilinx.com:ip:axis_subset_converter:1.1
-SynthRuntime: 75

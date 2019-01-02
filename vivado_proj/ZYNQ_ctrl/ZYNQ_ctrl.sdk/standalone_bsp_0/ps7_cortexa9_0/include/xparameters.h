@@ -309,12 +309,14 @@
 /* Definitions for Fabric interrupts connected to ps7_scugic_0 */
 #define XPAR_FABRIC_AXI_UARTLITE_0_INTERRUPT_INTR 61U
 #define XPAR_FABRIC_AXI_IIC_0_IIC2INTC_IRPT_INTR 62U
+#define XPAR_FABRIC_AXI_UARTLITE_1_INTERRUPT_INTR 63U
 
 /******************************************************************/
 
 /* Canonical definitions for Fabric interrupts connected to ps7_scugic_0 */
 #define XPAR_FABRIC_UARTLITE_0_VEC_ID XPAR_FABRIC_AXI_UARTLITE_0_INTERRUPT_INTR
 #define XPAR_FABRIC_IIC_0_VEC_ID XPAR_FABRIC_AXI_IIC_0_IIC2INTC_IRPT_INTR
+#define XPAR_FABRIC_UARTLITE_1_VEC_ID XPAR_FABRIC_AXI_UARTLITE_1_INTERRUPT_INTR
 
 /******************************************************************/
 
@@ -409,8 +411,19 @@
 
 /******************************************************************/
 
+/* Definitions for driver SERVO */
+#define XPAR_SERVO_NUM_INSTANCES 1
+
+/* Definitions for peripheral SERVO_0 */
+#define XPAR_SERVO_0_DEVICE_ID 0
+#define XPAR_SERVO_0_S_AXI_BASEADDR 0x43C00000
+#define XPAR_SERVO_0_S_AXI_HIGHADDR 0x43C0FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver UARTLITE */
-#define XPAR_XUARTLITE_NUM_INSTANCES 1
+#define XPAR_XUARTLITE_NUM_INSTANCES 2
 
 /* Definitions for peripheral AXI_UARTLITE_0 */
 #define XPAR_AXI_UARTLITE_0_BASEADDR 0x42C00000
@@ -420,6 +433,16 @@
 #define XPAR_AXI_UARTLITE_0_USE_PARITY 0
 #define XPAR_AXI_UARTLITE_0_ODD_PARITY 0
 #define XPAR_AXI_UARTLITE_0_DATA_BITS 8
+
+
+/* Definitions for peripheral AXI_UARTLITE_1 */
+#define XPAR_AXI_UARTLITE_1_BASEADDR 0x42C10000
+#define XPAR_AXI_UARTLITE_1_HIGHADDR 0x42C1FFFF
+#define XPAR_AXI_UARTLITE_1_DEVICE_ID 1
+#define XPAR_AXI_UARTLITE_1_BAUDRATE 9600
+#define XPAR_AXI_UARTLITE_1_USE_PARITY 0
+#define XPAR_AXI_UARTLITE_1_ODD_PARITY 0
+#define XPAR_AXI_UARTLITE_1_DATA_BITS 8
 
 
 /******************************************************************/
@@ -432,6 +455,15 @@
 #define XPAR_UARTLITE_0_USE_PARITY 0
 #define XPAR_UARTLITE_0_ODD_PARITY 0
 #define XPAR_UARTLITE_0_DATA_BITS 8
+
+/* Canonical definitions for peripheral AXI_UARTLITE_1 */
+#define XPAR_UARTLITE_1_DEVICE_ID XPAR_AXI_UARTLITE_1_DEVICE_ID
+#define XPAR_UARTLITE_1_BASEADDR 0x42C10000
+#define XPAR_UARTLITE_1_HIGHADDR 0x42C1FFFF
+#define XPAR_UARTLITE_1_BAUDRATE 9600
+#define XPAR_UARTLITE_1_USE_PARITY 0
+#define XPAR_UARTLITE_1_ODD_PARITY 0
+#define XPAR_UARTLITE_1_DATA_BITS 8
 
 
 /******************************************************************/

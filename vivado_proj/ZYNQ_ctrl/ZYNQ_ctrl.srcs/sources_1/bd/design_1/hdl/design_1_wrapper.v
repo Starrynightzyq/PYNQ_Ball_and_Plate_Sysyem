@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-//Date        : Fri Dec 28 16:24:23 2018
+//Date        : Wed Jan  2 14:06:04 2019
 //Host        : ZYQ-Mac-Win running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -33,8 +33,12 @@ module design_1_wrapper
     FIXED_IO_ps_srstb,
     i2c_scl_io,
     i2c_sda_io,
-    uart_rtl_rxd,
-    uart_rtl_txd);
+    pwm_out_0,
+    pwm_out_1,
+    uart_camera_rxd,
+    uart_camera_txd,
+    uart_pc_rxd,
+    uart_pc_txd);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -58,8 +62,12 @@ module design_1_wrapper
   inout FIXED_IO_ps_srstb;
   inout i2c_scl_io;
   inout i2c_sda_io;
-  input uart_rtl_rxd;
-  output uart_rtl_txd;
+  output pwm_out_0;
+  output pwm_out_1;
+  input uart_camera_rxd;
+  output uart_camera_txd;
+  input uart_pc_rxd;
+  output uart_pc_txd;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -90,8 +98,12 @@ module design_1_wrapper
   wire i2c_sda_io;
   wire i2c_sda_o;
   wire i2c_sda_t;
-  wire uart_rtl_rxd;
-  wire uart_rtl_txd;
+  wire pwm_out_0;
+  wire pwm_out_1;
+  wire uart_camera_rxd;
+  wire uart_camera_txd;
+  wire uart_pc_rxd;
+  wire uart_pc_txd;
 
   design_1 design_1_i
        (.DDR_addr(DDR_addr),
@@ -121,8 +133,12 @@ module design_1_wrapper
         .i2c_sda_i(i2c_sda_i),
         .i2c_sda_o(i2c_sda_o),
         .i2c_sda_t(i2c_sda_t),
-        .uart_rtl_rxd(uart_rtl_rxd),
-        .uart_rtl_txd(uart_rtl_txd));
+        .pwm_out_0(pwm_out_0),
+        .pwm_out_1(pwm_out_1),
+        .uart_camera_rxd(uart_camera_rxd),
+        .uart_camera_txd(uart_camera_txd),
+        .uart_pc_rxd(uart_pc_rxd),
+        .uart_pc_txd(uart_pc_txd));
   IOBUF i2c_scl_iobuf
        (.I(i2c_scl_o),
         .IO(i2c_scl_io),

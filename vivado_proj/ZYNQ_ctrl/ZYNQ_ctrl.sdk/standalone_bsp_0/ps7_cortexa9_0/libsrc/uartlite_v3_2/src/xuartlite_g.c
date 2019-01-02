@@ -5,7 +5,7 @@
 * Version: 
 * DO NOT EDIT.
 *
-* Copyright (C) 2010-2018 Xilinx, Inc. All Rights Reserved.*
+* Copyright (C) 2010-2019 Xilinx, Inc. All Rights Reserved.*
 *Permission is hereby granted, free of charge, to any person obtaining a copy
 *of this software and associated documentation files (the Software), to deal
 *in the Software without restriction, including without limitation the rights
@@ -53,6 +53,14 @@ XUartLite_Config XUartLite_ConfigTable[XPAR_XUARTLITE_NUM_INSTANCES] =
 		XPAR_AXI_UARTLITE_0_USE_PARITY,
 		XPAR_AXI_UARTLITE_0_ODD_PARITY,
 		XPAR_AXI_UARTLITE_0_DATA_BITS
+	},
+	{
+		XPAR_AXI_UARTLITE_1_DEVICE_ID,
+		XPAR_AXI_UARTLITE_1_BASEADDR,
+		XPAR_AXI_UARTLITE_1_BAUDRATE,
+		XPAR_AXI_UARTLITE_1_USE_PARITY,
+		XPAR_AXI_UARTLITE_1_ODD_PARITY,
+		XPAR_AXI_UARTLITE_1_DATA_BITS
 	}
 };
 

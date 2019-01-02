@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1545894722">
   <File Type="PA-TCL" Name="mb_demo_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="mb_demo_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="mb_demo_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="mb_demo_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="mb_demo_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="mb_demo_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="mb_demo_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="mb_demo_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="mb_demo_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/src/cmos_8_16bit.v">
@@ -73,12 +70,12 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="mb_demo_microblaze_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_demo_microblaze_0_axi_intc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_demo_mdm_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_demo_microblaze_0_xlconcat_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_demo_mdm_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_demo_clk_wiz_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_demo_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_demo_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_demo_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_demo_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_demo_axi_uartlite_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_demo_axi_timer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_demo_xbar_0"/>

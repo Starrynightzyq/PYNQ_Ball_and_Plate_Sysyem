@@ -1,9 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../bd/pynq_design/ip/pynq_design_axi_timer_0_0/sim/pynq_design_axi_timer_0_0.vhd" \
-"../../../bd/pynq_design/ip/pynq_design_rst_ps7_0_100M_0/sim/pynq_design_rst_ps7_0_100M_0.vhd" \
-"../../../bd/pynq_design/ip/pynq_design_ball_locator_0_0/src/shift_ram_1bit/sim/shift_ram_1bit.vhd" \
-"../../../bd/pynq_design/ip/pynq_design_ball_locator_0_0/src/shift_ram/sim/shift_ram.vhd" \
-"../../../bd/pynq_design/ip/pynq_design_ball_locator_0_0/src/shift_ram_16bit/sim/shift_ram_16bit.vhd" \
-"../../../bd/pynq_design/ip/pynq_design_axi_iic_0_0/sim/pynq_design_axi_iic_0_0.vhd" \
-
-nosort

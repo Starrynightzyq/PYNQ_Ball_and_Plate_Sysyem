@@ -1,0 +1,16 @@
+/*
+ * flag.c
+ *
+ *  Created on: 2018年12月29日
+ *      Author: admin
+ */
+#include "flag.h"
+
+void InitFlag(flag *FlagInstance) {
+	FlagInstance->timer_1000Hz = false;
+	FlagInstance->timer_500Hz = false;
+	FlagInstance->timer_250Hz = false;
+	FlagInstance->timer_200Hz = false;
+	FlagInstance->timer_40Hz = false;
+	FlagInstance->timer_25Hz = false;
+}

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Fri Dec 28 16:35:33 2018
+| Date             : Wed Jan  2 14:23:59 2019
 | Host             : ZYQ-Mac-Win running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.403        |
+| Total On-Chip Power (W)  | 1.405        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.267        |
+| Dynamic (W)              | 1.269        |
 | Device Static (W)        | 0.136        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 68.8         |
@@ -52,19 +52,19 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.006 |        3 |       --- |             --- |
-| Slice Logic             |     0.002 |     2752 |       --- |             --- |
-|   LUT as Logic          |     0.002 |      952 |     53200 |            1.79 |
-|   Register              |    <0.001 |     1207 |    106400 |            1.13 |
-|   CARRY4                |    <0.001 |       29 |     13300 |            0.22 |
-|   LUT as Shift Register |    <0.001 |       82 |     17400 |            0.47 |
+| Clocks                  |     0.007 |        3 |       --- |             --- |
+| Slice Logic             |     0.002 |     3610 |       --- |             --- |
+|   LUT as Logic          |     0.002 |     1326 |     53200 |            2.49 |
+|   Register              |    <0.001 |     1558 |    106400 |            1.46 |
+|   CARRY4                |    <0.001 |       77 |     13300 |            0.58 |
+|   LUT as Shift Register |    <0.001 |       92 |     17400 |            0.53 |
 |   F7/F8 Muxes           |    <0.001 |       13 |     53200 |            0.02 |
-|   Others                |     0.000 |      239 |       --- |             --- |
-| Signals                 |     0.002 |     2018 |       --- |             --- |
-| I/O                     |    <0.001 |        4 |       125 |            3.20 |
+|   Others                |     0.000 |      261 |       --- |             --- |
+| Signals                 |     0.003 |     2737 |       --- |             --- |
+| I/O                     |    <0.001 |        8 |       125 |            6.40 |
 | PS7                     |     1.256 |        1 |       --- |             --- |
 | Static Power            |     0.136 |          |           |                 |
-| Total                   |     1.403 |          |           |                 |
+| Total                   |     1.405 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.023 |       0.010 |      0.013 |
+| Vccint    |       1.000 |     0.026 |       0.013 |      0.013 |
 | Vccaux    |       1.800 |     0.014 |       0.000 |      0.014 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -150,8 +150,8 @@ Table of Contents
 +-----------------------------------------------------------------------------+-----------+
 | Name                                                                        | Power (W) |
 +-----------------------------------------------------------------------------+-----------+
-| design_1_wrapper                                                            |     1.267 |
-|   design_1_i                                                                |     1.266 |
+| design_1_wrapper                                                            |     1.269 |
+|   design_1_i                                                                |     1.269 |
 |     axi_iic_0                                                               |     0.002 |
 |       U0                                                                    |     0.002 |
 |         X_IIC                                                               |     0.002 |
@@ -182,8 +182,28 @@ Table of Contents
 |         AXI_LITE_IPIF_I                                                     |    <0.001 |
 |           I_SLAVE_ATTACHMENT                                                |    <0.001 |
 |             I_DECODER                                                       |    <0.001 |
-|               MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I |    <0.001 |
-|               MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I |    <0.001 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I |     0.000 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I |     0.000 |
+|         UARTLITE_CORE_I                                                     |    <0.001 |
+|           BAUD_RATE_I                                                       |    <0.001 |
+|           UARTLITE_RX_I                                                     |    <0.001 |
+|             INPUT_DOUBLE_REGS3                                              |    <0.001 |
+|             SRL_FIFO_I                                                      |    <0.001 |
+|               I_SRL_FIFO_RBU_F                                              |    <0.001 |
+|                 CNTR_INCR_DECR_ADDN_F_I                                     |    <0.001 |
+|                 DYNSHREG_F_I                                                |    <0.001 |
+|           UARTLITE_TX_I                                                     |    <0.001 |
+|             SRL_FIFO_I                                                      |    <0.001 |
+|               I_SRL_FIFO_RBU_F                                              |    <0.001 |
+|                 CNTR_INCR_DECR_ADDN_F_I                                     |    <0.001 |
+|                 DYNSHREG_F_I                                                |    <0.001 |
+|     axi_uartlite_1                                                          |    <0.001 |
+|       U0                                                                    |    <0.001 |
+|         AXI_LITE_IPIF_I                                                     |    <0.001 |
+|           I_SLAVE_ATTACHMENT                                                |    <0.001 |
+|             I_DECODER                                                       |    <0.001 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I |     0.000 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I |     0.000 |
 |         UARTLITE_CORE_I                                                     |    <0.001 |
 |           BAUD_RATE_I                                                       |    <0.001 |
 |           UARTLITE_RX_I                                                     |    <0.001 |
@@ -209,7 +229,7 @@ Table of Contents
 |                 cmd_translator_0                                            |    <0.001 |
 |                   incr_cmd_0                                                |    <0.001 |
 |                   wrap_cmd_0                                                |    <0.001 |
-|               RD.r_channel_0                                                |     0.001 |
+|               RD.r_channel_0                                                |    <0.001 |
 |                 rd_data_fifo_0                                              |    <0.001 |
 |                 transaction_fifo_0                                          |    <0.001 |
 |               SI_REG                                                        |     0.002 |
@@ -225,9 +245,9 @@ Table of Contents
 |               WR.b_channel_0                                                |    <0.001 |
 |                 bid_fifo_0                                                  |    <0.001 |
 |                 bresp_fifo_0                                                |    <0.001 |
-|       xbar                                                                  |     0.001 |
-|         inst                                                                |     0.001 |
-|           gen_sasd.crossbar_sasd_0                                          |     0.001 |
+|       xbar                                                                  |    <0.001 |
+|         inst                                                                |    <0.001 |
+|           gen_sasd.crossbar_sasd_0                                          |    <0.001 |
 |             addr_arbiter_inst                                               |    <0.001 |
 |             gen_decerr.decerr_slave_inst                                    |    <0.001 |
 |             reg_slice_r                                                     |    <0.001 |
@@ -240,6 +260,11 @@ Table of Contents
 |           ACTIVE_LOW_EXT.ACT_LO_EXT                                         |    <0.001 |
 |         SEQ                                                                 |    <0.001 |
 |           SEQ_COUNTER                                                       |    <0.001 |
+|     servo_0                                                                 |     0.002 |
+|       inst                                                                  |     0.002 |
+|         servo_v1_0_S_AXI_inst                                               |     0.002 |
+|           U0_axi_pwm                                                        |    <0.001 |
+|           U1_axi_pwm                                                        |    <0.001 |
 |     xlconcat_0                                                              |     0.000 |
 |   i2c_scl_iobuf                                                             |     0.000 |
 |   i2c_sda_iobuf                                                             |     0.000 |

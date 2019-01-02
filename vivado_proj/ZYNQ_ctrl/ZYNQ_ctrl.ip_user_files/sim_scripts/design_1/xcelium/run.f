@@ -97,13 +97,20 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+  "../../../bd/design_1/sim/design_1.v" \
+  "../../../bd/design_1/ipshared/27b8/hdl/servo_v1_0_S_AXI.v" \
+  "../../../bd/design_1/ipshared/27b8/src/axi_pwm.v" \
+  "../../../bd/design_1/ipshared/27b8/hdl/servo_v1_0.v" \
+  "../../../bd/design_1/ip/design_1_servo_0_0/sim/design_1_servo_0_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_uartlite_1_0/sim/design_1_axi_uartlite_1_0.vhd" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_17 \
   "../../../../ZYNQ_ctrl.srcs/sources_1/bd/design_1/ipshared/ccfb/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
-  "../../../bd/design_1/sim/design_1.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v
