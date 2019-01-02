@@ -126,6 +126,7 @@ static void TimerIntrHandler(void *CallBackRef)
 //    	xil_printf("timer interrupt event\r\n");
 		if(counter >= (1000-1)) {
 			counter = 0;
+			FlagInstance.timer_1Hz = 1;
 		}
 		else {
 			counter++;

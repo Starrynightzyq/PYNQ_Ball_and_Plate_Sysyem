@@ -159,4 +159,10 @@ void IMU_getInfo()
 #endif
 }
 
-
+void IMU_printInfo() {
+#ifdef DEBUG_PRINT
+	char *str;
+	sprintf(str, "angle: %f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+	puts(str);
+#endif
+}

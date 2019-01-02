@@ -17,6 +17,8 @@ typedef struct {
 	bool timer_200Hz;	/* 400 HZ */
 	bool timer_40Hz;
 	bool timer_25Hz;
+	bool timer_1Hz;
+	bool uart_cam_recv;	/* uart 接收标志 */
 } flag;
 
 void InitFlag(flag *FlagInstance);

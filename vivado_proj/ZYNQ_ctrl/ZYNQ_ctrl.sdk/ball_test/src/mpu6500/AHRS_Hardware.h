@@ -12,13 +12,14 @@
 #include "MahonyAHRS.h"
 #include "../DronePara.h"
 
-//#define DEBUG
+#define DEBUG_PRINT
 
 #define PI 3.1415926
 
 void AHRS_HardWareinit(XIic *IicMpu6500);
 void IMU_getValues(float * values);
 void IMU_getInfo(void);
+void IMU_printInfo();
 
 extern volatile float RDrone_R[3][3];
 extern float Accel_Src[3];

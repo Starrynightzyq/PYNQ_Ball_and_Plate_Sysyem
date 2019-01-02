@@ -58,14 +58,16 @@
 #include "sleep.h"
 #include "./iic_driver/iic_driver.h"
 #include "./mpu6500/AHRS_Hardware.h"
-#include "timer_driver/timer_driver.h"
+#include "./timer_driver/timer_driver.h"
+#include "./uart_driver/uart_driver.h"
+#include "uart_cam.h"
 #include "DronePara.h"
 #include "flag.h"
 #include "task.h"
 
 #define INTC_DEVICE_ID			XPAR_SCUGIC_0_DEVICE_ID
-#define UARTLITE_0_DEVICE_ID 	XPAR_UARTLITE_0_DEVICE_ID
-#define UARTLITE_0_INT_ID		XPAR_FABRIC_UARTLITE_0_VEC_ID
+#define UARTLITE_PC_DEVICE_ID 	XPAR_UARTLITE_0_DEVICE_ID
+#define UARTLITE_PC_INT_ID		XPAR_FABRIC_UARTLITE_0_VEC_ID
 #define IICAXI_0_DEVICE_ID		XPAR_IIC_0_DEVICE_ID
 #define IICAXI_0_INT_ID			XPAR_FABRIC_IIC_0_VEC_ID
 #define TIMER_0_DEVICE_ID		XPAR_XSCUTIMER_0_DEVICE_ID
@@ -81,9 +83,10 @@ XScuTimer TimerInstance;	/* Cortex A9 Scu Private Timer Instance */
 XUartLite UartCam;
 
 //全局变量
-DroneRTInfo RT_Info;
+DroneRTInfo RT_Info;	//传感器数据
 OffsetInfo OffsetData;
-flag FlagInstance;
+flag FlagInstance;		//标志位
+BallInfo Ball_Info;		//小球数据
 
 int Init_System(void);
 int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
@@ -104,7 +107,8 @@ int main()
 
 //	AT24C_test();
 	while(1) {
-		MainTask();
+		TimerTask();
+		ExIntrTask();
 	}
 
     cleanup_platform();
@@ -120,6 +124,9 @@ int Init_System(void) {
 	IicInit(&IicInstance, IICAXI_0_DEVICE_ID, IICAXI_0_INT_ID, MPU6500_IIC_ADDR, &InterruptController);
 
 	InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &InterruptController, TIMER_0_LOAD_VALUE);
+
+//	InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController);
+	InitUartCam();
 
 	xil_printf("Init the mpu 6500...\r\n");
     AHRS_HardWareinit(&IicInstance);

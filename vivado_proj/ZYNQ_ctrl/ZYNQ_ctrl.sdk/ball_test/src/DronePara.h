@@ -1,32 +1,31 @@
 /*
  * DronePara.h
  *
- *  Created on: 2018Äê4ÔÂ17ÈÕ
+ *  Created on: 2018å¹´4æœˆ17æ—¥
  *      Author: Xiluna Tech
  */
 
 #ifndef PARAMETER_DRONEPARA_H_
 #define PARAMETER_DRONEPARA_H_
 
-//#include "F2837xD_device.h"
 #include "stdbool.h"
 
 typedef enum{
   Drone_Mode_None=0,
-  Drone_Mode_RatePitch, //×ËÌ¬ÄÚ»·
+  Drone_Mode_RatePitch, //å§¿æ€å†…ç¯
   Drone_Mode_RateRoll,
-  Drone_Mode_Pitch,     //×ËÌ¬Íâ»·
+  Drone_Mode_Pitch,     //å§¿æ€å¤–ç¯
   Drone_Mode_Roll,
-  Drone_Mode_4Axis,     //ËÄÖá·ÉĞĞ
+  Drone_Mode_4Axis,     //å››è½´é£è¡Œ
 }DroneFlightMode_TypeDef;
 
 typedef enum{
-    Drone_Off  = 0x00,//¹Ø±Õµç»ú
-    Drone_On   = 0x01,//Æğ·É
-    Drone_Land = 0x02,//½µÂä
+    Drone_Off  = 0x00,//å…³é—­ç”µæœº
+    Drone_On   = 0x01,//èµ·é£
+    Drone_Land = 0x02,//é™è½
 }DroneFlightOnOff_TypeDef;
 
-/* ·¢ËÍPID²ÎÊı±êÖ¾Î» */
+/* å‘é€PIDå‚æ•°æ ‡å¿—ä½ */
 typedef enum
 {
     Report_SET      = 0x01,
@@ -48,14 +47,14 @@ typedef enum{
 }FlyMode;
 
 typedef struct{
-    //ÂË²¨Ê±¼ä
+    //æ»¤æ³¢æ—¶é—´
     float Merge_t;
-    //²ÎÊı
+    //å‚æ•°
     float Q_Position;
     float Q_Velocity;
     float Q_Bias;
     float R_Position;
-    //×´Ì¬
+    //çŠ¶æ€
     float Axis_Pos;
     float Axis_Vel;
     float Axis_Bias;
@@ -93,11 +92,11 @@ typedef struct{
 }DroneErrangle;
 
 typedef struct{
-    //²ÎÊı
+    //å‚æ•°
     float Kp;
     float Ki;
     float Kd;
-    //×´Ì¬
+    //çŠ¶æ€
     float error;
     float lasterror;
     float differential;
@@ -110,7 +109,7 @@ typedef struct{
 
 typedef struct
 {
-    //²ÎÊı
+    //å‚æ•°
     float r;
     float h;
     float N0;
@@ -125,7 +124,7 @@ typedef struct
     float alpha1;
     float alpha2;
     float zeta;
-    //×´Ì¬
+    //çŠ¶æ€
     float x1;
     float x2;
     float h0;
@@ -168,7 +167,7 @@ typedef struct
     unsigned int M4;
 }Throttle;
 
-/*´ÅÁ¦Êı¾İ*/
+/*ç£åŠ›æ•°æ®*/
 typedef struct
 {
     bool MagOffseting;
@@ -181,7 +180,7 @@ typedef struct
 }OffsetInfo;
 
 
-/*ÎŞÈË»úÊµÊ±ĞÅÏ¢*/
+/*æ— äººæœºå®æ—¶ä¿¡æ¯*/
 typedef struct
 {
     float Pitch;
@@ -223,12 +222,15 @@ typedef struct{
     float VIO_Zaxis;
 }SensorData;
 
-//float ÁªºÏÌå
+//float è”åˆä½“
 typedef union{
         float fv;
         u16 sv[2];
 }float_union;
 
-
+typedef struct{
+	u16 x;
+	u16 y;
+} BallInfo;
 
 #endif /* PARAMETER_DRONEPARA_H_ */

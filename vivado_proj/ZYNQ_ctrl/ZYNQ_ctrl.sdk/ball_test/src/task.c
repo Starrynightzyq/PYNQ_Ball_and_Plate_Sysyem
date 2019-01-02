@@ -16,7 +16,7 @@ void MPU6500_Task() {
     }
 }*/
 
-void MainTask(void) {
+void TimerTask(void) {
 	if(FlagInstance.timer_500Hz) {
 		IMU_getInfo();					/* 姿态解算 */
 										/* 内环PID */
@@ -33,14 +33,26 @@ void MainTask(void) {
 		FlagInstance.timer_200Hz = 0;
 	}
 
-	if(FlagInstance.timer_40Hz) {
+	if(FlagInstance.timer_40Hz) {	/* 向上位机发送数据 */
 
 		FlagInstance.timer_40Hz = 0;
 	}
 
-	if(FlagInstance.timer_25Hz) {
+	if(FlagInstance.timer_25Hz) {	/* 外环PID */
 
 		FlagInstance.timer_25Hz = 0;
 	}
 
+	if(FlagInstance.timer_1Hz) {	/* 外环PID */
+		IMU_printInfo();
+		FlagInstance.timer_1Hz = 0;
+	}
+
+}
+
+void ExIntrTask(void) {
+	if(FlagInstance.uart_cam_recv) { /* uart1 cam 中断触发 */
+		RecvUartCam();
+		FlagInstance.uart_cam_recv = 0;
+	}
 }

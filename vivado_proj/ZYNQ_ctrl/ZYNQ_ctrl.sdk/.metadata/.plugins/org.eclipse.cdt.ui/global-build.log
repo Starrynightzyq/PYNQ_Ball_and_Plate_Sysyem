@@ -6417,3 +6417,2694 @@ arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
   52556	   3832	  23368	  79756	  1378c	ball_test.elf
 Finished building: ball_test.elf.size
  
+14:37:49 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+14:38:13 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+14:38:29 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+14:38:42 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+Finished building: ../src/uart_driver/uart_driver.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52556	   3832	  23368	  79756	  1378c	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+14:41:29 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+14:42:03 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+../src/uart_driver/uart_driver.c:9:18: error: unknown type name 'XUartLite'
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr) {
+                  ^~~~~~~~~
+../src/uart_driver/uart_driver.c:9:46: error: unknown type name 'u16'
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr) {
+                                              ^~~
+../src/uart_driver/uart_driver.c:9:57: error: unknown type name 'u16'
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr) {
+                                                         ^~~
+../src/uart_driver/uart_driver.c:9:68: error: unknown type name 'INTC'
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr) {
+                                                                    ^~~~
+../src/uart_driver/uart_driver.c: In function 'RecvHandler':
+../src/uart_driver/uart_driver.c:65:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/uart_driver/uart_driver.c:65:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/uart_driver/uart_driver.c:66:2: warning: implicit declaration of function 'xil_printf'; did you mean '__builtin_printf'? [-Wimplicit-function-declaration]
+  xil_printf("uart receive event\r\n");
+  ^~~~~~~~~~
+  __builtin_printf
+../src/uart_driver/uart_driver.c: In function 'SendHandler':
+../src/uart_driver/uart_driver.c:71:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+../src/uart_driver/uart_driver.c: At top level:
+../src/uart_driver/uart_driver.c:76:17: error: unknown type name 'XUartLite'
+ void Uart_Check(XUartLite *UartInstancePtr) {
+                 ^~~~~~~~~
+make: *** [src/uart_driver/uart_driver.o] ¥ÌŒÛ 1
+14:42:21 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+../src/uart_driver/uart_driver.c: In function 'InitUartLite':
+../src/uart_driver/uart_driver.c:34:11: warning: implicit declaration of function 'XIntc_Connect'; did you mean 'XScuGic_Connect'? [-Wimplicit-function-declaration]
+  Status = XIntc_Connect(IntrInstancePtr, IntId,
+           ^~~~~~~~~~~~~
+           XScuGic_Connect
+../src/uart_driver/uart_driver.c:44:2: warning: implicit declaration of function 'XIntc_Enable'; did you mean 'XScuGic_Enable'? [-Wimplicit-function-declaration]
+  XIntc_Enable(IntrInstancePtr, IntId);
+  ^~~~~~~~~~~~
+  XScuGic_Enable
+../src/uart_driver/uart_driver.c:52:44: error: 'SendHandler' undeclared (first use in this function); did you mean 'XNullHandler'?
+  XUartLite_SetSendHandler(UartInstancePtr, SendHandler, UartInstancePtr);
+                                            ^~~~~~~~~~~
+                                            XNullHandler
+../src/uart_driver/uart_driver.c:52:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/uart_driver/uart_driver.c:53:44: error: 'RecvHandler' undeclared (first use in this function); did you mean 'SendHandler'?
+  XUartLite_SetRecvHandler(UartInstancePtr, RecvHandler, UartInstancePtr);
+                                            ^~~~~~~~~~~
+                                            SendHandler
+../src/uart_driver/uart_driver.c: In function 'RecvHandler':
+../src/uart_driver/uart_driver.c:65:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/uart_driver/uart_driver.c: In function 'SendHandler':
+../src/uart_driver/uart_driver.c:71:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+../src/uart_driver/uart_driver.c: In function 'Uart_Check':
+../src/uart_driver/uart_driver.c:79:9: warning: implicit declaration of function 'XUartLite_GetStatusReg'; did you mean 'XUartLite_GetStats'? [-Wimplicit-function-declaration]
+  data = XUartLite_GetStatusReg(UartInstancePtr->RegBaseAddress);
+         ^~~~~~~~~~~~~~~~~~~~~~
+         XUartLite_GetStats
+make: *** [src/uart_driver/uart_driver.o] ¥ÌŒÛ 1
+14:42:54 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+../src/uart_driver/uart_driver.c: In function 'InitUartLite':
+../src/uart_driver/uart_driver.c:34:11: warning: implicit declaration of function 'XIntc_Connect'; did you mean 'XScuGic_Connect'? [-Wimplicit-function-declaration]
+  Status = XIntc_Connect(IntrInstancePtr, IntId,
+           ^~~~~~~~~~~~~
+           XScuGic_Connect
+../src/uart_driver/uart_driver.c:44:2: warning: implicit declaration of function 'XIntc_Enable'; did you mean 'XScuGic_Enable'? [-Wimplicit-function-declaration]
+  XIntc_Enable(IntrInstancePtr, IntId);
+  ^~~~~~~~~~~~
+  XScuGic_Enable
+../src/uart_driver/uart_driver.c: In function 'RecvHandler':
+../src/uart_driver/uart_driver.c:65:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/uart_driver/uart_driver.c:65:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/uart_driver/uart_driver.c: In function 'SendHandler':
+../src/uart_driver/uart_driver.c:71:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+../src/uart_driver/uart_driver.c: In function 'Uart_Check':
+../src/uart_driver/uart_driver.c:79:9: warning: implicit declaration of function 'XUartLite_GetStatusReg'; did you mean 'XUartLite_GetStats'? [-Wimplicit-function-declaration]
+  data = XUartLite_GetStatusReg(UartInstancePtr->RegBaseAddress);
+         ^~~~~~~~~~~~~~~~~~~~~~
+         XUartLite_GetStats
+make: *** [src/uart_driver/uart_driver.o] ¥ÌŒÛ 1
+14:43:38 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+../src/uart_driver/uart_driver.c: In function 'InitUartLite':
+../src/uart_driver/uart_driver.c:34:11: warning: implicit declaration of function 'XIntc_Connect'; did you mean 'XScuGic_Connect'? [-Wimplicit-function-declaration]
+  Status = XIntc_Connect(IntrInstancePtr, IntId,
+           ^~~~~~~~~~~~~
+           XScuGic_Connect
+../src/uart_driver/uart_driver.c:44:2: warning: implicit declaration of function 'XIntc_Enable'; did you mean 'XScuGic_Enable'? [-Wimplicit-function-declaration]
+  XIntc_Enable(IntrInstancePtr, IntId);
+  ^~~~~~~~~~~~
+  XScuGic_Enable
+../src/uart_driver/uart_driver.c: In function 'RecvHandler':
+../src/uart_driver/uart_driver.c:65:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/uart_driver/uart_driver.c:65:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/uart_driver/uart_driver.c: In function 'SendHandler':
+../src/uart_driver/uart_driver.c:71:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+make: *** [src/uart_driver/uart_driver.o] ¥ÌŒÛ 1
+14:44:22 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+../src/uart_driver/uart_driver.c: In function 'InitUartLite':
+../src/uart_driver/uart_driver.c:37:11: warning: implicit declaration of function 'XIntc_Connect'; did you mean 'XScuGic_Connect'? [-Wimplicit-function-declaration]
+  Status = XIntc_Connect(IntrInstancePtr, IntId,
+           ^~~~~~~~~~~~~
+           XScuGic_Connect
+../src/uart_driver/uart_driver.c:47:2: warning: implicit declaration of function 'XIntc_Enable'; did you mean 'XScuGic_Enable'? [-Wimplicit-function-declaration]
+  XIntc_Enable(IntrInstancePtr, IntId);
+  ^~~~~~~~~~~~
+  XScuGic_Enable
+Finished building: ../src/uart_driver/uart_driver.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/uart_driver/uart_driver.o: In function `InitUartLite':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\ball_test\Debug/../src/uart_driver/uart_driver.c:37: undefined reference to `XIntc_Connect'
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\ball_test\Debug/../src/uart_driver/uart_driver.c:47: undefined reference to `XIntc_Enable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ball_test.elf] ¥ÌŒÛ 1
+14:45:21 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+Finished building: ../src/uart_driver/uart_driver.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55924	   3864	  23384	  83172	  144e4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+14:46:05 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+../src/uart_driver/uart_driver.c: In function 'InitUartLite':
+../src/uart_driver/uart_driver.c:51:27: error: 'IntcInstancePtr' undeclared (first use in this function); did you mean 'IntrInstancePtr'?
+  Status = XScuGic_Connect(IntcInstancePtr, IntId,
+                           ^~~~~~~~~~~~~~~
+                           IntrInstancePtr
+../src/uart_driver/uart_driver.c:51:27: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/uart_driver/uart_driver.o] ¥ÌŒÛ 1
+14:46:16 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+../src/uart_driver/uart_driver.c: In function 'InitUartLite':
+../src/uart_driver/uart_driver.c:58:17: error: 'IntcInstancePtr' undeclared (first use in this function); did you mean 'IntrInstancePtr'?
+  XScuGic_Enable(IntcInstancePtr, IntId);
+                 ^~~~~~~~~~~~~~~
+                 IntrInstancePtr
+../src/uart_driver/uart_driver.c:58:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/uart_driver/uart_driver.o] ¥ÌŒÛ 1
+14:46:23 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+Finished building: ../src/uart_driver/uart_driver.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+14:49:12 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+Finished building: ../src/uart_driver/uart_driver.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+14:52:10 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+14:52:42 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:15:27 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\ball_test\Debug/../src/helloworld.c:107: undefined reference to `MainTask'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ball_test.elf] ¥ÌŒÛ 1
+15:15:34 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:107:3: warning: implicit declaration of function 'MainTask' [-Wimplicit-function-declaration]
+   MainTask();
+   ^~~~~~~~
+In file included from ../src/helloworld.c:61:0:
+../src/helloworld.c: At top level:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\ball_test\Debug/../src/helloworld.c:107: undefined reference to `MainTask'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ball_test.elf] ¥ÌŒÛ 1
+15:15:40 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:17:27 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+In file included from ../src/mpu6500/AHRS_Hardware.h:13:0,
+                 from ../src/mpu6500/AHRS_Hardware.c:8:
+../src/mpu6500/../DronePara.h:11:10: fatal error: F2837xD_device.h: No such file or directory
+ #include "F2837xD_device.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/mpu6500/AHRS_Hardware.o] ¥ÌŒÛ 1
+15:17:30 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+In file included from ../src/mpu6500/AHRS_Hardware.h:13:0,
+                 from ../src/mpu6500/AHRS_Hardware.c:8:
+../src/mpu6500/../DronePara.h:173:5: error: unknown type name 'bool'
+     bool MagOffseting;
+     ^~~~
+../src/mpu6500/../DronePara.h:228:9: error: unknown type name 'Uint16'
+         Uint16 sv[2];
+         ^~~~~~
+make: *** [src/mpu6500/AHRS_Hardware.o] ¥ÌŒÛ 1
+15:17:54 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+In file included from ../src/mpu6500/AHRS_Hardware.h:13:0,
+                 from ../src/mpu6500/AHRS_Hardware.c:8:
+../src/mpu6500/../DronePara.h:228:9: error: unknown type name 'Uint16'
+         Uint16 sv[2];
+         ^~~~~~
+make: *** [src/mpu6500/AHRS_Hardware.o] ¥ÌŒÛ 1
+15:18:07 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:19:42 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:19:56 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+15:20:11 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:20:38 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:21:15 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:22:41 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:24:17 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:127:25: error: expected expression before ')' token
+  InitUartLite(&UartCam, )
+                         ^
+../src/helloworld.c:127:2: error: too few arguments to function 'InitUartLite'
+  InitUartLite(&UartCam, )
+  ^~~~~~~~~~~~
+In file included from ../src/helloworld.c:62:0:
+../src/./uart_driver/uart_driver.h:33:5: note: declared here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr);
+     ^~~~~~~~~~~~
+In file included from ../src/helloworld.c:61:0:
+../src/helloworld.c: At top level:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ¥ÌŒÛ 1
+15:24:57 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56052	   3864	  23384	  83300	  14564	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:31:58 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+../src/uart_driver/uart_driver.c:12:5: error: conflicting types for 'InitUartLite'
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+In file included from ../src/uart_driver/uart_driver.c:7:0:
+../src/uart_driver/uart_driver.h:33:5: note: previous declaration of 'InitUartLite' was here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr);
+     ^~~~~~~~~~~~
+make: *** [src/uart_driver/uart_driver.o] ¥ÌŒÛ 1
+15:32:23 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+../src/uart_driver/uart_driver.c:12:5: error: conflicting types for 'InitUartLite'
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+In file included from ../src/uart_driver/uart_driver.c:7:0:
+../src/uart_driver/uart_driver.h:33:5: note: previous declaration of 'InitUartLite' was here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr);
+     ^~~~~~~~~~~~
+make: *** [src/uart_driver/uart_driver.o] ¥ÌŒÛ 1
+15:32:35 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+Finished building: ../src/uart_driver/uart_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:127:2: error: too few arguments to function 'InitUartLite'
+  InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController);
+  ^~~~~~~~~~~~
+In file included from ../src/helloworld.c:62:0:
+../src/./uart_driver/uart_driver.h:33:5: note: declared here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+In file included from ../src/helloworld.c:61:0:
+../src/helloworld.c: At top level:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ¥ÌŒÛ 1
+15:32:43 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55988	   3864	  23384	  83236	  14524	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:34:30 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'InitUartCam':
+../src/uart_cam.c:15:2: error: too few arguments to function 'InitUartLite'
+  InitUartLite()
+  ^~~~~~~~~~~~
+In file included from ../src/uart_cam.h:11:0,
+                 from ../src/uart_cam.c:8:
+../src/uart_driver/uart_driver.h:33:5: note: declared here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+../src/uart_cam.c:16:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/uart_cam.o] ¥ÌŒÛ 1
+15:35:59 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+Finished building: ../src/uart_driver/uart_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'InitUartCam':
+../src/uart_cam.c:15:2: error: too few arguments to function 'InitUartLite'
+  InitUartLite()
+  ^~~~~~~~~~~~
+In file included from ../src/uart_cam.h:11:0,
+                 from ../src/uart_cam.c:8:
+../src/uart_driver/uart_driver.h:35:5: note: declared here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+../src/uart_cam.c:16:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/uart_cam.o] ¥ÌŒÛ 1
+15:36:03 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+Finished building: ../src/uart_driver/uart_driver.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'InitUartCam':
+../src/uart_cam.c:15:2: error: too few arguments to function 'InitUartLite'
+  InitUartLite()
+  ^~~~~~~~~~~~
+In file included from ../src/uart_cam.h:11:0,
+                 from ../src/uart_cam.c:8:
+../src/uart_driver/uart_driver.h:35:5: note: declared here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+../src/uart_cam.c:16:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/uart_cam.o] ¥ÌŒÛ 1
+15:36:24 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'InitUartCam':
+../src/uart_cam.c:16:92: error: expected expression before ')' token
+  InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController, )
+                                                                                            ^
+../src/uart_cam.c:16:2: error: too few arguments to function 'InitUartLite'
+  InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController, )
+  ^~~~~~~~~~~~
+In file included from ../src/uart_cam.h:11:0,
+                 from ../src/uart_cam.c:8:
+../src/uart_driver/uart_driver.h:35:5: note: declared here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+../src/uart_cam.c: In function 'CamRecvHandler':
+../src/uart_cam.c:21:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/uart_cam.c:21:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/uart_cam.c: In function 'CamSendHandler':
+../src/uart_cam.c:27:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+make: *** [src/uart_cam.o] ¥ÌŒÛ 1
+15:36:47 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'InitUartCam':
+../src/uart_cam.c:16:92: error: 'CamSendHandler' undeclared (first use in this function); did you mean 'XNullHandler'?
+  InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController, CamSendHandler, CamRecvHandler);
+                                                                                            ^~~~~~~~~~~~~~
+                                                                                            XNullHandler
+../src/uart_cam.c:16:92: note: each undeclared identifier is reported only once for each function it appears in
+../src/uart_cam.c:16:108: error: 'CamRecvHandler' undeclared (first use in this function); did you mean 'CamSendHandler'?
+  InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController, CamSendHandler, CamRecvHandler);
+                                                                                                            ^~~~~~~~~~~~~~
+                                                                                                            CamSendHandler
+make: *** [src/uart_cam.o] ¥ÌŒÛ 1
+15:36:59 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56052	   3864	  23384	  83300	  14564	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:37:20 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:126:2: warning: implicit declaration of function 'InitUartCam'; did you mean 'InitUartLite'? [-Wimplicit-function-declaration]
+  InitUartCam();
+  ^~~~~~~~~~~
+  InitUartLite
+In file included from ../src/helloworld.c:61:0:
+../src/helloworld.c: At top level:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56052	   3864	  23384	  83300	  14564	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:37:37 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:127:2: warning: implicit declaration of function 'InitUartCam'; did you mean 'InitUartLite'? [-Wimplicit-function-declaration]
+  InitUartCam();
+  ^~~~~~~~~~~
+  InitUartLite
+In file included from ../src/helloworld.c:61:0:
+../src/helloworld.c: At top level:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56052	   3864	  23384	  83300	  14564	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:37:51 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56052	   3864	  23384	  83300	  14564	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:38:31 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56052	   3864	  23384	  83300	  14564	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:39:27 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:25:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56052	   3864	  23384	  83300	  14564	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:39:51 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56052	   3864	  23384	  83300	  14564	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:39:53 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56052	   3864	  23384	  83300	  14564	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:42:21 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56052	   3864	  23384	  83300	  14564	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:42:41 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56052	   3864	  23384	  83300	  14564	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:43:08 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56028	   3864	  23384	  83276	  1454c	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:43:56 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c:40:1: error: expected identifier or '(' at end of input
+ void
+ ^~~~
+../src/uart_cam.c:19:11: warning: 'RecvBuffer' defined but not used [-Wunused-variable]
+ static u8 RecvBuffer[8] = {0};
+           ^~~~~~~~~~
+make: *** [src/uart_cam.o] ¥ÌŒÛ 1
+15:47:04 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56092	   3864	  23384	  83340	  1458c	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:52:23 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56092	   3864	  23384	  83340	  1458c	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:52:25 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56092	   3864	  23384	  83340	  1458c	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:52:50 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56092	   3864	  23384	  83340	  1458c	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:53:58 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56156	   3864	  23384	  83404	  145cc	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:54:10 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56156	   3864	  23384	  83404	  145cc	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:54:21 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56156	   3864	  23384	  83404	  145cc	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:57:25 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56156	   3864	  23384	  83404	  145cc	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:57:58 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56156	   3864	  23384	  83404	  145cc	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:58:50 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56156	   3864	  23384	  83404	  145cc	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+15:59:06 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c:18:8: error: unknown type name 'BallInfo'
+ extern BallInfo Ball_Info;  //Â∞èÁêÉÊï∞ÊçÆ
+        ^~~~~~~~
+make: *** [src/uart_cam.o] ¥ÌŒÛ 1
+15:59:31 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56156	   3864	  23384	  83404	  145cc	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:03:45 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56156	   3864	  23384	  83404	  145cc	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:09:55 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'GetUart8Data':
+../src/uart_cam.c:55:5: warning: variable 'end' set but not used [-Wunused-but-set-variable]
+  u8 end = 0;
+     ^~~
+../src/uart_cam.c:54:5: warning: variable 'header_1' set but not used [-Wunused-but-set-variable]
+  u8 header_1 = 0;
+     ^~~~~~~~
+../src/uart_cam.c:53:5: warning: variable 'header_0' set but not used [-Wunused-but-set-variable]
+  u8 header_0 = 0;
+     ^~~~~~~~
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56412	   3864	  23384	  83660	  146cc	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:13:11 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56412	   3864	  23384	  83660	  146cc	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:13:49 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56508	   3864	  23384	  83756	  1472c	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:14:14 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'GetUart8Data':
+../src/uart_cam.c:60:2: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+  puts(ReceiveBuffer);
+  ^~~~
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65604	   3864	  23384	  92852	  16ab4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:14:43 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56508	   3864	  23384	  83756	  1472c	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:15:30 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'GetUart8Data':
+../src/uart_cam.c:58:7: warning: pointer targets in passing argument 1 of 'puts' differ in signedness [-Wpointer-sign]
+  puts(ReceiveBuffer);
+       ^~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xuartlite_l.h:73,
+                 from ../src/uart_driver/uart_driver.h:12,
+                 from ../src/uart_cam.h:13,
+                 from ../src/uart_cam.c:8:
+c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:202:5: note: expected 'const char *' but argument is of type 'u8 * {aka unsigned char *}'
+ int _EXFUN(puts, (const char *));
+     ^
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65604	   3864	  23384	  92852	  16ab4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:16:39 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'GetUart8Data':
+../src/uart_cam.c:58:7: warning: pointer targets in passing argument 1 of 'puts' differ in signedness [-Wpointer-sign]
+  puts(ReceiveBuffer);
+       ^~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xuartlite_l.h:73,
+                 from ../src/uart_driver/uart_driver.h:12,
+                 from ../src/uart_cam.h:13,
+                 from ../src/uart_cam.c:8:
+c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:202:5: note: expected 'const char *' but argument is of type 'u8 * {aka unsigned char *}'
+ int _EXFUN(puts, (const char *));
+     ^
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65604	   3864	  23384	  92852	  16ab4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:16:55 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'GetUart8Data':
+../src/uart_cam.c:58:7: warning: pointer targets in passing argument 1 of 'puts' differ in signedness [-Wpointer-sign]
+  puts(ReceiveBuffer);
+       ^~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xuartlite_l.h:73,
+                 from ../src/uart_driver/uart_driver.h:12,
+                 from ../src/uart_cam.h:13,
+                 from ../src/uart_cam.c:8:
+c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:202:5: note: expected 'const char *' but argument is of type 'u8 * {aka unsigned char *}'
+ int _EXFUN(puts, (const char *));
+     ^
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65604	   3864	  23384	  92852	  16ab4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:17:15 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'GetUart8Data':
+../src/uart_cam.c:58:7: warning: pointer targets in passing argument 1 of 'puts' differ in signedness [-Wpointer-sign]
+  puts(ReceiveBuffer);
+       ^~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xuartlite_l.h:73,
+                 from ../src/uart_driver/uart_driver.h:12,
+                 from ../src/uart_cam.h:13,
+                 from ../src/uart_cam.c:8:
+c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:202:5: note: expected 'const char *' but argument is of type 'u8 * {aka unsigned char *}'
+ int _EXFUN(puts, (const char *));
+     ^
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65604	   3864	  23384	  92852	  16ab4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:17:26 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'CamRecvHandler':
+../src/uart_cam.c:22:18: error: 'DATA_LEN' undeclared (first use in this function); did you mean 'DATA_SYNC'?
+  if(EventData == DATA_LEN) {
+                  ^~~~~~~~
+                  DATA_SYNC
+../src/uart_cam.c:22:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/uart_cam.c: In function 'InitUartCam':
+../src/uart_cam.c:35:25: error: 'UARTLITE_CAM_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_1_DEVICE_ID'?
+  InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController, CamSendHandler, CamRecvHandler);
+                         ^~~~~~~~~~~~~~~~~~~~~~
+                         XPAR_UARTLITE_1_DEVICE_ID
+../src/uart_cam.c:35:49: error: 'UARTLITE_CAM_INT_ID' undeclared (first use in this function); did you mean 'UARTLITE_CAM_DEVICE_ID'?
+  InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController, CamSendHandler, CamRecvHandler);
+                                                 ^~~~~~~~~~~~~~~~~~~
+                                                 UARTLITE_CAM_DEVICE_ID
+../src/uart_cam.c:38:45: error: 'DATA_LEN' undeclared (first use in this function); did you mean 'DATA_SYNC'?
+     XUartLite_Recv(&UartCam, ReceiveBuffer, DATA_LEN);
+                                             ^~~~~~~~
+                                             DATA_SYNC
+../src/uart_cam.c: In function 'RecvUartCam':
+../src/uart_cam.c:44:45: error: 'DATA_LEN' undeclared (first use in this function); did you mean 'DATA_SYNC'?
+     XUartLite_Recv(&UartCam, ReceiveBuffer, DATA_LEN);
+                                             ^~~~~~~~
+                                             DATA_SYNC
+../src/uart_cam.c: In function 'GetUart8Data':
+../src/uart_cam.c:54:7: warning: pointer targets in passing argument 1 of 'puts' differ in signedness [-Wpointer-sign]
+  puts(ReceiveBuffer);
+       ^~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xuartlite_l.h:73,
+                 from ../src/uart_driver/uart_driver.h:12,
+                 from ../src/uart_cam.h:13,
+                 from ../src/uart_cam.c:8:
+c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:202:5: note: expected 'const char *' but argument is of type 'u8 * {aka unsigned char *}'
+ int _EXFUN(puts, (const char *));
+     ^
+make: *** [src/uart_cam.o] ¥ÌŒÛ 1
+16:17:32 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'GetUart8Data':
+../src/uart_cam.c:54:7: warning: pointer targets in passing argument 1 of 'puts' differ in signedness [-Wpointer-sign]
+  puts(ReceiveBuffer);
+       ^~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xuartlite_l.h:73,
+                 from ../src/uart_driver/uart_driver.h:12,
+                 from ../src/uart_cam.h:13,
+                 from ../src/uart_cam.c:8:
+c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:202:5: note: expected 'const char *' but argument is of type 'u8 * {aka unsigned char *}'
+ int _EXFUN(puts, (const char *));
+     ^
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65604	   3864	  23384	  92852	  16ab4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:18:45 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'GetUart8Data':
+../src/uart_cam.c:57:7: warning: pointer targets in passing argument 1 of 'puts' differ in signedness [-Wpointer-sign]
+  puts(ReceiveBuffer);
+       ^~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xuartlite_l.h:73,
+                 from ../src/uart_driver/uart_driver.h:12,
+                 from ../src/uart_cam.h:13,
+                 from ../src/uart_cam.c:8:
+c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:202:5: note: expected 'const char *' but argument is of type 'u8 * {aka unsigned char *}'
+ int _EXFUN(puts, (const char *));
+     ^
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65668	   3864	  23384	  92916	  16af4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:19:52 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'GetUart8Data':
+../src/uart_cam.c:63:7: warning: pointer targets in passing argument 1 of 'puts' differ in signedness [-Wpointer-sign]
+  puts(ReceiveBuffer);
+       ^~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xuartlite_l.h:73,
+                 from ../src/uart_driver/uart_driver.h:12,
+                 from ../src/uart_cam.h:13,
+                 from ../src/uart_cam.c:8:
+c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:202:5: note: expected 'const char *' but argument is of type 'u8 * {aka unsigned char *}'
+ int _EXFUN(puts, (const char *));
+     ^
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65668	   3864	  23384	  92916	  16af4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:20:52 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65668	   3864	  23384	  92916	  16af4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:21:18 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65668	   3864	  23384	  92916	  16af4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:22:20 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:22:30 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:23:48 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:35:28 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+Finished building: ../src/uart_driver/uart_driver.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65732	   3864	  23384	  92980	  16b34	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:35:58 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:37:16 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'GetUart8Data':
+../src/uart_cam.c:63:7: warning: pointer targets in passing argument 1 of 'puts' differ in signedness [-Wpointer-sign]
+  puts(ReceiveBuffer);
+       ^~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xuartlite_l.h:73,
+                 from ../src/uart_driver/uart_driver.h:12,
+                 from ../src/uart_cam.h:13,
+                 from ../src/uart_cam.c:8:
+c:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:202:5: note: expected 'const char *' but argument is of type 'u8 * {aka unsigned char *}'
+ int _EXFUN(puts, (const char *));
+     ^
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65644	   3864	  23384	  92892	  16adc	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:39:01 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56748	   3864	  23384	  83996	  1481c	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:39:38 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56772	   3864	  23384	  84020	  14834	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:39:42 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:41:30 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56772	   3864	  23384	  84020	  14834	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:41:35 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:42:40 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56780	   3864	  23384	  84028	  1483c	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:42:46 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:43:49 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56772	   3864	  23384	  84020	  14834	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:43:54 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:45:16 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56852	   3864	  23384	  84100	  14884	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:45:33 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56852	   3864	  23384	  84100	  14884	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:45:39 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:46:48 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56852	   3864	  23384	  84100	  14884	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:46:59 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:48:02 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56852	   3864	  23384	  84100	  14884	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:48:53 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56852	   3864	  23384	  84100	  14884	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:48:57 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:50:04 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56852	   3864	  23384	  84100	  14884	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:50:09 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+16:52:40 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56852	   3864	  23384	  84100	  14884	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:57:53 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:25:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56852	   3864	  23384	  84100	  14884	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:58:12 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/flag.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/flag.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/flag.d" -MT"src/flag.o" -o "src/flag.o" "../src/flag.c"
+Finished building: ../src/flag.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56852	   3864	  23384	  84100	  14884	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:58:58 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:25:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56852	   3864	  23384	  84100	  14884	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+16:59:14 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56916	   3864	  23384	  84164	  148c4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+17:01:21 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56916	   3864	  23384	  84164	  148c4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+17:01:33 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56916	   3864	  23384	  84164	  148c4	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+17:02:29 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_printInfo':
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(str, "%f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+  ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:165:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:166:2: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+  puts(str);
+  ^~~~
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: 'str' is used uninitialized in this function [-Wuninitialized]
+  sprintf(str, "%f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102256	   4256	  24096	 130608	  1fe30	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+17:03:35 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_printInfo':
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(str, "angle: %f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+  ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:165:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:166:2: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+  puts(str);
+  ^~~~
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: 'str' is used uninitialized in this function [-Wuninitialized]
+  sprintf(str, "angle: %f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102256	   4256	  24096	 130608	  1fe30	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+17:03:48 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_printInfo':
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(str, "angle: %f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+  ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:165:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:166:2: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+  puts(str);
+  ^~~~
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: 'str' is used uninitialized in this function [-Wuninitialized]
+  sprintf(str, "angle: %f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102256	   4256	  24096	 130608	  1fe30	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+17:04:01 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102256	   4256	  24096	 130608	  1fe30	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+17:04:15 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+17:04:56 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
