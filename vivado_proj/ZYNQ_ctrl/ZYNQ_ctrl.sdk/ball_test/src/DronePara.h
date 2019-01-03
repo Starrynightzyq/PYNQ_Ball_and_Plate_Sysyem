@@ -234,4 +234,13 @@ typedef struct{
 	u16 y;
 } BallInfo;
 
+typedef struct{
+	u32 pwm_x;
+	u32 pwm_y;
+	float angle_x_o;
+	float angle_y_o;
+	float position_x_o;
+	float position_y_o;
+} _Pid_Out;
+
 #endif /* PARAMETER_DRONEPARA_H_ */

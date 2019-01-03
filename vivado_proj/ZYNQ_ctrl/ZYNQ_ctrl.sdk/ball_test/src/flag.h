@@ -9,6 +9,10 @@
 #define SRC_FLAG_H_
 
 #include "stdbool.h"
+#include "xil_types.h"
+
+#define MODE_SINGLE 0	//单级PID
+#define MODE_DUAL	1	//串级PID
 
 typedef struct {
 	bool timer_1000Hz;	/*1 is timer count done*/
@@ -19,6 +23,7 @@ typedef struct {
 	bool timer_25Hz;
 	bool timer_1Hz;
 	bool uart_cam_recv;	/* uart 接收标志 */
+	u8 pid_mode;		/* pid mode */
 } flag;
 
 void InitFlag(flag *FlagInstance);

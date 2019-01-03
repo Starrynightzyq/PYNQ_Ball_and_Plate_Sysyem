@@ -1,7 +1,7 @@
 /*
  * PID_Control.c
  *
- *  Created on: 2018Äê5ÔÂ18ÈÕ
+ *  Created on: 2018ï¿½ï¿½5ï¿½ï¿½18ï¿½ï¿½
  *      Author: Xiluna Tech
  */
 
@@ -10,67 +10,31 @@
 const float PID_Unit[11][3]=
 {
       /* P            I           D    */
-     { -500,          0,          5,    },//Pitch
-     {  500 ,         0,         -5,    },//Roll
-     {  0.05,        0.00012,    -0.0003,    },//Yaw
-     {  0.013,       0.0004,      0.0005,    },//PitchRate
-     {  0.013,       0.0004,      0.0005,    },//RollRate
-     {  1.25,          0,          0,    },//Height
-     {  79,          0.09,       14, },//HeightV
-     { -0.135,          0,          0,    },//PointX
-     { -0.135,          0,          0, },//PointY
-     {  7.6,          0.025,       1.3, },//PointVX
-     {  7.6,          0.025,       1.3, },//PointVY
+     { 	-5,          0,          0,    },//Angle_x
+     {  5,         0,         -0,    },//Angle_y
+     {  0.05,        0.00012,    -0.0003,    },//Position_x
+     {  0.013,       0.0004,      0.0005,    },//Position_y
 };
 
-/******* pitch roll height adrc ²ÎÊý³õÊ¼»¯ ********/
-void PID_Init(Pid *PITCH_PARA,Pid *ROLL_PARA,Pid *YAW_PARA,Pid *PITCH_RATE,Pid *ROLL_RATE,
-                  Pid *HEIGHT_PARA,Pid *HEIGHTV_PARA,Pid *PointX,Pid *PointY,Pid *PointVX,Pid *PointVY)
+/******* PID å‚æ•°åˆå§‹åŒ– ********/
+void PID_Init(Pid *ANGLE_X,Pid *ANGLE_Y,Pid *POSITION_X,Pid *POSITION_Y)
 {
-    //pitch
-    PITCH_PARA->Kp = PID_Unit[0][0];
-    PITCH_PARA->Ki = PID_Unit[0][1];
-    PITCH_PARA->Kd = PID_Unit[0][2];
-    //roll
-    ROLL_PARA->Kp = PID_Unit[1][0];
-    ROLL_PARA->Ki = PID_Unit[1][1];
-    ROLL_PARA->Kd = PID_Unit[1][2];
-    //yaw
-    YAW_PARA->Kp = PID_Unit[2][0];
-    YAW_PARA->Ki = PID_Unit[2][1];
-    YAW_PARA->Kd = PID_Unit[2][2];
-    //pitchrate
-    PITCH_RATE->Kp = PID_Unit[3][0];
-    PITCH_RATE->Ki = PID_Unit[3][1];
-    PITCH_RATE->Kd = PID_Unit[3][2];
-    //rollrate
-    ROLL_RATE->Kp = PID_Unit[4][0];
-    ROLL_RATE->Ki = PID_Unit[4][1];
-    ROLL_RATE->Kd = PID_Unit[4][2];
-    //height
-    HEIGHT_PARA->Kp = PID_Unit[5][0];
-    HEIGHT_PARA->Ki = PID_Unit[5][1];
-    HEIGHT_PARA->Kd = PID_Unit[5][2];
-    //heightv
-    HEIGHTV_PARA->Kp = PID_Unit[6][0];
-    HEIGHTV_PARA->Ki = PID_Unit[6][1];
-    HEIGHTV_PARA->Kd = PID_Unit[6][2];
-    //PointX
-    PointX->Kp = PID_Unit[7][0];
-    PointX->Ki = PID_Unit[7][1];
-    PointX->Kd = PID_Unit[7][2];
-    //PointY
-    PointY->Kp = PID_Unit[8][0];
-    PointY->Ki = PID_Unit[8][1];
-    PointY->Kd = PID_Unit[8][2];
-    //PointVX
-    PointVX->Kp = PID_Unit[9][0];
-    PointVX->Ki = PID_Unit[9][1];
-    PointVX->Kd = PID_Unit[9][2];
-    //PointVY
-    PointVY->Kp = PID_Unit[10][0];
-    PointVY->Ki = PID_Unit[10][1];
-    PointVY->Kd = PID_Unit[10][2];
+    //Angle_x
+	ANGLE_X->Kp = PID_Unit[0][0];
+	ANGLE_X->Ki = PID_Unit[0][1];
+	ANGLE_X->Kd = PID_Unit[0][2];
+    //Angle_y
+	ANGLE_Y->Kp = PID_Unit[1][0];
+	ANGLE_Y->Ki = PID_Unit[1][1];
+	ANGLE_Y->Kd = PID_Unit[1][2];
+    //Position_x
+	POSITION_X->Kp = PID_Unit[2][0];
+	POSITION_X->Ki = PID_Unit[2][1];
+	POSITION_X->Kd = PID_Unit[2][2];
+    //Position_y
+	POSITION_Y->Kp = PID_Unit[3][0];
+	POSITION_Y->Ki = PID_Unit[3][1];
+	POSITION_Y->Kd = PID_Unit[3][2];
 }
 
 

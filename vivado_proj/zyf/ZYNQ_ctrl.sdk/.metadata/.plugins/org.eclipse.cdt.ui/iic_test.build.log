@@ -1,0 +1,30 @@
+14:28:25 **** Auto Build of configuration Debug for project iic_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "iic_test.elf"  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52556	   3832	  23368	  79756	  1378c	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+
+14:28:26 Build Finished (took 1s.213ms)
+

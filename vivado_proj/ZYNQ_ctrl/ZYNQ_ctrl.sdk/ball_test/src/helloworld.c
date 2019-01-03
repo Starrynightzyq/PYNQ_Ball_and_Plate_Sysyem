@@ -60,10 +60,12 @@
 #include "./mpu6500/AHRS_Hardware.h"
 #include "./timer_driver/timer_driver.h"
 #include "./uart_driver/uart_driver.h"
+#include "./control/PID_Control.h"
 #include "uart_cam.h"
 #include "DronePara.h"
 #include "flag.h"
 #include "task.h"
+#include "servo.h"
 
 #define INTC_DEVICE_ID			XPAR_SCUGIC_0_DEVICE_ID
 #define UARTLITE_PC_DEVICE_ID 	XPAR_UARTLITE_0_DEVICE_ID
@@ -81,16 +83,21 @@ XScuGic InterruptController; 	     /* Instance of the Interrupt Controller */
 XIic IicInstance;	/* The instance of the mpu6500 IIC device. */
 XScuTimer TimerInstance;	/* Cortex A9 Scu Private Timer Instance */
 XUartLite UartCam;
+XServo Servo;
 
 //全局变量
 DroneRTInfo RT_Info;	//传感器数据
-OffsetInfo OffsetData;
+OffsetInfo OffsetData;	//校准数据
 flag FlagInstance;		//标志位
-BallInfo Ball_Info;		//小球数据
+BallInfo Ball_Info;		//小球位置数据
+Pid Angle_x, Angle_y, Position_x, Position_y;	//Angle内环PID参数，Position外环PID参数
+_Pid_Out Pid_Out;		//PID输出数据
 
 int Init_System(void);
 int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
 int InitInterruptController(XScuGic *XScuGicInstancePtr, u16 DeviceId);
+void InitServo(void);
+void Servo_test();
 
 void AT24C_test();
 
@@ -103,7 +110,7 @@ int main()
     Init_System();
 
 
-	print("MPU6500 Test ...\n\r");
+	print("Ball Game Test ...\n\r");
 
 //	AT24C_test();
 	while(1) {
@@ -117,16 +124,31 @@ int main()
 
 
 int Init_System(void) {
+	//初始化标志位
 	InitFlag(&FlagInstance);
 
+	//初始化PID参数
+	PID_Init(&Angle_x, &Angle_y, &Position_x, &Position_y);
+
+	//初始化中断控制器
 	InitInterruptController(&InterruptController, INTC_DEVICE_ID);
 
+	//初始化与MPU6500连接的IIC接口
 	IicInit(&IicInstance, IICAXI_0_DEVICE_ID, IICAXI_0_INT_ID, MPU6500_IIC_ADDR, &InterruptController);
 
+	//初始化定时器
 	InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &InterruptController, TIMER_0_LOAD_VALUE);
 
+	//初始化摄像头串口
 	InitUartCam();
 
+	//初始化舵机
+    xil_printf("Init the servos...\r\n");
+	InitServo();
+    xil_printf("Init the servos done\r\n");
+    sleep(1);
+
+	//初始化MPU6500
 	xil_printf("Init the mpu 6500...\r\n");
     AHRS_HardWareinit(&IicInstance);
     xil_printf("Init the mpu 6500 done\r\n");
@@ -234,4 +256,28 @@ void AT24C_test() {
     xil_printf("Compare End\n\r");
 }
 
+void InitServo(void) {
+	XServo_Config *ServoConfigPtr;
+//    初始化Servo_pwm
+    ServoConfigPtr = XServo_LookupConfig(XPAR_SERVO_0_DEVICE_ID);
+    XServo_CfgInitialize(&Servo, ServoConfigPtr, ServoConfigPtr->BaseAddress);
 
+    //设置初始位置 90
+    XServo_SetPWM(&Servo, 1, 40000);
+    XServo_SetPWM(&Servo, 2, 40000);
+
+    Servo_test();
+
+    //设置初始位置 90
+    XServo_SetPWM(&Servo, 1, 100000);
+    XServo_SetPWM(&Servo, 2, 100000);
+}
+
+void Servo_test() {
+	for(int i = 0; i < 200; i+=20) {
+	    XServo_SetPWM(&Servo, 1, i*1000);
+	    XServo_SetPWM(&Servo, 2, i*1000);
+	    sleep(1);
+	}
+	sleep(2);
+}

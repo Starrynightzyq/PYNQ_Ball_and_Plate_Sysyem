@@ -1,0 +1,14 @@
+/*
+ * task.c
+ *
+ *  Created on: 2019年1月2日
+ *      Author: admin
+ */
+#include "task.h"
+
+void MPU6500_Task() {
+    if(FlagInstance.timer_400Hz) {
+    	FlagInstance.timer_400Hz = 0;
+    	IMU_getInfo();
+    }
+}

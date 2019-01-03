@@ -1,0 +1,19 @@
+/*
+ * flag.h
+ *
+ *  Created on: 2018年12月29日
+ *      Author: admin
+ */
+
+#ifndef SRC_FLAG_H_
+#define SRC_FLAG_H_
+
+#include "stdbool.h"
+
+typedef struct {
+	bool timer;	/*1 is timer count done*/
+} flag;
+
+void InitFlag(flag *FlagInstance);
+
+#endif /* SRC_FLAG_H_ */

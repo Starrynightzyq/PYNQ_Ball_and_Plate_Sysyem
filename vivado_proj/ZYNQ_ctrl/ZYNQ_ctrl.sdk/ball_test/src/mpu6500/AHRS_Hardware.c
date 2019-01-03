@@ -152,6 +152,12 @@ void IMU_getInfo()
 
     RT_Info.Yaw = -atan2(2.0*q1q2 + 2.0*q0q3, -2.0*q2q2 - 2.0*q3q3 + 1) * 180/PI; // yaw
 
+    if(RT_Info.Roll <= 0) {
+    	RT_Info.Roll += 360;
+    }
+
+    RT_Info.Pitch += 180;
+
 #ifdef DEBUG
         char *str;
         sprintf(str, "%f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
