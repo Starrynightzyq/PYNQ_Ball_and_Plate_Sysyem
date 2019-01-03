@@ -1,0 +1,2316 @@
+16:03:01 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/iic_v3_4/src"
+make -C microblaze_0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_4/src"
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/iic_v3_4/src"
+make -C microblaze_0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iic"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:69:2: warning: #warning "May wait for more than the specified delay" [-Wcpp]
+ #warning "May wait for more than the specified delay"
+  ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_4/src"
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+16:03:10 **** Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_my/iic_my.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_my/iic_my.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/iic_my/iic_my.d" -MT"src/iic_my/iic_my.o" -o "src/iic_my/iic_my.o" "../src/iic_my/iic_my.c"
+Finished building: ../src/iic_my/iic_my.c
+ 
+Building file: ../src/camera/camera.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/camera/camera.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/camera/camera.d" -MT"src/camera/camera.o" -o "src/camera/camera.o" "../src/camera/camera.c"
+../src/camera/camera.c:11:23: warning: 'sensor_ov7725_init_data' defined but not used [-Wunused-variable]
+ static struct reginfo sensor_ov7725_init_data[] =
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/camera/camera.c
+ 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:62:28: error: 'XPAR_IIC_1_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_IIC_0_DEVICE_ID'?
+ #define IIC_CAM_DEVICE_ID  XPAR_IIC_1_DEVICE_ID
+                            ^
+../src/helloworld.c:121:27: note: in expansion of macro 'IIC_CAM_DEVICE_ID'
+  IicInit(&IicCamInstance, IIC_CAM_DEVICE_ID, IIC_CAM_INTR_ID, OV7725_IIC_ADDR, &IntcInstance);
+                           ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:62:28: note: each undeclared identifier is reported only once for each function it appears in
+ #define IIC_CAM_DEVICE_ID  XPAR_IIC_1_DEVICE_ID
+                            ^
+../src/helloworld.c:121:27: note: in expansion of macro 'IIC_CAM_DEVICE_ID'
+  IicInit(&IicCamInstance, IIC_CAM_DEVICE_ID, IIC_CAM_INTR_ID, OV7725_IIC_ADDR, &IntcInstance);
+                           ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:63:26: error: 'XPAR_INTC_0_IIC_1_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_INTC_0_IIC_0_VEC_ID'?
+ #define IIC_CAM_INTR_ID  XPAR_INTC_0_IIC_1_VEC_ID
+                          ^
+../src/helloworld.c:121:46: note: in expansion of macro 'IIC_CAM_INTR_ID'
+  IicInit(&IicCamInstance, IIC_CAM_DEVICE_ID, IIC_CAM_INTR_ID, OV7725_IIC_ADDR, &IntcInstance);
+                                              ^~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+16:03:28 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:121:27: error: 'IIC_CAM_DEVICE_ID' undeclared (first use in this function); did you mean 'IIC_DEVICE_ID'?
+  IicInit(&IicCamInstance, IIC_CAM_DEVICE_ID, IIC_CAM_INTR_ID, OV7725_IIC_ADDR, &IntcInstance);
+                           ^~~~~~~~~~~~~~~~~
+                           IIC_DEVICE_ID
+../src/helloworld.c:121:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:121:46: error: 'IIC_CAM_INTR_ID' undeclared (first use in this function); did you mean 'IIC_INTR_ID'?
+  IicInit(&IicCamInstance, IIC_CAM_DEVICE_ID, IIC_CAM_INTR_ID, OV7725_IIC_ADDR, &IntcInstance);
+                                              ^~~~~~~~~~~~~~~
+                                              IIC_INTR_ID
+make: *** [src/helloworld.o] ´íÎó 1
+16:03:45 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:121:27: error: 'IIC_CAM_DEVICE_ID' undeclared (first use in this function); did you mean 'IIC_DEVICE_ID'?
+  IicInit(&IicCamInstance, IIC_CAM_DEVICE_ID, IIC_CAM_INTR_ID, OV7725_IIC_ADDR, &IntcInstance);
+                           ^~~~~~~~~~~~~~~~~
+                           IIC_DEVICE_ID
+../src/helloworld.c:121:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:121:46: error: 'IIC_CAM_INTR_ID' undeclared (first use in this function); did you mean 'IIC_INTR_ID'?
+  IicInit(&IicCamInstance, IIC_CAM_DEVICE_ID, IIC_CAM_INTR_ID, OV7725_IIC_ADDR, &IntcInstance);
+                                              ^~~~~~~~~~~~~~~
+                                              IIC_INTR_ID
+../src/helloworld.c:121:63: error: 'OV7725_IIC_ADDR' undeclared (first use in this function); did you mean 'MPU6500_IIC_ADDR'?
+  IicInit(&IicCamInstance, IIC_CAM_DEVICE_ID, IIC_CAM_INTR_ID, OV7725_IIC_ADDR, &IntcInstance);
+                                                               ^~~~~~~~~~~~~~~
+                                                               MPU6500_IIC_ADDR
+make: *** [src/helloworld.o] ´íÎó 1
+16:04:07 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 40624 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+16:04:32 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 41904 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+16:04:38 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 43440 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+16:04:46 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 40368 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+16:04:50 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 40368 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+16:05:30 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 40624 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+16:06:49 **** Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3104	    332	   3108	   6544	   1990	test.elf
+Finished building: test.elf.size
+ 
+16:06:51 **** Auto Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:07:03 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 42416 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+16:07:06 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 42416 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+16:07:07 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:07:25 **** Clean-only build of configuration Debug for project iic_test ****
+make clean 
+rm -rf  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o  ./src/mpu6500/AHRS_Hardware.d ./src/mpu6500/MahonyAHRS.d ./src/mpu6500/mpu6500.d  ./src/iic_my/iic_my.d  ./src/camera/camera.d  ./src/helloworld.d ./src/platform.d  iic_test.elf.size  iic_test.elf
+ 
+16:07:25 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_my/iic_my.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_my/iic_my.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/iic_my/iic_my.d" -MT"src/iic_my/iic_my.o" -o "src/iic_my/iic_my.o" "../src/iic_my/iic_my.c"
+Finished building: ../src/iic_my/iic_my.c
+ 
+Building file: ../src/camera/camera.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/camera/camera.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/camera/camera.d" -MT"src/camera/camera.o" -o "src/camera/camera.o" "../src/camera/camera.c"
+../src/camera/camera.c:11:23: warning: 'sensor_ov7725_init_data' defined but not used [-Wunused-variable]
+ static struct reginfo sensor_ov7725_init_data[] =
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/camera/camera.c
+ 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+make: *** Ã»ÓÐ¹æÔò¿ÉÒÔ´´½¨¡°iic_test.elf¡±ÐèÒªµÄÄ¿±ê¡°../src/lscript.ld¡±¡£ Í£Ö¹¡£
+16:07:30 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69696	   1440	   4000	  75136	  12580	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:08:37 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:08:45 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+16:12:55 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_my/iic_my.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_my/iic_my.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/iic_my/iic_my.d" -MT"src/iic_my/iic_my.o" -o "src/iic_my/iic_my.o" "../src/iic_my/iic_my.c"
+Finished building: ../src/iic_my/iic_my.c
+ 
+Building file: ../src/camera/camera.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/camera/camera.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/camera/camera.d" -MT"src/camera/camera.o" -o "src/camera/camera.o" "../src/camera/camera.c"
+../src/camera/camera.c:11:23: warning: 'sensor_ov7725_init_data' defined but not used [-Wunused-variable]
+ static struct reginfo sensor_ov7725_init_data[] =
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/camera/camera.c
+ 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69696	   1440	   4000	  75136	  12580	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:13:18 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+16:16:49 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69696	   1440	   4000	  75136	  12580	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:17:26 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+16:20:18 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69700	   1440	   4004	  75144	  12588	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:20:28 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+16:22:17 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69712	   1440	   4000	  75152	  12590	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:22:30 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+16:23:01 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69708	   1440	   4004	  75152	  12590	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:23:06 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+16:25:25 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69708	   1440	   4004	  75152	  12590	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:25:52 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69700	   1440	   4004	  75144	  12588	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:25:57 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+16:26:23 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69700	   1440	   4004	  75144	  12588	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:26:40 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+16:26:51 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69524	   1440	   4004	  74968	  124d8	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:30:07 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+../src/mpu6500/mpu6500.c: In function 'MPU6500_readGyro_Acc':
+../src/mpu6500/mpu6500.c:99:7: error: macro names must be identifiers
+ #ifdef(DEBUG)
+       ^
+make: *** [src/mpu6500/mpu6500.o] ´íÎó 1
+16:30:25 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69524	   1440	   4004	  74968	  124d8	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:30:40 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69708	   1440	   4004	  75152	  12590	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:30:46 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69708	   1440	   4004	  75152	  12590	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:30:52 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70244	   1440	   4004	  75688	  127a8	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:31:02 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69708	   1440	   4004	  75152	  12590	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+16:31:14 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+20:31:33 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69524	   1440	   4004	  74968	  124d8	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+20:32:07 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69524	   1440	   4004	  74968	  124d8	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+20:35:02 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69904	   1440	   4000	  75344	  12650	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+20:35:17 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69908	   1440	   4004	  75352	  12658	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+08:39:11 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+08:44:10 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69668	   1440	   4004	  75112	  12568	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+08:44:19 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+08:46:17 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69668	   1440	   4004	  75112	  12568	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+08:46:57 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69668	   1440	   4004	  75112	  12568	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+08:47:07 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+13:00:24 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+13:02:55 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+13:07:59 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69636	   1440	   4004	  75080	  12548	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:08:04 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69636	   1440	   4004	  75080	  12548	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:08:16 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69632	   1440	   4000	  75072	  12540	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:08:30 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+13:10:18 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69632	   1440	   4000	  75072	  12540	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:10:57 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+13:18:23 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69656	   1440	   4000	  75096	  12558	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:18:28 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69656	   1440	   4000	  75096	  12558	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:18:38 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69656	   1440	   4000	  75096	  12558	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:18:50 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+13:22:30 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69736	   1440	   4000	  75176	  125a8	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:22:39 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+13:24:23 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:69:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(s_test, &pi);
+     ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:69:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:69:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:69:21: warning: passing argument 2 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+     sprintf(s_test, &pi);
+                     ^
+../src/mpu6500/AHRS_Hardware.c:69:21: note: expected 'const char *' but argument is of type 'float *'
+../src/mpu6500/AHRS_Hardware.c:69:5: warning: 's_test' is used uninitialized in this function [-Wuninitialized]
+     sprintf(s_test, &pi);
+     ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 2216 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:24:51 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:69:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(str, &pi);
+     ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:69:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:69:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:69:18: warning: passing argument 2 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+     sprintf(str, &pi);
+                  ^
+../src/mpu6500/AHRS_Hardware.c:69:18: note: expected 'const char *' but argument is of type 'float *'
+../src/mpu6500/AHRS_Hardware.c:69:5: warning: 'str' is used uninitialized in this function [-Wuninitialized]
+     sprintf(str, &pi);
+     ^~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 2216 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:25:17 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:69:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(str, &pi);
+     ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:69:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:69:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:69:18: warning: passing argument 2 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+     sprintf(str, &pi);
+                  ^
+../src/mpu6500/AHRS_Hardware.c:69:18: note: expected 'const char *' but argument is of type 'float *'
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 2224 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:25:37 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:71:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(str, &pi);
+     ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:71:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:71:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:71:18: warning: passing argument 2 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+     sprintf(str, &pi);
+                  ^
+../src/mpu6500/AHRS_Hardware.c:71:18: note: expected 'const char *' but argument is of type 'float *'
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 2224 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:25:42 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:71:18: warning: passing argument 2 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+     sprintf(str, &pi);
+                  ^
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/microblaze_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/microblaze_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/microblaze_0/include/xiic_l.h:101,
+                 from ../../standalone_bsp_0/microblaze_0/include/xiic.h:328,
+                 from ../src/mpu6500/../iic_my/iic_my.h:11,
+                 from ../src/mpu6500/mpu6500.h:11,
+                 from ../src/mpu6500/AHRS_Hardware.h:11,
+                 from ../src/mpu6500/AHRS_Hardware.c:8:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:225:5: note: expected 'const char * restrict' but argument is of type 'float *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 2224 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:25:52 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69632	   1440	   4000	  75072	  12540	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:27:15 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69632	   1440	   3488	  74560	  12340	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:27:23 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69632	   1440	   4000	  75072	  12540	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:27:36 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69632	   1440	   3488	  74560	  12340	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+13:27:50 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:71:18: warning: passing argument 2 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+     sprintf(str, &pi);
+                  ^
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/microblaze_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/microblaze_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/microblaze_0/include/xiic_l.h:101,
+                 from ../../standalone_bsp_0/microblaze_0/include/xiic.h:328,
+                 from ../src/mpu6500/../iic_my/iic_my.h:11,
+                 from ../src/mpu6500/mpu6500.h:11,
+                 from ../src/mpu6500/AHRS_Hardware.h:11,
+                 from ../src/mpu6500/AHRS_Hardware.c:8:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:225:5: note: expected 'const char * restrict' but argument is of type 'float *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 1712 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:28:34 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:71:19: warning: '%f' directive writing between 8 and 317 bytes into a region of size 4 [-Wformat-overflow=]
+     sprintf(str, "%f", pi);
+                   ^~
+../src/mpu6500/AHRS_Hardware.c:71:5: note: 'sprintf' output between 9 and 318 bytes into a destination of size 4
+     sprintf(str, "%f", pi);
+     ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 1744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:28:56 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 1744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:29:08 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_getValues':
+../src/mpu6500/AHRS_Hardware.c:71:5: warning: 'str' is used uninitialized in this function [-Wuninitialized]
+     sprintf(str, "%f", pi);
+     ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 1736 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:29:22 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 1744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:29:34 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 1744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:29:42 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.stack' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 720 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:29:47 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 2256 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:30:01 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 1744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:30:07 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 2256 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:30:11 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 3280 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:30:17 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 6864 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:30:28 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: iic_test.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 2256 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [iic_test.elf] ´íÎó 1
+13:30:49 **** Auto Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69656	   1440	   4000	  75096	  12558	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:04:46 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/iic_v3_4/src"
+make -C microblaze_0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_4/src"
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/iic_v3_4/src"
+make -C microblaze_0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iic"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:69:2: warning: #warning "May wait for more than the specified delay" [-Wcpp]
+ #warning "May wait for more than the specified delay"
+  ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_4/src"
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+21:04:55 **** Clean-only build of configuration Debug for project iic_test ****
+make clean 
+rm -rf  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o  ./src/mpu6500/AHRS_Hardware.d ./src/mpu6500/MahonyAHRS.d ./src/mpu6500/mpu6500.d  ./src/iic_my/iic_my.d  ./src/camera/camera.d  ./src/helloworld.d ./src/platform.d  iic_test.elf.size  iic_test.elf
+ 
+21:04:56 **** Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_my/iic_my.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_my/iic_my.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/iic_my/iic_my.d" -MT"src/iic_my/iic_my.o" -o "src/iic_my/iic_my.o" "../src/iic_my/iic_my.c"
+Finished building: ../src/iic_my/iic_my.c
+ 
+Building file: ../src/camera/camera.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/camera/camera.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/camera/camera.d" -MT"src/camera/camera.o" -o "src/camera/camera.o" "../src/camera/camera.c"
+../src/camera/camera.c:11:23: warning: 'sensor_ov7725_init_data' defined but not used [-Wunused-variable]
+ static struct reginfo sensor_ov7725_init_data[] =
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/camera/camera.c
+ 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69656	   1440	   4000	  75096	  12558	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+21:04:59 **** Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3104	    332	   3108	   6544	   1990	test.elf
+Finished building: test.elf.size
+ 
+15:44:31 **** Clean-only build of configuration Debug for project iic_test ****
+make clean 
+rm -rf  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o  ./src/mpu6500/AHRS_Hardware.d ./src/mpu6500/MahonyAHRS.d ./src/mpu6500/mpu6500.d  ./src/iic_my/iic_my.d  ./src/camera/camera.d  ./src/helloworld.d ./src/platform.d  iic_test.elf.size  iic_test.elf
+ 
+15:44:32 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/MahonyAHRS.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/MahonyAHRS.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/MahonyAHRS.d" -MT"src/mpu6500/MahonyAHRS.o" -o "src/mpu6500/MahonyAHRS.o" "../src/mpu6500/MahonyAHRS.c"
+Finished building: ../src/mpu6500/MahonyAHRS.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_my/iic_my.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_my/iic_my.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/iic_my/iic_my.d" -MT"src/iic_my/iic_my.o" -o "src/iic_my/iic_my.o" "../src/iic_my/iic_my.c"
+Finished building: ../src/iic_my/iic_my.c
+ 
+Building file: ../src/camera/camera.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/camera/camera.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/camera/camera.d" -MT"src/camera/camera.o" -o "src/camera/camera.o" "../src/camera/camera.c"
+../src/camera/camera.c:11:23: warning: 'sensor_ov7725_init_data' defined but not used [-Wunused-variable]
+ static struct reginfo sensor_ov7725_init_data[] =
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/camera/camera.c
+ 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: iic_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "iic_test.elf"  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_my/iic_my.o  ./src/camera/camera.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: iic_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size iic_test.elf  |tee "iic_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69656	   1440	   4000	  75096	  12558	iic_test.elf
+Finished building: iic_test.elf.size
+ 
+15:44:35 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+15:44:36 **** Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3104	    332	   3108	   6544	   1990	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+15:53:58 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitInterrupt':
+../src/helloworld.c:76:2: error: 'Status' undeclared (first use in this function); did you mean 'XStatus'?
+  Status = XIntc_Initialize(IntcInstancePtr, INTC_DEVICE_ID);
+  ^~~~~~
+  XStatus
+../src/helloworld.c:76:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:94:32: error: 'UARTLITE_INT_IRQ_ID' undeclared (first use in this function); did you mean 'UARTLITE_INT_ID'?
+  XIntc_Enable(IntcInstancePtr, UARTLITE_INT_IRQ_ID);
+                                ^~~~~~~~~~~~~~~~~~~
+                                UARTLITE_INT_ID
+make: *** [src/helloworld.o] ´íÎó 1
+15:54:12 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitInterrupt':
+../src/helloworld.c:94:32: error: 'UARTLITE_INT_IRQ_ID' undeclared (first use in this function); did you mean 'UARTLITE_INT_ID'?
+  XIntc_Enable(IntcInstancePtr, UARTLITE_INT_IRQ_ID);
+                                ^~~~~~~~~~~~~~~~~~~
+                                UARTLITE_INT_ID
+../src/helloworld.c:94:32: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] ´íÎó 1
+15:54:26 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3104	    332	   3108	   6544	   1990	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+15:54:49 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3104	    332	   3108	   6544	   1990	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+15:55:10 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3104	    332	   3108	   6544	   1990	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+15:55:33 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3104	    332	   3108	   6544	   1990	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+15:55:41 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3104	    332	   3108	   6544	   1990	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+15:58:09 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:118:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3104	    332	   3108	   6544	   1990	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+15:59:58 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:123:33: error: 'UartLite' undeclared (first use in this function); did you mean 'XUartLite'?
+  Status = XUartLite_Initialize(&UartLite, DeviceId);
+                                 ^~~~~~~~
+                                 XUartLite
+../src/helloworld.c:123:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:123:43: error: 'DeviceId' undeclared (first use in this function); did you mean 'DevId'?
+  Status = XUartLite_Initialize(&UartLite, DeviceId);
+                                           ^~~~~~~~
+                                           DevId
+../src/helloworld.c:141:47: error: 'UARTLITE_INT_IRQ_ID' undeclared (first use in this function); did you mean 'UARTLITE_INT_ID'?
+  Status = XIntc_Connect(&InterruptController, UARTLITE_INT_IRQ_ID,
+                                               ^~~~~~~~~~~~~~~~~~~
+                                               UARTLITE_INT_ID
+../src/helloworld.c:143:15: error: 'UartLitePtr' undeclared (first use in this function); did you mean 'UartLite'?
+       (void *)UartLitePtr);
+               ^~~~~~~~~~~
+               UartLite
+../src/helloworld.c:159:38: error: 'SendHandler' undeclared (first use in this function); did you mean 'XNullHandler'?
+  XUartLite_SetSendHandler(&UartLite, SendHandler, &UartLite);
+                                      ^~~~~~~~~~~
+                                      XNullHandler
+../src/helloworld.c:160:38: error: 'RecvHandler' undeclared (first use in this function); did you mean 'SendHandler'?
+  XUartLite_SetRecvHandler(&UartLite, RecvHandler, &UartLite);
+                                      ^~~~~~~~~~~
+                                      SendHandler
+../src/helloworld.c: In function 'RecvHandler':
+../src/helloworld.c:170:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'SendHandler':
+../src/helloworld.c:175:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:166:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] ´íÎó 1
+16:00:43 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:123:49: error: 'DeviceId' undeclared (first use in this function); did you mean 'DevId'?
+  Status = XUartLite_Initialize(UartInstancePtr, DeviceId);
+                                                 ^~~~~~~~
+                                                 DevId
+../src/helloworld.c:123:49: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:141:47: error: 'UARTLITE_INT_IRQ_ID' undeclared (first use in this function); did you mean 'UARTLITE_INT_ID'?
+  Status = XIntc_Connect(&InterruptController, UARTLITE_INT_IRQ_ID,
+                                               ^~~~~~~~~~~~~~~~~~~
+                                               UARTLITE_INT_ID
+../src/helloworld.c:143:15: error: 'UartLitePtr' undeclared (first use in this function); did you mean 'UartLite_1'?
+       (void *)UartLitePtr);
+               ^~~~~~~~~~~
+               UartLite_1
+../src/helloworld.c:159:44: error: 'SendHandler' undeclared (first use in this function); did you mean 'XNullHandler'?
+  XUartLite_SetSendHandler(UartInstancePtr, SendHandler, UartInstancePtr);
+                                            ^~~~~~~~~~~
+                                            XNullHandler
+../src/helloworld.c:160:44: error: 'RecvHandler' undeclared (first use in this function); did you mean 'SendHandler'?
+  XUartLite_SetRecvHandler(UartInstancePtr, RecvHandler, UartInstancePtr);
+                                            ^~~~~~~~~~~
+                                            SendHandler
+../src/helloworld.c: In function 'RecvHandler':
+../src/helloworld.c:170:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'SendHandler':
+../src/helloworld.c:175:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:166:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] ´íÎó 1
+16:01:15 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:151:37: error: 'UARTLITE_INT_IRQ_ID' undeclared (first use in this function); did you mean 'UARTLITE_INT_ID'?
+  XIntc_Enable(&InterruptController, UARTLITE_INT_IRQ_ID);
+                                     ^~~~~~~~~~~~~~~~~~~
+                                     UARTLITE_INT_ID
+../src/helloworld.c:151:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:159:44: error: 'SendHandler' undeclared (first use in this function); did you mean 'XNullHandler'?
+  XUartLite_SetSendHandler(UartInstancePtr, SendHandler, UartInstancePtr);
+                                            ^~~~~~~~~~~
+                                            XNullHandler
+../src/helloworld.c:160:44: error: 'RecvHandler' undeclared (first use in this function); did you mean 'SendHandler'?
+  XUartLite_SetRecvHandler(UartInstancePtr, RecvHandler, UartInstancePtr);
+                                            ^~~~~~~~~~~
+                                            SendHandler
+../src/helloworld.c: In function 'RecvHandler':
+../src/helloworld.c:170:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'SendHandler':
+../src/helloworld.c:175:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:166:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] ´íÎó 1
+16:01:34 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:159:44: error: 'SendHandler' undeclared (first use in this function); did you mean 'XNullHandler'?
+  XUartLite_SetSendHandler(UartInstancePtr, SendHandler, UartInstancePtr);
+                                            ^~~~~~~~~~~
+                                            XNullHandler
+../src/helloworld.c:159:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:160:44: error: 'RecvHandler' undeclared (first use in this function); did you mean 'SendHandler'?
+  XUartLite_SetRecvHandler(UartInstancePtr, RecvHandler, UartInstancePtr);
+                                            ^~~~~~~~~~~
+                                            SendHandler
+../src/helloworld.c: In function 'RecvHandler':
+../src/helloworld.c:170:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'SendHandler':
+../src/helloworld.c:175:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:166:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] ´íÎó 1
+16:02:10 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'RecvHandler':
+../src/helloworld.c:174:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:174:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'SendHandler':
+../src/helloworld.c:179:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:170:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] ´íÎó 1
+16:03:03 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'RecvHandler':
+../src/helloworld.c:175:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:175:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'SendHandler':
+../src/helloworld.c:180:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:171:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] ´íÎó 1
+16:03:22 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'RecvHandler':
+../src/helloworld.c:178:2: error: 'TotalReceivedCount' undeclared (first use in this function)
+  TotalReceivedCount = EventData;
+  ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:178:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'SendHandler':
+../src/helloworld.c:183:2: error: 'TotalSentCount' undeclared (first use in this function)
+  TotalSentCount = EventData;
+  ^~~~~~~~~~~~~~
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:174:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] ´íÎó 1
+16:03:41 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'InitUartLite':
+../src/helloworld.c:177:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3104	    332	   3108	   6544	   1990	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:04:09 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3104	    332	   3108	   6544	   1990	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:06:03 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7860	    368	   3548	  11776	   2e00	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:06:54 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7488	    368	   3544	  11400	   2c88	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:07:48 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7892	    368	   3548	  11808	   2e20	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:10:41 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11360	    372	   3548	  15280	   3bb0	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:12:38 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12704	    372	   3548	  16624	   40f0	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:13:32 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12704	    384	   3360	  16448	   4040	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:14:04 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12704	    384	   3360	  16448	   4040	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:14:56 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12740	    384	   3364	  16488	   4068	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:15:45 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12740	    384	   3364	  16488	   4068	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:17:38 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.
+16:23:50 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12740	    384	   3364	  16488	   4068	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:24:04 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.
+16:27:46 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12840	    384	   3360	  16584	   40c8	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:27:52 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.
+16:28:41 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12840	    384	   3360	  16584	   40c8	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:28:47 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.
+16:30:51 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12836	    384	   3364	  16584	   40c8	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:31:10 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.
+16:31:36 **** Incremental Build of configuration Debug for project iic_test ****
+make all 
+make: Nothing to be done for `all'.
+16:31:37 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:31:37 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.
+16:33:01 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12868	    384	   3364	  16616	   40e8	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:33:07 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.
+16:33:30 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.
+16:34:42 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Uart_Check':
+../src/helloworld.c:227:9: warning: implicit declaration of function 'XUartLite_GetStatusReg'; did you mean 'XUartLite_GetStats'? [-Wimplicit-function-declaration]
+  data = XUartLite_GetStatusReg(UartInstancePtr->RegBaseAddress);
+         ^~~~~~~~~~~~~~~~~~~~~~
+         XUartLite_GetStats
+../src/helloworld.c:234:25: error: 'UartWifi' undeclared (first use in this function); did you mean 'XUartLite'?
+   XUartLite_ResetFifos(&UartWifi);
+                         ^~~~~~~~
+                         XUartLite
+../src/helloworld.c:234:25: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] ´íÎó 1
+16:34:49 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Uart_Check':
+../src/helloworld.c:227:9: warning: implicit declaration of function 'XUartLite_GetStatusReg'; did you mean 'XUartLite_GetStats'? [-Wimplicit-function-declaration]
+  data = XUartLite_GetStatusReg(UartInstancePtr->RegBaseAddress);
+         ^~~~~~~~~~~~~~~~~~~~~~
+         XUartLite_GetStats
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12892	    384	   3364	  16640	   4100	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:35:24 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12892	    384	   3364	  16640	   4100	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:36:06 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13128	    384	   3360	  16872	   41e8	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:36:12 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.
+16:38:04 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13128	    384	   3360	  16872	   41e8	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:38:08 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.
+16:39:21 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_test.elf  |tee "uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13136	    384	   3360	  16880	   41f0	uart_test.elf
+Finished building: uart_test.elf.size
+ 
+16:39:27 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.

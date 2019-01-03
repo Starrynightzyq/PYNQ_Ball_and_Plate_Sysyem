@@ -2,95 +2,81 @@
    ExpandedHierarchyInLayout: "",
    guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
 #  -string -flagsOSRD
-preplace port iic_rtl -pg 1 -y 620 -defaultsOSRD
-preplace port OV7725_XCLK_0 -pg 1 -y 100 -defaultsOSRD
-preplace port OV7725_PCLK_0 -pg 1 -y 230 -defaultsOSRD
-preplace port en_take_color_i_0 -pg 1 -y 90 -defaultsOSRD
-preplace port dip_switches_16bits -pg 1 -y 470 -defaultsOSRD
-preplace port pwm_out_1_0 -pg 1 -y 1120 -defaultsOSRD
-preplace port OV7725_PWND_0 -pg 1 -y 120 -defaultsOSRD
-preplace port OV7725_HREF_0 -pg 1 -y 210 -defaultsOSRD
-preplace port vga_vsync_0 -pg 1 -y 180 -defaultsOSRD
-preplace port sys_clock -pg 1 -y 650 -defaultsOSRD
-preplace port pwm_out_0_0 -pg 1 -y 1100 -defaultsOSRD
-preplace port usb_uart -pg 1 -y 960 -defaultsOSRD
-preplace port OV7725_IIC -pg 1 -y 790 -defaultsOSRD
-preplace port OV7725_VSYNC_0 -pg 1 -y 190 -defaultsOSRD
-preplace port vga_hsync_0 -pg 1 -y 160 -defaultsOSRD
-preplace port OV7725_RST_0 -pg 1 -y 140 -defaultsOSRD
-preplace port reset -pg 1 -y 560 -defaultsOSRD
-preplace portBus OV7725_D_0 -pg 1 -y 250 -defaultsOSRD
-preplace portBus vga_data_0 -pg 1 -y 200 -defaultsOSRD
-preplace inst axi_iic_0 -pg 1 -lvl 6 -y 640 -defaultsOSRD
-preplace inst axi_iic_1 -pg 1 -lvl 6 -y 810 -defaultsOSRD
-preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 1000 -defaultsOSRD
-preplace inst servo_0 -pg 1 -lvl 6 -y 1110 -defaultsOSRD
-preplace inst axi_timer_0 -pg 1 -lvl 6 -y 1300 -defaultsOSRD
-preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -y 360 -defaultsOSRD
-preplace inst axi_gpio_1 -pg 1 -lvl 6 -y 480 -defaultsOSRD
-preplace inst ball_locator_0 -pg 1 -lvl 6 -y 140 -defaultsOSRD
-preplace inst alinx_ov5640_0 -pg 1 -lvl 5 -y 340 -defaultsOSRD
-preplace inst mdm_1 -pg 1 -lvl 3 -y 570 -defaultsOSRD
-preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -y 360 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 6 -y 350 -defaultsOSRD
-preplace inst axi_uartlite_0 -pg 1 -lvl 6 -y 970 -defaultsOSRD
-preplace inst microblaze_0 -pg 1 -lvl 4 -y 560 -defaultsOSRD
-preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 580 -defaultsOSRD
-preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 640 -defaultsOSRD
-preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 570 -defaultsOSRD
-preplace netloc servo_0_pwm_out_0 1 6 1 NJ
+preplace port uart_rtl -pg 1 -y 760 -defaultsOSRD
+preplace port OV7725_XCLK_0 -pg 1 -y 1110 -defaultsOSRD
+preplace port OV7725_PCLK_0 -pg 1 -y 1160 -defaultsOSRD
+preplace port en_take_color_i_0 -pg 1 -y 1100 -defaultsOSRD
+preplace port OV7725_PWND_0 -pg 1 -y 1130 -defaultsOSRD
+preplace port OV7725_HREF_0 -pg 1 -y 1140 -defaultsOSRD
+preplace port vga_vsync_0 -pg 1 -y 1190 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 1050 -defaultsOSRD
+preplace port usb_uart -pg 1 -y 580 -defaultsOSRD
+preplace port OV7725_IIC -pg 1 -y 210 -defaultsOSRD
+preplace port OV7725_VSYNC_0 -pg 1 -y 1180 -defaultsOSRD
+preplace port vga_hsync_0 -pg 1 -y 1170 -defaultsOSRD
+preplace port OV7725_RST_0 -pg 1 -y 1150 -defaultsOSRD
+preplace port reset -pg 1 -y 960 -defaultsOSRD
+preplace portBus OV7725_D_0 -pg 1 -y 1120 -defaultsOSRD
+preplace portBus vga_data_0 -pg 1 -y 1210 -defaultsOSRD
+preplace inst axi_iic_1 -pg 1 -lvl 6 -y 230 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 320 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 6 -y 400 -defaultsOSRD
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -y 790 -defaultsOSRD
+preplace inst ball_locator_0 -pg 1 -lvl 6 -y 1150 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -y 1040 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -y 840 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 6 -y 590 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -y 860 -defaultsOSRD
+preplace inst axi_uartlite_1 -pg 1 -lvl 6 -y 770 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 990 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 1040 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 870 -defaultsOSRD
 preplace netloc ball_locator_0_vga_vsync 1 6 1 NJ
-preplace netloc microblaze_0_axi_periph_M04_AXI 1 5 1 1850
-preplace netloc servo_0_pwm_out_1 1 6 1 NJ
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 5 1 1770
+preplace netloc axi_uartlite_1_interrupt 1 1 6 250 670 NJ 670 NJ 670 NJ 670 1760J 850 2110
 preplace netloc ball_locator_0_vga_data 1 6 1 NJ
-preplace netloc axi_iic_0_iic2intc_irpt 1 1 6 270 1320 NJ 1320 NJ 1320 NJ 1320 1930J 720 2220
-preplace netloc OV7725_D_0_1 1 0 6 NJ 250 NJ 250 NJ 250 NJ 250 1440 110 NJ
+preplace netloc OV7725_D_0_1 1 0 6 10J 1150 NJ 1150 NJ 1150 920J 1120 NJ 1120 NJ
 preplace netloc ball_locator_0_OV7725_XCLK 1 6 1 NJ
-preplace netloc axi_uartlite_0_interrupt 1 1 6 240 1350 NJ 1350 NJ 1350 NJ 1350 1880J 890 2220
-preplace netloc microblaze_0_intr 1 2 1 670
+preplace netloc axi_uartlite_0_interrupt 1 1 6 240 660 NJ 660 NJ 660 NJ 660 1780J 680 2110
+preplace netloc microblaze_0_intr 1 2 1 630
+preplace netloc axi_uartlite_1_UART 1 6 1 NJ
 preplace netloc axi_iic_1_IIC 1 6 1 NJ
-preplace netloc ball_locator_0_coord_valid_o 1 1 6 250 240 NJ 240 NJ 240 1430J 230 1930J 280 2220
-preplace netloc microblaze_0_Clk 1 1 5 220 690 630 650 930 650 1440 480 1910
-preplace netloc microblaze_0_axi_periph_M06_AXI 1 5 1 1850
-preplace netloc microblaze_0_axi_periph_M03_AXI 1 5 1 1870
-preplace netloc microblaze_0_intc_axi 1 2 4 680 1360 NJ 1360 NJ 1360 1840
-preplace netloc microblaze_0_interrupt 1 3 1 930
-preplace netloc alinx_ov5640_0_m_axis_video 1 5 1 N
+preplace netloc ball_locator_0_coord_valid_o 1 1 6 260 680 NJ 680 NJ 680 NJ 680 1750J 860 2110
+preplace netloc microblaze_0_Clk 1 1 5 230 890 640 950 920 950 1430 950 1790
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 5 1 1820
+preplace netloc microblaze_0_intc_axi 1 2 4 640 640 NJ 640 NJ 640 1760
+preplace netloc microblaze_0_interrupt 1 3 1 900
 preplace netloc microblaze_0_ilmb_1 1 4 1 N
-preplace netloc en_take_color_i_0_1 1 0 6 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ
+preplace netloc en_take_color_i_0_1 1 0 6 20J 1120 NJ 1120 NJ 1120 910J 1100 NJ 1100 NJ
 preplace netloc sys_clock_1 1 0 1 NJ
-preplace netloc microblaze_0_axi_periph_M05_AXI 1 5 1 1870
-preplace netloc microblaze_0_axi_dp 1 4 1 1430
-preplace netloc OV7725_HREF_0_1 1 0 6 NJ 210 NJ 210 NJ 210 NJ 210 1450 130 NJ
+preplace netloc microblaze_0_axi_periph_M05_AXI 1 5 1 N
+preplace netloc microblaze_0_axi_dp 1 4 1 1410
+preplace netloc OV7725_HREF_0_1 1 0 6 NJ 1140 NJ 1140 NJ 1140 NJ 1140 NJ 1140 NJ
 preplace netloc ball_locator_0_OV7725_RST 1 6 1 NJ
 preplace netloc ball_locator_0_OV7725_PWND 1 6 1 NJ
-preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 2 3 640 690 NJ 690 1420J
-preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 650 660 NJ 660 1460J
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 N
-preplace netloc axi_iic_1_iic2intc_irpt 1 1 6 280 1330 NJ 1330 NJ 1330 NJ 1330 1860J 730 2220
-preplace netloc axi_gpio_1_ip2intc_irpt 1 1 6 260 680 NJ 680 NJ 680 NJ 680 1860J 560 2220
-preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 660 470 NJ 470 1450 450 1920
-preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 670 640 940
-preplace netloc clk_wiz_1_locked 1 1 1 230
-preplace netloc axi_iic_0_IIC 1 6 1 NJ
+preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 2 3 610J 630 NJ 630 1420
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 NJ 970 NJ 970 1440
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 1830
+preplace netloc axi_iic_1_iic2intc_irpt 1 1 6 230 650 NJ 650 NJ 650 NJ 650 1810J 670 2120
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 620 700 NJ 700 1440 700 1800
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 650 960 910
+preplace netloc clk_wiz_1_locked 1 1 1 260
 preplace netloc axi_uartlite_0_UART 1 6 1 NJ
-preplace netloc OV7725_VSYNC_0_1 1 0 6 NJ 190 NJ 190 NJ 190 NJ 190 1460 170 NJ
-preplace netloc OV7725_PCLK_0_1 1 0 6 NJ 230 NJ 230 NJ 230 NJ 230 1420 220 1940
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 5 1 1900
-preplace netloc microblaze_0_axi_periph_M07_AXI 1 5 1 1890
+preplace netloc OV7725_VSYNC_0_1 1 0 6 NJ 1180 NJ 1180 NJ 1180 NJ 1180 NJ 1180 NJ
+preplace netloc OV7725_PCLK_0_1 1 0 6 NJ 1160 NJ 1160 NJ 1160 NJ 1160 NJ 1160 NJ
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 5 1 1770
 preplace netloc microblaze_0_dlmb_1 1 4 1 N
-preplace netloc axi_gpio_1_GPIO 1 6 1 NJ
-preplace netloc microblaze_0_debug 1 3 1 930
+preplace netloc microblaze_0_debug 1 3 1 900
 preplace netloc ball_locator_0_vga_hsync 1 6 1 NJ
-preplace netloc reset_1 1 0 2 20 560 NJ
-preplace netloc mdm_1_debug_sys_rst 1 1 3 290 700 NJ 700 920
-preplace netloc axi_timer_0_interrupt 1 1 6 250 1340 NJ 1340 NJ 1340 NJ 1340 1940J 1190 2220
-levelinfo -pg 1 0 120 460 800 1180 1670 2080 2240 -top 0 -bot 1410
+preplace netloc reset_1 1 0 2 30 1130 240J
+preplace netloc mdm_1_debug_sys_rst 1 1 3 270 1110 NJ 1110 900
+preplace netloc axi_timer_0_interrupt 1 1 6 270 690 NJ 690 NJ 690 NJ 690 NJ 690 2130
+levelinfo -pg 1 -10 130 440 780 1170 1600 1970 2150 -top 0 -bot 1290
 ",
 }
 {
-   da_axi4_cnt: "13",
-   da_board_cnt: "10",
+   da_axi4_cnt: "14",
+   da_board_cnt: "11",
    da_clkrst_cnt: "5",
    da_mb_cnt: "1",
 }

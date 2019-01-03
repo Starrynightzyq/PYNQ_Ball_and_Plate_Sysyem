@@ -69,25 +69,30 @@ set_property IOSTANDARD LVCMOS33 [get_ports en_take_color_i_0]
 
 set_property PACKAGE_PIN T18 [get_ports en_take_color_i_0]
 
-set_property IOSTANDARD LVCMOS33 [get_ports pwm0_0]
-set_property PACKAGE_PIN L1 [get_ports pwm0_0]
 
+##Pmod Header JXADC
+##Sch name = XA1_P
+set_property PACKAGE_PIN J3 [get_ports {uart_rtl_txd}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {uart_rtl_txd}]
+##Sch name = XA2_P
+#set_property PACKAGE_PIN L3 [get_ports {iic_rtl_sda_io}]				
+#	set_property IOSTANDARD LVCMOS33 [get_ports {iic_rtl_sda_io}]
+##Sch name = XA3_P
+#set_property PACKAGE_PIN M2 [get_ports {JXADC[2]}]				
+	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[2]}]
+##Sch name = XA4_P
+#set_property PACKAGE_PIN N2 [get_ports {JXADC[3]}]				
+	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[3]}]
+##Sch name = XA1_N
+set_property PACKAGE_PIN K3 [get_ports {uart_rtl_rxd}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {uart_rtl_rxd}]
+##Sch name = XA2_N
+#set_property PACKAGE_PIN M3 [get_ports {JXADC[5]}]				
+	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[5]}]
+##Sch name = XA3_N
+#set_property PACKAGE_PIN M1 [get_ports {JXADC[6]}]				
+	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[6]}]
+##Sch name = XA4_N
+#set_property PACKAGE_PIN N1 [get_ports {JXADC[7]}]				
+	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[7]}]
 
-set_property IOSTANDARD LVCMOS33 [get_ports pwm_out_0_0]
-set_property IOSTANDARD LVCMOS33 [get_ports pwm_out_1_0]
-set_property PACKAGE_PIN J1 [get_ports pwm_out_0_0]
-set_property PACKAGE_PIN H1 [get_ports pwm_out_1_0]
-
-
-
-#Pmod Header JXADC
-#IIC test
-#Sch name = XA1_P
-set_property PACKAGE_PIN J3 [get_ports {iic_rtl_scl_io}]				
-	set_property IOSTANDARD LVCMOS33 [get_ports {iic_rtl_scl_io}]
-#Sch name = XA2_P
-set_property PACKAGE_PIN L3 [get_ports {iic_rtl_sda_io}]				
-	set_property IOSTANDARD LVCMOS33 [get_ports {iic_rtl_sda_io}]
-
-set_property PULLUP true [get_ports iic_rtl_scl_io]
-set_property PULLUP true [get_ports iic_rtl_sda_io]

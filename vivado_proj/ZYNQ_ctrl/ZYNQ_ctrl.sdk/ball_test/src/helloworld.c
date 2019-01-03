@@ -125,7 +125,6 @@ int Init_System(void) {
 
 	InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &InterruptController, TIMER_0_LOAD_VALUE);
 
-//	InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController);
 	InitUartCam();
 
 	xil_printf("Init the mpu 6500...\r\n");

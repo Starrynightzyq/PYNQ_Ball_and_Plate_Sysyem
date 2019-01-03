@@ -5,7 +5,7 @@
 * Version: 
 * DO NOT EDIT.
 *
-* Copyright (C) 2010-2018 Xilinx, Inc. All Rights Reserved.*
+* Copyright (C) 2010-2019 Xilinx, Inc. All Rights Reserved.*
 *Permission is hereby granted, free of charge, to any person obtaining a copy
 *of this software and associated documentation files (the Software), to deal
 *in the Software without restriction, including without limitation the rights
@@ -59,10 +59,6 @@ XIntc_Config XIntc_ConfigTable[] =
 		XIN_SVC_SGL_ISR_OPTION,
 		XPAR_MICROBLAZE_0_AXI_INTC_TYPE,
 		{
-			{
-				XNullHandler,
-				(void *) XNULL
-			},
 			{
 				XNullHandler,
 				(void *) XNULL

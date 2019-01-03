@@ -9108,3 +9108,477 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: Nothing to be done for `main-build'.
+08:45:48 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/servo_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/servo_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iic"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/servo_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/servo_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling servo..."
+servo.c: In function 'XServo_CfgInitialize':
+servo.c:32:64: warning: unused parameter 'Config' [-Wunused-parameter]
+ int XServo_CfgInitialize(XServo * InstancePtr, XServo_Config * Config,
+                                                                ^~~~~~
+servo_selftest.c: In function 'SERVO_Reg_SelfTest':
+servo_selftest.c:52:54: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( SERVO_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                      ^~
+servo_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+08:46:25 **** Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+Finished building: ../src/uart_driver/uart_driver.c
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:25:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_printInfo':
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(str, "angle: %f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+  ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:165:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:166:2: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+  puts(str);
+  ^~~~
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: 'str' is used uninitialized in this function [-Wuninitialized]
+  sprintf(str, "angle: %f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102256	   4256	  24096	 130608	  1fe30	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+12:29:51 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+12:30:37 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/control/PID_Control.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/PID_Control.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/control/PID_Control.d" -MT"src/control/PID_Control.o" -o "src/control/PID_Control.o" "../src/control/PID_Control.c"
+In file included from ../src/control/PID_Control.c:8:0:
+../src/control/PID_Control.h:11:10: fatal error: F28x_Project.h: No such file or directory
+ #include "F28x_Project.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/control/PID_Control.o] ´íÎó 1
+12:30:58 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/control/PID_Control.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/PID_Control.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/control/PID_Control.d" -MT"src/control/PID_Control.o" -o "src/control/PID_Control.o" "../src/control/PID_Control.c"
+In file included from ../src/control/PID_Control.c:8:0:
+../src/control/PID_Control.h:12:10: fatal error: DronePara.h: No such file or directory
+ #include "DronePara.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/control/PID_Control.o] ´íÎó 1
+12:31:06 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/control/PID_Control.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/PID_Control.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/control/PID_Control.d" -MT"src/control/PID_Control.o" -o "src/control/PID_Control.o" "../src/control/PID_Control.c"
+In file included from ../src/control/PID_Control.c:8:0:
+../src/control/PID_Control.h:12:10: fatal error: ../src/control/ã€‚ã??/DronePara.h: Invalid argument
+ #include "ã€‚ã??/DronePara.h"
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/control/PID_Control.o] ´íÎó 1
+12:31:49 **** Incremental Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/control/PID_Control.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/PID_Control.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/control/PID_Control.d" -MT"src/control/PID_Control.o" -o "src/control/PID_Control.o" "../src/control/PID_Control.c"
+In file included from ../src/control/PID_Control.c:8:0:
+../src/control/PID_Control.h:12:10: fatal error: ../src/control/ã€‚ã??/DronePara.h: Invalid argument
+ #include "ã€‚ã??/DronePara.h"
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/control/PID_Control.o] ´íÎó 1
+12:32:12 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/control/PID_Control.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/PID_Control.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/control/PID_Control.d" -MT"src/control/PID_Control.o" -o "src/control/PID_Control.o" "../src/control/PID_Control.c"
+In file included from ../src/control/PID_Control.h:12:0,
+                 from ../src/control/PID_Control.c:8:
+../src/control/../DronePara.h:174:5: error: unknown type name 'int16_t'
+     int16_t MagX;
+     ^~~~~~~
+../src/control/../DronePara.h:175:5: error: unknown type name 'int16_t'
+     int16_t MagY;
+     ^~~~~~~
+../src/control/../DronePara.h:176:5: error: unknown type name 'int16_t'
+     int16_t MagZ;
+     ^~~~~~~
+../src/control/../DronePara.h:228:9: error: unknown type name 'u16'
+         u16 sv[2];
+         ^~~
+../src/control/../DronePara.h:232:2: error: unknown type name 'u16'
+  u16 x;
+  ^~~
+../src/control/../DronePara.h:233:2: error: unknown type name 'u16'
+  u16 y;
+  ^~~
+../src/control/PID_Control.c: In function 'PID_Control':
+../src/control/PID_Control.c:93:17: warning: implicit declaration of function 'Limits_data' [-Wimplicit-function-declaration]
+     PID->iOut = Limits_data(PID->iOut,Integrallimiter,-Integrallimiter);
+                 ^~~~~~~~~~~
+make: *** [src/control/PID_Control.o] ´íÎó 1
+12:33:21 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+../src/mpu6500/AHRS_Hardware.c: In function 'IMU_printInfo':
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(str, "angle: %f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+  ^~~~~~~
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:165:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/mpu6500/AHRS_Hardware.c:166:2: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+  puts(str);
+  ^~~~
+../src/mpu6500/AHRS_Hardware.c:165:2: warning: 'str' is used uninitialized in this function [-Wuninitialized]
+  sprintf(str, "angle: %f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/control/PID_Control.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/PID_Control.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/control/PID_Control.d" -MT"src/control/PID_Control.o" -o "src/control/PID_Control.o" "../src/control/PID_Control.c"
+../src/control/PID_Control.c: In function 'PID_Control':
+../src/control/PID_Control.c:93:17: warning: implicit declaration of function 'Limits_data' [-Wimplicit-function-declaration]
+     PID->iOut = Limits_data(PID->iOut,Integrallimiter,-Integrallimiter);
+                 ^~~~~~~~~~~
+Finished building: ../src/control/PID_Control.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/control/PID_Control.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/control/PID_Control.o: In function `PID_Control':
+C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\ball_test\Debug/../src/control/PID_Control.c:93: undefined reference to `Limits_data'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ball_test.elf] ´íÎó 1
+12:34:35 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/control/SimpleDigitalFiltering.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/SimpleDigitalFiltering.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/control/SimpleDigitalFiltering.d" -MT"src/control/SimpleDigitalFiltering.o" -o "src/control/SimpleDigitalFiltering.o" "../src/control/SimpleDigitalFiltering.c"
+In file included from ../src/control/SimpleDigitalFiltering.c:7:0:
+../src/control/SimpleDigitalFiltering.h:11:10: fatal error: F28x_Project.h: No such file or directory
+ #include "F28x_Project.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/control/SimpleDigitalFiltering.o] ´íÎó 1
+12:34:43 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/control/SimpleDigitalFiltering.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/SimpleDigitalFiltering.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/control/SimpleDigitalFiltering.d" -MT"src/control/SimpleDigitalFiltering.o" -o "src/control/SimpleDigitalFiltering.o" "../src/control/SimpleDigitalFiltering.c"
+In file included from ../src/control/SimpleDigitalFiltering.c:7:0:
+../src/control/SimpleDigitalFiltering.h:13:39: error: unknown type name 'Uint16'; did you mean 'wint_t'?
+ float Average_Filter(float FilterData,Uint16 Length,float *FilterArray);
+                                       ^~~~~~
+                                       wint_t
+../src/control/SimpleDigitalFiltering.h:14:36: error: unknown type name 'Uint16'; did you mean 'wint_t'?
+ float Median_Filter(int FilterData,Uint16 Length,int *FilterArray);
+                                    ^~~~~~
+                                    wint_t
+../src/control/SimpleDigitalFiltering.c:11:39: error: unknown type name 'Uint16'; did you mean 'wint_t'?
+ float Average_Filter(float FilterData,Uint16 Length,float *FilterArray){
+                                       ^~~~~~
+                                       wint_t
+../src/control/SimpleDigitalFiltering.c:30:36: error: unknown type name 'Uint16'; did you mean 'wint_t'?
+ float Median_Filter(int FilterData,Uint16 Length,int *FilterArray){
+                                    ^~~~~~
+                                    wint_t
+make: *** [src/control/SimpleDigitalFiltering.o] ´íÎó 1
+12:35:19 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/control/SimpleDigitalFiltering.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/SimpleDigitalFiltering.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/control/SimpleDigitalFiltering.d" -MT"src/control/SimpleDigitalFiltering.o" -o "src/control/SimpleDigitalFiltering.o" "../src/control/SimpleDigitalFiltering.c"
+Finished building: ../src/control/SimpleDigitalFiltering.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/control/PID_Control.o ./src/control/SimpleDigitalFiltering.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 104568	   4256	  24096	 132920	  20738	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+12:36:40 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/control/PID_Control.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/PID_Control.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/control/PID_Control.d" -MT"src/control/PID_Control.o" -o "src/control/PID_Control.o" "../src/control/PID_Control.c"
+../src/control/PID_Control.c: In function 'PID_Control':
+../src/control/PID_Control.c:93:17: warning: implicit declaration of function 'Limits_data' [-Wimplicit-function-declaration]
+     PID->iOut = Limits_data(PID->iOut,Integrallimiter,-Integrallimiter);
+                 ^~~~~~~~~~~
+Finished building: ../src/control/PID_Control.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/control/PID_Control.o ./src/control/SimpleDigitalFiltering.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 104568	   4256	  24096	 132920	  20738	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+12:37:55 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/control/PID_Control.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/PID_Control.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/control/PID_Control.d" -MT"src/control/PID_Control.o" -o "src/control/PID_Control.o" "../src/control/PID_Control.c"
+Finished building: ../src/control/PID_Control.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/control/PID_Control.o ./src/control/SimpleDigitalFiltering.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 104568	   4256	  24096	 132920	  20738	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+12:38:49 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:18:12: warning: 'TimerSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/./timer_driver/timer_driver.h:21:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/control/PID_Control.o ./src/control/SimpleDigitalFiltering.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 104568	   4256	  24096	 132920	  20738	ball_test.elf
+Finished building: ball_test.elf.size
+ 

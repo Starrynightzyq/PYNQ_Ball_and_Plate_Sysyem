@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Wed Dec 26 19:51:26 2018
+// Date        : Mon Dec 24 08:45:24 2018
 // Host        : ZYQ-Mac-Win running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_microblaze_0_xlconcat_0/mb_demo_microblaze_0_xlconcat_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top mb_demo_microblaze_0_xlconcat_0 -prefix
+//               mb_demo_microblaze_0_xlconcat_0_ mb_demo_microblaze_0_xlconcat_0_sim_netlist.v
 // Design      : mb_demo_microblaze_0_xlconcat_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,24 +20,20 @@ module mb_demo_microblaze_0_xlconcat_0
     In2,
     In3,
     In4,
-    In5,
     dout);
   input [0:0]In0;
   input [0:0]In1;
   input [0:0]In2;
   input [0:0]In3;
   input [0:0]In4;
-  input [0:0]In5;
-  output [5:0]dout;
+  output [4:0]dout;
 
   wire [0:0]In0;
   wire [0:0]In1;
   wire [0:0]In2;
   wire [0:0]In3;
   wire [0:0]In4;
-  wire [0:0]In5;
 
-  assign dout[5] = In5;
   assign dout[4] = In4;
   assign dout[3] = In3;
   assign dout[2] = In2;

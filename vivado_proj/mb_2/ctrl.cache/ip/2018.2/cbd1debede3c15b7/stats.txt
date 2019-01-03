@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Thu Dec 27 07:35:52 UTC 2018
+VLNV: xilinx.com:ip:axi_timer:2.0
+SynthRuntime: 78

@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Dec 27 13:57:40 2018
-# Process ID: 14296
+# Start of session at: Thu Jan  3 08:51:36 2019
+# Process ID: 10668
 # Current directory: C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_xbar_0_synth_1
 # Command line: vivado.exe -log mb_demo_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_demo_xbar_0.tcl
 # Log file: C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_xbar_0_synth_1/mb_demo_xbar_0.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2140 
+INFO: Helper process launched with PID 5424 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 424.137 ; gain = 104.922
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 425.008 ; gain = 104.598
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mb_demo_xbar_0' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_xbar_0/synth/mb_demo_xbar_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_18_axi_crossbar' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/15a3/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
@@ -29,8 +29,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_18_axi_crossbar' [c:
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 512'b00000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000001000100101000010000000000000000000000000000000000000000000000000100000111000000000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000000000010000000000000000000000000000000000000000000000000100000010000001000000000000000000000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
-	Parameter C_M_AXI_ADDR_WIDTH bound to: 256'b0000000000000000000000000000111100000000000000000000000000001111000000000000000000000000000011110000000000000000000000000000111100000000000000000000000000001111000000000000000000000000000011110000000000000000000000000000111100000000000000000000000000001111 
+	Parameter C_M_AXI_BASE_ADDR bound to: 512'b11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000111000000000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000011000010000000000000000000000000000000000000000000000000100000010000001000000000000000000000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011110000000000000000000000000000111100000000000000000000000000010000000000000000000000000000000011110000000000000000000000000000111100000000000000000000000000001111 
 	Parameter C_S_AXI_BASE_ID bound to: 96'b000000000000000000000000000000100000000000000000000000000000000100000000000000000000000000000000 
 	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -78,8 +78,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_18_crossbar_sasd' [c
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 512'b00000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000001000100101000010000000000000000000000000000000000000000000000000100000111000000000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000000000010000000000000000000000000000000000000000000000000100000010000001000000000000000000000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
-	Parameter C_M_AXI_HIGH_ADDR bound to: 512'b00000000000000000000000000000000010000001000000001111111111111110000000000000000000000000000000001000100101000010111111111111111000000000000000000000000000000000100000111000000011111111111111100000000000000000000000000000000010001001010000001111111111111110000000000000000000000000000000001000000000000010111111111111111000000000000000000000000000000000100000010000001011111111111111100000000000000000000000000000000010000000110000001111111111111110000000000000000000000000000000001000001001000000111111111111111 
+	Parameter C_M_AXI_BASE_ADDR bound to: 512'b11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000111000000000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000011000010000000000000000000000000000000000000000000000000100000010000001000000000000000000000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000111000000011111111111111100000000000000000000000000000000010001001010000001111111111111110000000000000000000000000000000001000000011000011111111111111111000000000000000000000000000000000100000010000001011111111111111100000000000000000000000000000000010000000110000001111111111111110000000000000000000000000000000001000001001000000111111111111111 
 	Parameter C_S_AXI_BASE_ID bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_HIGH_ID bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -131,8 +131,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_18_addr_decoder' [c:
 	Parameter C_TARGET_ENC bound to: 1 - type: integer 
 	Parameter C_TARGET_HOT bound to: 1 - type: integer 
 	Parameter C_REGION_ENC bound to: 1 - type: integer 
-	Parameter C_BASE_ADDR bound to: 512'b00000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000001000100101000010000000000000000000000000000000000000000000000000100000111000000000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000000000010000000000000000000000000000000000000000000000000100000010000001000000000000000000000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
-	Parameter C_HIGH_ADDR bound to: 512'b00000000000000000000000000000000010000001000000001111111111111110000000000000000000000000000000001000100101000010111111111111111000000000000000000000000000000000100000111000000011111111111111100000000000000000000000000000000010001001010000001111111111111110000000000000000000000000000000001000000000000010111111111111111000000000000000000000000000000000100000010000001011111111111111100000000000000000000000000000000010000000110000001111111111111110000000000000000000000000000000001000001001000000111111111111111 
+	Parameter C_BASE_ADDR bound to: 512'b11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000111000000000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000011000010000000000000000000000000000000000000000000000000100000010000001000000000000000000000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000111000000011111111111111100000000000000000000000000000000010001001010000001111111111111110000000000000000000000000000000001000000011000011111111111111111000000000000000000000000000000000100000010000001011111111111111100000000000000000000000000000000010000000110000001111111111111110000000000000000000000000000000001000001001000000111111111111111 
 	Parameter C_TARGET_QUAL bound to: 9'b011111111 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
@@ -165,7 +165,7 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_s
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b010000000000000100000000000000 
+	Parameter C_VALUE bound to: 30'b010000000110000100000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
@@ -187,22 +187,6 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_s
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (2#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b010001001010000100000000000000 
-	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
-	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
-	Parameter C_NUM_LUT bound to: 5 - type: integer 
-	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' (2#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized6' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b010000001000000000000000000000 
-	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
-	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
-	Parameter C_NUM_LUT bound to: 5 - type: integer 
-	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized6' (2#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_18_addr_decoder' (3#1) [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/15a3/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
@@ -386,7 +370,7 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_18_axi_crossbar has unconnected
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_18_axi_crossbar has unconnected port s_axi_awqos[7]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 577.469 ; gain = 258.254
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 578.832 ; gain = 258.422
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -399,10 +383,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 577.469 ; gain = 258.254
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 578.832 ; gain = 258.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 577.469 ; gain = 258.254
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 578.832 ; gain = 258.422
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -418,23 +402,23 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 816.695 ; gain = 1.668
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 817.703 ; gain = 1.609
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 816.695 ; gain = 497.480
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 817.703 ; gain = 497.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 816.695 ; gain = 497.480
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 817.703 ; gain = 497.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 816.695 ; gain = 497.480
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 817.703 ; gain = 497.293
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -475,7 +459,7 @@ INFO: [Synth 8-5544] ROM "f_mux_return3" won't be mapped to Block RAM because ad
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:01:00 . Memory (MB): peak = 816.695 ; gain = 497.480
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:56 . Memory (MB): peak = 817.703 ; gain = 497.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -597,6 +581,8 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_arbiter.last_rr_hot_reg[1]' (FDRE) to 'inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_arbiter.m_grant_enc_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[6]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[7] )
 INFO: [Synth 8-3332] Sequential element (gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_arbiter.m_amesg_i_reg[63]) is unused and will be removed from module axi_crossbar_v2_1_18_axi_crossbar.
 INFO: [Synth 8-3332] Sequential element (gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_arbiter.m_amesg_i_reg[62]) is unused and will be removed from module axi_crossbar_v2_1_18_axi_crossbar.
 INFO: [Synth 8-3332] Sequential element (gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_arbiter.m_amesg_i_reg[61]) is unused and will be removed from module axi_crossbar_v2_1_18_axi_crossbar.
@@ -628,8 +614,9 @@ INFO: [Synth 8-3332] Sequential element (gen_sasd.crossbar_sasd_0/addr_arbiter_i
 INFO: [Synth 8-3332] Sequential element (gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_arbiter.m_amesg_i_reg[0]) is unused and will be removed from module axi_crossbar_v2_1_18_axi_crossbar.
 INFO: [Synth 8-3332] Sequential element (gen_sasd.crossbar_sasd_0/reg_slice_r/skid_buffer_reg[35]) is unused and will be removed from module axi_crossbar_v2_1_18_axi_crossbar.
 INFO: [Synth 8-3332] Sequential element (gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg[35]) is unused and will be removed from module axi_crossbar_v2_1_18_axi_crossbar.
+INFO: [Synth 8-3332] Sequential element (gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[7]) is unused and will be removed from module axi_crossbar_v2_1_18_axi_crossbar.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:01:05 . Memory (MB): peak = 816.695 ; gain = 497.480
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 817.703 ; gain = 497.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -641,13 +628,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:22 . Memory (MB): peak = 816.695 ; gain = 497.480
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:16 . Memory (MB): peak = 817.703 ; gain = 497.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:24 . Memory (MB): peak = 860.098 ; gain = 540.883
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:18 . Memory (MB): peak = 863.953 ; gain = 543.543
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -659,7 +646,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:24 . Memory (MB): peak = 860.098 ; gain = 540.883
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:18 . Memory (MB): peak = 863.953 ; gain = 543.543
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -683,7 +670,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:25 . Memory (MB): peak = 860.098 ; gain = 540.883
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:20 . Memory (MB): peak = 863.953 ; gain = 543.543
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -696,7 +683,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:25 . Memory (MB): peak = 860.098 ; gain = 540.883
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:20 . Memory (MB): peak = 863.953 ; gain = 543.543
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -708,25 +695,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 860.098 ; gain = 540.883
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:20 . Memory (MB): peak = 863.953 ; gain = 543.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 860.098 ; gain = 540.883
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:20 . Memory (MB): peak = 863.953 ; gain = 543.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 860.098 ; gain = 540.883
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:20 . Memory (MB): peak = 863.953 ; gain = 543.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 860.098 ; gain = 540.883
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:20 . Memory (MB): peak = 863.953 ; gain = 543.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -743,12 +730,12 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |LUT1 |     3|
-|2     |LUT2 |    50|
+|2     |LUT2 |    52|
 |3     |LUT3 |    15|
-|4     |LUT4 |    80|
-|5     |LUT5 |   112|
-|6     |LUT6 |   230|
-|7     |FDRE |   150|
+|4     |LUT4 |    68|
+|5     |LUT5 |   104|
+|6     |LUT6 |   231|
+|7     |FDRE |   148|
 |8     |FDSE |     1|
 +------+-----+------+
 
@@ -756,21 +743,21 @@ Report Instance Areas:
 +------+-------------------------------------+-----------------------------------------------+------+
 |      |Instance                             |Module                                         |Cells |
 +------+-------------------------------------+-----------------------------------------------+------+
-|1     |top                                  |                                               |   641|
-|2     |  inst                               |axi_crossbar_v2_1_18_axi_crossbar              |   641|
-|3     |    \gen_sasd.crossbar_sasd_0        |axi_crossbar_v2_1_18_crossbar_sasd             |   641|
-|4     |      addr_arbiter_inst              |axi_crossbar_v2_1_18_addr_arbiter_sasd         |   338|
-|5     |      \gen_decerr.decerr_slave_inst  |axi_crossbar_v2_1_18_decerr_slave              |    11|
-|6     |      reg_slice_r                    |axi_register_slice_v2_1_17_axic_register_slice |   249|
-|7     |      splitter_ar                    |axi_crossbar_v2_1_18_splitter__parameterized0  |     7|
-|8     |      splitter_aw                    |axi_crossbar_v2_1_18_splitter                  |    13|
+|1     |top                                  |                                               |   622|
+|2     |  inst                               |axi_crossbar_v2_1_18_axi_crossbar              |   622|
+|3     |    \gen_sasd.crossbar_sasd_0        |axi_crossbar_v2_1_18_crossbar_sasd             |   622|
+|4     |      addr_arbiter_inst              |axi_crossbar_v2_1_18_addr_arbiter_sasd         |   323|
+|5     |      \gen_decerr.decerr_slave_inst  |axi_crossbar_v2_1_18_decerr_slave              |    12|
+|6     |      reg_slice_r                    |axi_register_slice_v2_1_17_axic_register_slice |   243|
+|7     |      splitter_ar                    |axi_crossbar_v2_1_18_splitter__parameterized0  |    10|
+|8     |      splitter_aw                    |axi_crossbar_v2_1_18_splitter                  |    14|
 +------+-------------------------------------+-----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 860.098 ; gain = 540.883
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:20 . Memory (MB): peak = 863.953 ; gain = 543.543
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 234 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:01:08 . Memory (MB): peak = 860.098 ; gain = 301.656
-Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 860.098 ; gain = 540.883
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:01:05 . Memory (MB): peak = 863.953 ; gain = 304.672
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:20 . Memory (MB): peak = 863.953 ; gain = 543.543
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -778,9 +765,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-128 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+127 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:29 . Memory (MB): peak = 860.098 ; gain = 547.773
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:24 . Memory (MB): peak = 863.953 ; gain = 550.438
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_xbar_0_synth_1/mb_demo_xbar_0.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.srcs/sources_1/bd/mb_demo/ip/mb_demo_xbar_0/mb_demo_xbar_0.xci
@@ -788,5 +777,5 @@ INFO: [Coretcl 2-1174] Renamed 7 cell refs.
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/mb/ball_mb.runs/mb_demo_xbar_0_synth_1/mb_demo_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mb_demo_xbar_0_utilization_synth.rpt -pb mb_demo_xbar_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 860.098 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 27 13:59:31 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 863.953 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  3 08:53:20 2019...

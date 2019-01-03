@@ -9,6 +9,7 @@
 #define PARAMETER_DRONEPARA_H_
 
 #include "stdbool.h"
+#include "xil_types.h"
 
 typedef enum{
   Drone_Mode_None=0,

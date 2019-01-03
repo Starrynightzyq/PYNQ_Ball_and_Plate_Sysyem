@@ -135,8 +135,8 @@ int main()
     XBall_WriteThreshold(&Ball, 0x28);
 
     //初始化Servo_pwm
-    ServoConfigPtr = XServo_LookupConfig(XPAR_SERVO_0_DEVICE_ID);
-    XServo_CfgInitialize(&Servo, ServoConfigPtr, ServoConfigPtr->BaseAddress);
+//    ServoConfigPtr = XServo_LookupConfig(XPAR_SERVO_0_DEVICE_ID);
+//    XServo_CfgInitialize(&Servo, ServoConfigPtr, ServoConfigPtr->BaseAddress);
 
     //定时器初始化
     XTmrCtr_Initialize(&TmrCtr, TMRCTR_ID);
@@ -171,11 +171,11 @@ int main()
 //    XTmrCtr_Reset(&TmrCtr, TIMER_CTR_NUM);
 
     //初始化servo
-	XServo_SetPWM(&Servo, 1, 100000);
-	XServo_SetPWM(&Servo, 2, 100000);
+//	XServo_SetPWM(&Servo, 1, 100000);
+//	XServo_SetPWM(&Servo, 2, 100000);
 
 	//初始化PID参数
-	task1_init();
+//	task1_init();
 
 	xil_printf("while start\r\n");
     while(1){
