@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jan  2 14:06:32 2019" VIVADOVERSION="2018.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan  4 16:28:41 2019" VIVADOVERSION="2018.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -33,6 +33,8 @@
     <PORT DIR="I" NAME="i2c_sda_i" SIGIS="undef"/>
     <PORT DIR="O" NAME="i2c_sda_o" SIGIS="undef"/>
     <PORT DIR="O" NAME="i2c_sda_t" SIGIS="undef"/>
+    <PORT DIR="I" NAME="uart_camera_rxd" SIGIS="undef"/>
+    <PORT DIR="O" NAME="uart_camera_txd" SIGIS="undef"/>
     <PORT DIR="O" NAME="pwm_out_0" SIGIS="undef" SIGNAME="servo_0_pwm_out_0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="servo_0" PORT="pwm_out_0"/>
@@ -43,8 +45,6 @@
         <CONNECTION INSTANCE="servo_0" PORT="pwm_out_1"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="uart_camera_rxd" SIGIS="undef"/>
-    <PORT DIR="O" NAME="uart_camera_txd" SIGIS="undef"/>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -881,7 +881,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4160FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -993,7 +993,7 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M01_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -1252,7 +1252,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x42C0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -1359,7 +1359,7 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M00_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="4"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -1600,7 +1600,7 @@
         <PARAMETER NAME="C_S_AXI_ACLK_FREQ_HZ" VALUE="100000000"/>
         <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="4"/>
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_BAUDRATE" VALUE="9600"/>
+        <PARAMETER NAME="C_BAUDRATE" VALUE="115200"/>
         <PARAMETER NAME="C_DATA_BITS" VALUE="8"/>
         <PARAMETER NAME="C_USE_PARITY" VALUE="0"/>
         <PARAMETER NAME="C_ODD_PARITY" VALUE="0"/>
@@ -1614,7 +1614,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x42C1FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -1721,7 +1721,7 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M03_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="4"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -2860,7 +2860,7 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S00_AXI_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="M_AXI_GP0_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="M_AXI_GP0_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -2925,19 +2925,19 @@
             <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="FCLK_CLK0" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="O" NAME="FCLK_CLK0" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="servo_0" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ACLK"/>
-            <CONNECTION INSTANCE="servo_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ACLK"/>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ACLK"/>
           </CONNECTIONS>
         </PORT>
@@ -3033,7 +3033,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI3"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="12"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -3476,6 +3476,26 @@
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="M02_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef" SIGNAME="processing_system7_0_M_AXI_GP0_ARVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ARVALID"/>
@@ -3836,16 +3856,6 @@
             <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M02_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M02_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_axi_periph_M02_AXI_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="servo_0" PORT="s_axi_awaddr"/>
@@ -3941,14 +3951,19 @@
             <CONNECTION INSTANCE="servo_0" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M03_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M03_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+        <PORT DIR="I" NAME="M03_AXI_arready" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_arvalid" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_awaddr">
@@ -3956,35 +3971,19 @@
             <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M03_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_awvalid" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="M03_AXI_awready" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_awready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M03_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_wdata">
+        <PORT DIR="O" NAME="M03_AXI_awvalid" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_wdata"/>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M03_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_wstrb">
+        <PORT DIR="O" NAME="M03_AXI_bready" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M03_AXI_wvalid" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M03_AXI_wready" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_wready"/>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_bready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="1" NAME="M03_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_bresp">
@@ -3997,30 +3996,14 @@
             <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M03_AXI_bready" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M03_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_arvalid" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M03_AXI_arready" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" LEFT="31" NAME="M03_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_rready" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="1" NAME="M03_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_rresp">
@@ -4033,9 +4016,24 @@
             <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M03_AXI_rready" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_rready">
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_rready"/>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_wready" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M03_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_wvalid" SIGIS="undef" SIGNAME="axi_uartlite_1_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -4149,25 +4147,23 @@
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M03_AXI" DATAWIDTH="32" NAME="M03_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="M03_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="M03_AXI_arready"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="M03_AXI_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M03_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWPROT" PHYSICAL="M03_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M03_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M03_AXI_awready"/>
-            <PORTMAP LOGICAL="WDATA" PHYSICAL="M03_AXI_wdata"/>
-            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M03_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WVALID" PHYSICAL="M03_AXI_wvalid"/>
-            <PORTMAP LOGICAL="WREADY" PHYSICAL="M03_AXI_wready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M03_AXI_awvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="M03_AXI_bready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M03_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M03_AXI_bvalid"/>
-            <PORTMAP LOGICAL="BREADY" PHYSICAL="M03_AXI_bready"/>
-            <PORTMAP LOGICAL="ARADDR" PHYSICAL="M03_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARPROT" PHYSICAL="M03_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARVALID" PHYSICAL="M03_AXI_arvalid"/>
-            <PORTMAP LOGICAL="ARREADY" PHYSICAL="M03_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M03_AXI_rdata"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="M03_AXI_rready"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M03_AXI_rresp"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M03_AXI_rvalid"/>
-            <PORTMAP LOGICAL="RREADY" PHYSICAL="M03_AXI_rready"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="M03_AXI_wdata"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="M03_AXI_wready"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M03_AXI_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="M03_AXI_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -4192,7 +4188,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -4217,12 +4213,12 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="servo_0" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ARESETN"/>
-            <CONNECTION INSTANCE="servo_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ARESETN"/>
-            <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ARESETN"/>
           </CONNECTIONS>
         </PORT>
@@ -4348,7 +4344,7 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -4366,7 +4362,7 @@
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="4"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>

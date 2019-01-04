@@ -63,7 +63,7 @@
           <spirit:name>FREQ_HZ</spirit:name>
           <spirit:displayName>aclk frequency</spirit:displayName>
           <spirit:description>aclk frequency</spirit:description>
-          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLKIF.FREQ_HZ" spirit:minimum="1" spirit:maximum="1000000000" spirit:rangeType="long">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLKIF.FREQ_HZ" spirit:minimum="1" spirit:maximum="1000000000" spirit:rangeType="long">1e+08</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
@@ -648,7 +648,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.FREQ_HZ">1e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1476,7 +1476,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.FREQ_HZ">1e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -3108,7 +3108,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M01_AXI.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M01_AXI.FREQ_HZ">1e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -4740,7 +4740,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M02_AXI.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M02_AXI.FREQ_HZ">1e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -6372,7 +6372,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M03_AXI.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M03_AXI.FREQ_HZ">1e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -26252,7 +26252,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:5a4bf888</spirit:value>
+            <spirit:value>8:15d2fcf9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -26260,17 +26260,10 @@
         <spirit:name>xilinx_synthesisconstraints</spirit:name>
         <spirit:displayName>Synthesis Constraints</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_synthesisconstraints_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 02 06:06:31 UTC 2019</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:5a4bf888</spirit:value>
+            <spirit:value>8:15d2fcf9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -26286,11 +26279,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 02 06:06:31 UTC 2019</spirit:value>
+            <spirit:value>Fri Jan 04 08:28:39 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:5a4bf888</spirit:value>
+            <spirit:value>8:15d2fcf9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -26325,7 +26318,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:395e45cb</spirit:value>
+            <spirit:value>8:7fc31222</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -26341,11 +26334,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 02 06:06:31 UTC 2019</spirit:value>
+            <spirit:value>Fri Jan 04 08:28:40 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:395e45cb</spirit:value>
+            <spirit:value>8:7fc31222</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -26359,11 +26352,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 02 06:08:48 UTC 2019</spirit:value>
+            <spirit:value>Fri Jan 04 08:33:07 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:5a4bf888</spirit:value>
+            <spirit:value>8:15d2fcf9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -28728,16 +28721,6 @@
         <spirit:name>../../ipshared/15a3/hdl/axi_crossbar_v2_1_vl_rfs.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>axi_crossbar_v2_1_18</spirit:logicalName>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_synthesisconstraints_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>design_1_xbar_0_ooc.xdc</spirit:name>
-        <spirit:userFileType>xdc</spirit:userFileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
-        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>

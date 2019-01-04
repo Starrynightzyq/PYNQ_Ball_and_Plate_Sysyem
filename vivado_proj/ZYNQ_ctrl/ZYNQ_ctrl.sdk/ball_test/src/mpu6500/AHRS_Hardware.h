@@ -11,6 +11,7 @@
 #include "mpu6500.h"
 #include "MahonyAHRS.h"
 #include "../DronePara.h"
+#include <stdio.h>
 
 #define DEBUG_PRINT
 

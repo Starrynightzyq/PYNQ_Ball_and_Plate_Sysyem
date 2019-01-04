@@ -61,6 +61,7 @@
 #include "./timer_driver/timer_driver.h"
 #include "./uart_driver/uart_driver.h"
 #include "./control/PID_Control.h"
+#include "./data2pc/data2pc.h"
 #include "uart_cam.h"
 #include "DronePara.h"
 #include "flag.h"
@@ -68,8 +69,6 @@
 #include "servo.h"
 
 #define INTC_DEVICE_ID			XPAR_SCUGIC_0_DEVICE_ID
-#define UARTLITE_PC_DEVICE_ID 	XPAR_UARTLITE_0_DEVICE_ID
-#define UARTLITE_PC_INT_ID		XPAR_FABRIC_UARTLITE_0_VEC_ID
 #define IICAXI_0_DEVICE_ID		XPAR_IIC_0_DEVICE_ID
 #define IICAXI_0_INT_ID			XPAR_FABRIC_IIC_0_VEC_ID
 #define TIMER_0_DEVICE_ID		XPAR_XSCUTIMER_0_DEVICE_ID
@@ -79,11 +78,12 @@
 
 #define TEST_BUFFER_SIZE 10
 
-XScuGic InterruptController; 	     /* Instance of the Interrupt Controller */
-XIic IicInstance;	/* The instance of the mpu6500 IIC device. */
-XScuTimer TimerInstance;	/* Cortex A9 Scu Private Timer Instance */
-XUartLite UartCam;
-XServo Servo;
+XScuGic InterruptController;	/* Instance of the Interrupt Controller */
+XIic IicInstance;				/* The instance of the mpu6500 IIC device. */
+XScuTimer TimerInstance;		/* Cortex A9 Scu Private Timer Instance */
+XUartLite UartCam;				/* 与摄像头板连接的uart口 */
+XUartLite UartPc;				/* 与上位机通信的uart口 */
+XServo Servo;					/* 舵机PWM产生IP */
 
 //全局变量
 DroneRTInfo RT_Info;	//传感器数据
@@ -141,6 +141,9 @@ int Init_System(void) {
 
 	//初始化摄像头串口
 	InitUartCam();
+
+	//初始化与pc通信的uart
+	InitUartPc();
 
 	//初始化舵机
     xil_printf("Init the servos...\r\n");

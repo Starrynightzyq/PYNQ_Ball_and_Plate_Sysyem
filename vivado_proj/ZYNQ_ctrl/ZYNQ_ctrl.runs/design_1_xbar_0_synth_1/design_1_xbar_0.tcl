@@ -35,7 +35,6 @@ set_property ip_repo_paths c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/repo [current_p
 set_property ip_output_repo c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
-set_property used_in_implementation false [get_files -all c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -45,8 +44,6 @@ set_property used_in_implementation false [get_files -all c:/MyFiles/PYNQ_Ball_a
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 0
 
 set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.runs/design_1_xbar_0_synth_1 -new_name design_1_xbar_0 -ip [get_ips design_1_xbar_0]]

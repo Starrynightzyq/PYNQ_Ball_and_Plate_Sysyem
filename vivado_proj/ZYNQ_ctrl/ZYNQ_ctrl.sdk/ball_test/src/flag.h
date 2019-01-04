@@ -23,6 +23,9 @@ typedef struct {
 	bool timer_25Hz;
 	bool timer_1Hz;
 	bool uart_cam_recv;	/* uart 接收标志 */
+	bool uart_pc_recv;	/* uart pc 接收标志 */
+	bool report_pid;	/* 上传PID参数 */
+	bool save_pid;		/* 保存PID参数到SD */
 	u8 pid_mode;		/* pid mode */
 } flag;
 

@@ -14,12 +14,6 @@
 #include "xil_exception.h"
 #include "xil_printf.h"
 
-
-static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
-			      XScuTimer *TimerInstancePtr, u16 TimerIntrId);
-
-static void TimerIntrHandler(void *CallBackRef);
-
 /*
  * Function for external calls
  */

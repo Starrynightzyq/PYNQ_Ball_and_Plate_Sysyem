@@ -17,12 +17,17 @@ extern flag FlagInstance;
 
 static u16 counter = 0;
 
+static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+			      XScuTimer *TimerInstancePtr, u16 TimerIntrId);
+
+static void TimerIntrHandler(void *CallBackRef);
+
 int InitTimer(XScuTimer *TimerInstancePtr,
 		u16 TimerDeviceId, u16 TimerIntrId,
 		XScuGic *IntcInstancePtr, u32 TimerLoadValue) {
 
 	int Status;
-	int LastTimerExpired = 0;
+//	int LastTimerExpired = 0;
 	XScuTimer_Config *ConfigPtr;
 
 	/*

@@ -793,6 +793,7 @@
         <spirit:componentRef spirit:library="ip" spirit:name="axi_uartlite" spirit:vendor="xilinx.com" spirit:version="2.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_uartlite_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_BAUDRATE">115200</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -831,13 +832,13 @@
         <spirit:internalPortReference spirit:componentRef="rst_ps7_0_100M" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="servo_0" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_uartlite_1" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M01_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="servo_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M02_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axi_uartlite_1" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M03_ACLK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
@@ -850,12 +851,12 @@
         <spirit:internalPortReference spirit:componentRef="rst_ps7_0_100M" spirit:portRef="peripheral_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="servo_0" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_uartlite_1" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M01_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="servo_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M02_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="axi_uartlite_1" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M03_ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>

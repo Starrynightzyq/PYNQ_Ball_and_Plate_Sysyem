@@ -167,8 +167,8 @@ void IMU_getInfo()
 
 void IMU_printInfo() {
 #ifdef DEBUG_PRINT
-	char *str;
-	sprintf(str, "angle: %f %f %f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
+	char str[32];
+	sprintf(str, "angle: %3.1f %3.1f %3.1f", RT_Info.Roll, RT_Info.Pitch, RT_Info.Yaw);
 	puts(str);
 #endif
 }

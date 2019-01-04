@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-//Date        : Wed Jan  2 14:06:03 2019
+//Date        : Fri Jan  4 16:28:09 2019
 //Host        : ZYQ-Mac-Win running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -73,10 +73,10 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2c SDA_T" *) output i2c_sda_t;
   output pwm_out_0;
   output pwm_out_1;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_camera " *) input uart_camera_rxd;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_camera " *) output uart_camera_txd;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_pc " *) input uart_pc_rxd;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_pc " *) output uart_pc_txd;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_camera RxD" *) input uart_camera_rxd;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_camera TxD" *) output uart_camera_txd;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_pc RxD" *) input uart_pc_rxd;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_pc TxD" *) output uart_pc_txd;
 
   wire axi_iic_0_IIC_SCL_I;
   wire axi_iic_0_IIC_SCL_O;

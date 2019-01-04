@@ -12,6 +12,7 @@
 #include "./mpu6500/AHRS_Hardware.h"
 #include "uart_cam.h"
 #include "./control/position_control.h"
+#include "./data2pc/data2pc.h"
 
 //void MPU6500_Task();
 void TimerTask(void);
