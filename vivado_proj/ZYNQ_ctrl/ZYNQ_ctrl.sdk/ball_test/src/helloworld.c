@@ -149,7 +149,7 @@ int Init_System(void) {
     xil_printf("Init the servos...\r\n");
 	InitServo();
     xil_printf("Init the servos done\r\n");
-    sleep(1);
+    sleep(3);
 
 	//初始化MPU6500
 	xil_printf("Init the mpu 6500...\r\n");
@@ -265,11 +265,11 @@ void InitServo(void) {
     ServoConfigPtr = XServo_LookupConfig(XPAR_SERVO_0_DEVICE_ID);
     XServo_CfgInitialize(&Servo, ServoConfigPtr, ServoConfigPtr->BaseAddress);
 
-    //设置初始位置 90
-    XServo_SetPWM(&Servo, 1, 40000);
-    XServo_SetPWM(&Servo, 2, 40000);
+//    //设置初始位置 90
+//    XServo_SetPWM(&Servo, 1, 40000);
+//    XServo_SetPWM(&Servo, 2, 40000);
 
-    Servo_test();
+//    Servo_test();
 
     //设置初始位置 90
     XServo_SetPWM(&Servo, 1, 100000);

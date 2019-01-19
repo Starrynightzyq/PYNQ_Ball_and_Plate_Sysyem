@@ -15,9 +15,9 @@
 #include "stdio.h"
 
 //执行器在该系统可操作最大行程最大值
-#define PWM_MAX_X 160
+#define PWM_MAX_X 150
 #define PWM_MIN_X 40
-#define PWM_MAX_Y 160
+#define PWM_MAX_Y 150
 #define PWM_MIN_Y 40
 
 //PWM输出

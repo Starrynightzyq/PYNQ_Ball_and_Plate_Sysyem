@@ -8,6 +8,7 @@
 
 extern flag FlagInstance;
 extern _Pid_Out Pid_Out;		//PID输出数据
+extern BallInfo Ball_Info;		//小球位置数据
 /*
 //500 Hz
 void MPU6500_Task() {
@@ -47,7 +48,7 @@ void TimerTask(void) {
 
 
 		if(FlagInstance.pid_mode == MODE_DUAL) {
-			Position_Control(0, 0);
+			Position_Control(120, 160);
 		}
 
 
@@ -60,6 +61,10 @@ void TimerTask(void) {
 	}
 
 	if(FlagInstance.timer_1Hz) {	/* 1HZ */
+
+		xil_printf("o:%d,%d\r\n", (int)Pid_Out.position_x_o, (int)Pid_Out.position_y_o);
+
+//		xil_printf("ball:%d,%d\r\n", Ball_Info.x, Ball_Info.y);
 
 		Print_PWM();
 		IMU_printInfo();

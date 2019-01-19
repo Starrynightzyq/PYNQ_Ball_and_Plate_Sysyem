@@ -18,5 +18,5 @@ void InitFlag(flag *FlagInstance) {
 	FlagInstance->uart_pc_recv = false;
 	FlagInstance->report_pid = false;
 	FlagInstance->save_pid = false;
-	FlagInstance->pid_mode = MODE_SINGLE;
+	FlagInstance->pid_mode = MODE_DUAL;
 }

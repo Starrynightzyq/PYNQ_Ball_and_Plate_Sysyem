@@ -8,7 +8,7 @@
 #ifndef SRC_UART_CAM_H_
 #define SRC_UART_CAM_H_
 
-#define DEBUG
+//#define DEBUG
 
 #include "uart_driver/uart_driver.h"
 

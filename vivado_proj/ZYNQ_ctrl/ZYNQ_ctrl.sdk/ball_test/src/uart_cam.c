@@ -45,8 +45,8 @@ void RecvUartCam(void) {
 	GetUart8Data(&ID, &data0, &data1);
 
 	if(ID == CAM_POSITION) {
-		Ball_Info.x = data0;
-		Ball_Info.y = data1;
+		Ball_Info.x = data1;
+		Ball_Info.y = data0;
 #ifdef DEBUG
 		xil_printf("x = %d, y = %d\r\n", Ball_Info.x, Ball_Info.y);
 #endif

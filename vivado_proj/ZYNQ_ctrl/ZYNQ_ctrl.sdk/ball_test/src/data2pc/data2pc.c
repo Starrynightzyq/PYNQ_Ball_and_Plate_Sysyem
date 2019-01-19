@@ -92,14 +92,14 @@ void Process_PcData(u8 *PcData) {
 			FlagInstance.report_pid = 1;
 			FlagInstance.save_pid = 1;
         }
-        /* 设置accPitch的PID参数  -> 外环position_x */
+        /* 设置accPitch的PID参数  -> 外环position_x -*/
         else if(PcData[2]==0x0B){
 
         	xil_printf("position_x\r\n");
 
-        	Position_x.Kp = UnsignedcharToFloat(PcData,3);
-        	Position_x.Ki = UnsignedcharToFloat(PcData,7);
-        	Position_x.Kd = UnsignedcharToFloat(PcData,11);
+        	Position_x.Kp = -UnsignedcharToFloat(PcData,3);
+        	Position_x.Ki = -UnsignedcharToFloat(PcData,7);
+        	Position_x.Kd = -UnsignedcharToFloat(PcData,11);
 			FlagInstance.report_pid = 1;
 			FlagInstance.save_pid = 1;
         }
