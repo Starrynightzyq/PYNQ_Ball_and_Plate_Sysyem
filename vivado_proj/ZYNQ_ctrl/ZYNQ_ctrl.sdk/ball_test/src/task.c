@@ -22,19 +22,19 @@ void TimerTask(void) {
 	if(FlagInstance.timer_500Hz) {
 
 		IMU_getInfo();					// 姿态解算
-										// 内环PID
+
+		FlagInstance.timer_500Hz = 0;
+	}
+
+	if(FlagInstance.timer_250Hz) {
+
+		// 内环PID
 		if(FlagInstance.pid_mode == MODE_SINGLE) {
 			Angle_Control(180, 180);
 		}
 		else if(FlagInstance.pid_mode == MODE_DUAL) {
 			Angle_Control(Pid_Out.position_x_o+180, Pid_Out.position_y_o+180);
 		}
-
-
-		FlagInstance.timer_500Hz = 0;
-	}
-
-	if(FlagInstance.timer_250Hz) {
 
 		FlagInstance.timer_250Hz = 0;
 	}
@@ -46,28 +46,30 @@ void TimerTask(void) {
 
 	if(FlagInstance.timer_40Hz) {	/* 40HZ */
 
-
+		//外环PID
 		if(FlagInstance.pid_mode == MODE_DUAL) {
 			Position_Control(120, 160);
 		}
-
 
 		FlagInstance.timer_40Hz = 0;
 	}
 
 	if(FlagInstance.timer_25Hz) {	/* 25HZ */
 
+		App_TaskDataToPC();				//发送数据给上位机
 		FlagInstance.timer_25Hz = 0;
 	}
 
 	if(FlagInstance.timer_1Hz) {	/* 1HZ */
 
-		xil_printf("o:%d,%d\r\n", (int)Pid_Out.position_x_o, (int)Pid_Out.position_y_o);
+//		xil_printf("o:%d,%d\r\n", (int)Pid_Out.position_x_o, (int)Pid_Out.position_y_o);
 
 //		xil_printf("ball:%d,%d\r\n", Ball_Info.x, Ball_Info.y);
 
-		Print_PWM();
-		IMU_printInfo();
+//		Print_PWM();
+//		IMU_printInfo();
+
+//		xil_printf("1 Hz\r\n");
 
 		FlagInstance.timer_1Hz = 0;
 
@@ -81,7 +83,7 @@ void ExIntrTask(void) {
 		FlagInstance.uart_cam_recv = 0;
 	}
 
-	if(FlagInstance.uart_pc_recv) { /* uart1 cam 中断触发 */
+	if(FlagInstance.uart_pc_recv) { /* uart0 pc 中断触发 */
 		Receive_PcData();
 		FlagInstance.uart_pc_recv = 0;
 	}

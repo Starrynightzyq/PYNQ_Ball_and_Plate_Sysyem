@@ -136,9 +136,6 @@ int Init_System(void) {
 	//初始化与MPU6500连接的IIC接口
 	IicInit(&IicInstance, IICAXI_0_DEVICE_ID, IICAXI_0_INT_ID, MPU6500_IIC_ADDR, &InterruptController);
 
-	//初始化定时器
-	InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &InterruptController, TIMER_0_LOAD_VALUE);
-
 	//初始化摄像头串口
 	InitUartCam();
 
@@ -155,6 +152,9 @@ int Init_System(void) {
 	xil_printf("Init the mpu 6500...\r\n");
     AHRS_HardWareinit(&IicInstance);
     xil_printf("Init the mpu 6500 done\r\n");
+
+	//初始化定时器
+	InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &InterruptController, TIMER_0_LOAD_VALUE);
 
 	return XST_SUCCESS;
 }

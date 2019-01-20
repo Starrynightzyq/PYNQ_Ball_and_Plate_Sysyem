@@ -14,6 +14,11 @@
 
 #define lowpass_filter  7.9577e-3
 
+#define SYMBOL_ANGLE_X (-1.0)
+#define SYMBOL_ANGLE_Y (1.0)
+#define SYMBOL_POSITION_X (-1.0)
+#define SYMBOL_POSITION_Y (1.0)
+
 void PID_Init(Pid *ANGLE_X,Pid *ANGLE_Y,Pid *POSITION_X,Pid *POSITION_Y);
 float PID_Control(Pid *PID, float expect_PID, float feedback_PID, float PIDtime,float Integrallimiter);
 
