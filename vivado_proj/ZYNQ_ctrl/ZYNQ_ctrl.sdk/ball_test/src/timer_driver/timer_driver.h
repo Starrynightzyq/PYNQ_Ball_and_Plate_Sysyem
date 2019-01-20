@@ -19,6 +19,6 @@
  */
 int InitTimer(XScuTimer *TimerInstancePtr,
 		u16 TimerDeviceId, u16 TimerIntrId,
-		XScuGic *IntcInstancePtr, u32 TimerLoadValue);
+		XScuGic *IntcInstancePtr, u32 TimerLoadValue, u8 Priority);
 
 #endif /* SRC_TIMER_DRIVER_TIMER_DRIVER_H_ */

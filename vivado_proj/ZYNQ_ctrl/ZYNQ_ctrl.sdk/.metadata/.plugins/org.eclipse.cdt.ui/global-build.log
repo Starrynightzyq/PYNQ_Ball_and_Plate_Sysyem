@@ -4321,3 +4321,713 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: Nothing to be done for `main-build'.
+19:17:56 **** Auto Build of configuration Debug for project fsbl ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+19:17:57 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+19:24:21 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:26:5: error: conflicting types for 'IicInit'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr, u8 Priority) {
+     ^~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:36:5: note: previous declaration of 'IicInit' was here
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr);
+     ^~~~~~~
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:107:33: error: 'IntrInstancePtr' undeclared (first use in this function); did you mean 'IntcInstancePtr'?
+  XScuGic_SetPriorityTriggerType(IntrInstancePtr, IntId, Priority, 0x3);
+                                 ^~~~~~~~~~~~~~~
+                                 IntcInstancePtr
+../src/iic_driver/iic_driver.c:107:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/iic_driver/iic_driver.c:107:50: error: 'IntId' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntrInstancePtr, IntId, Priority, 0x3);
+                                                  ^~~~~
+../src/iic_driver/iic_driver.c:107:57: error: 'Priority' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntrInstancePtr, IntId, Priority, 0x3);
+                                                         ^~~~~~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:24:37 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:26:5: error: conflicting types for 'IicInit'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr, u8 Priority) {
+     ^~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:36:5: note: previous declaration of 'IicInit' was here
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr);
+     ^~~~~~~
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:107:63: error: 'Priority' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntcInstancePtr, Iic_Intc_Id, Priority, 0x3);
+                                                               ^~~~~~~~
+../src/iic_driver/iic_driver.c:107:63: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:24:51 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:26:5: error: conflicting types for 'IicInit'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr, u8 Priority) {
+     ^~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:36:5: note: previous declaration of 'IicInit' was here
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr);
+     ^~~~~~~
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:107:63: error: 'Priority' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntcInstancePtr, Iic_Intc_Id, Priority, 0x3);
+                                                               ^~~~~~~~
+../src/iic_driver/iic_driver.c:107:63: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:25:03 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:107:63: error: 'Priority' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntcInstancePtr, Iic_Intc_Id, Priority, 0x3);
+                                                               ^~~~~~~~
+../src/iic_driver/iic_driver.c:107:63: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:25:36 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:107:63: error: 'Priority' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntcInstancePtr, Iic_Intc_Id, Priority, 0x3);
+                                                               ^~~~~~~~
+../src/iic_driver/iic_driver.c:107:63: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:27:43 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:107:63: error: 'Priority' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntcInstancePtr, Iic_Intc_Id, Priority, 0x3);
+                                                               ^~~~~~~~
+../src/iic_driver/iic_driver.c:107:63: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:29:15 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:107:63: error: 'Priority' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntcInstancePtr, Iic_Intc_Id, Priority, 0x3);
+                                                               ^~~~~~~~
+../src/iic_driver/iic_driver.c:107:63: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:30:50 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:107:63: error: 'Priority' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntcInstancePtr, Iic_Intc_Id, Priority, 0x3);
+                                                               ^~~~~~~~
+../src/iic_driver/iic_driver.c:107:63: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:31:01 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/data2pc/data2pc.o  ./src/control/PID_Control.o ./src/control/SimpleDigitalFiltering.o ./src/control/position_control.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108832	   4264	  24416	 137512	  21928	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+19:32:17 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:108:63: error: 'Priority' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntcInstancePtr, Iic_Intc_Id, Priority, 0x03);
+                                                               ^~~~~~~~
+../src/iic_driver/iic_driver.c:108:63: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:32:45 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:26:5: error: conflicting types for 'IicInit'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr) {
+     ^~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:36:5: note: previous declaration of 'IicInit' was here
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr, u8 Priority);
+     ^~~~~~~
+../src/iic_driver/iic_driver.c:69:5: error: conflicting types for 'iic_setup_interrupt'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr, u8 Priority) {
+     ^~~~~~~~~~~~~~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:33:5: note: previous declaration of 'iic_setup_interrupt' was here
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr);
+     ^~~~~~~~~~~~~~~~~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:33:10 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:69:5: error: conflicting types for 'iic_setup_interrupt'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr, u8 Priority) {
+     ^~~~~~~~~~~~~~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:33:5: note: previous declaration of 'iic_setup_interrupt' was here
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr);
+     ^~~~~~~~~~~~~~~~~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:33:19 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c: In function 'IicInit':
+../src/iic_driver/iic_driver.c:46:11: error: too few arguments to function 'iic_setup_interrupt'
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:33:5: note: declared here
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr, u8 Priority);
+     ^~~~~~~~~~~~~~~~~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:33:43 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:26:5: error: conflicting types for 'IicInit'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr, u8 Priority) {
+     ^~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:36:5: note: previous declaration of 'IicInit' was here
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr);
+     ^~~~~~~
+../src/iic_driver/iic_driver.c: In function 'IicInit':
+../src/iic_driver/iic_driver.c:46:11: error: too few arguments to function 'iic_setup_interrupt'
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:33:5: note: declared here
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr, u8 Priority);
+     ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: At top level:
+../src/iic_driver/iic_driver.c:69:5: error: conflicting types for 'iic_setup_interrupt'
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+     ^~~~~~~~~~~~~~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:33:5: note: previous declaration of 'iic_setup_interrupt' was here
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr, u8 Priority);
+     ^~~~~~~~~~~~~~~~~~~
+../src/iic_driver/iic_driver.c: In function 'iic_setup_interrupt':
+../src/iic_driver/iic_driver.c:108:63: error: 'Priority' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntcInstancePtr, Iic_Intc_Id, Priority, 0x03);
+                                                               ^~~~~~~~
+../src/iic_driver/iic_driver.c:108:63: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:34:09 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:26:5: error: conflicting types for 'IicInit'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr, u8 Priority) {
+     ^~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:36:5: note: previous declaration of 'IicInit' was here
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr);
+     ^~~~~~~
+../src/iic_driver/iic_driver.c: In function 'IicInit':
+../src/iic_driver/iic_driver.c:46:11: error: too few arguments to function 'iic_setup_interrupt'
+  Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+           ^~~~~~~~~~~~~~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:33:5: note: declared here
+ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr, u8 Priority);
+     ^~~~~~~~~~~~~~~~~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:34:18 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+../src/iic_driver/iic_driver.c:26:5: error: conflicting types for 'IicInit'
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr, u8 Priority) {
+     ^~~~~~~
+In file included from ../src/iic_driver/iic_driver.c:9:0:
+../src/iic_driver/iic_driver.h:36:5: note: previous declaration of 'IicInit' was here
+ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr);
+     ^~~~~~~
+make: *** [src/iic_driver/iic_driver.o] ´íÎó 1
+19:34:29 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mpu6500/AHRS_Hardware.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/AHRS_Hardware.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/AHRS_Hardware.d" -MT"src/mpu6500/AHRS_Hardware.o" -o "src/mpu6500/AHRS_Hardware.o" "../src/mpu6500/AHRS_Hardware.c"
+Finished building: ../src/mpu6500/AHRS_Hardware.c
+ 
+Building file: ../src/mpu6500/mpu6500.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpu6500/mpu6500.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mpu6500/mpu6500.d" -MT"src/mpu6500/mpu6500.o" -o "src/mpu6500/mpu6500.o" "../src/mpu6500/mpu6500.c"
+Finished building: ../src/mpu6500/mpu6500.c
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/data2pc/data2pc.o  ./src/control/PID_Control.o ./src/control/SimpleDigitalFiltering.o ./src/control/position_control.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108832	   4264	  24416	 137512	  21928	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+19:34:50 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_driver/iic_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_driver/iic_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_driver/iic_driver.d" -MT"src/iic_driver/iic_driver.o" -o "src/iic_driver/iic_driver.o" "../src/iic_driver/iic_driver.c"
+Finished building: ../src/iic_driver/iic_driver.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/data2pc/data2pc.o  ./src/control/PID_Control.o ./src/control/SimpleDigitalFiltering.o ./src/control/position_control.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108832	   4264	  24416	 137512	  21928	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+19:35:33 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+../src/uart_driver/uart_driver.c:12:5: error: conflicting types for 'InitUartLite'
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+In file included from ../src/uart_driver/uart_driver.c:7:0:
+../src/uart_driver/uart_driver.h:35:5: note: previous declaration of 'InitUartLite' was here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+make: *** [src/uart_driver/uart_driver.o] ´íÎó 1
+19:35:43 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+../src/uart_driver/uart_driver.c:12:5: error: conflicting types for 'InitUartLite'
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+In file included from ../src/uart_driver/uart_driver.c:7:0:
+../src/uart_driver/uart_driver.h:35:5: note: previous declaration of 'InitUartLite' was here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+make: *** [src/uart_driver/uart_driver.o] ´íÎó 1
+19:35:55 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_driver/uart_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_driver/uart_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_driver/uart_driver.d" -MT"src/uart_driver/uart_driver.o" -o "src/uart_driver/uart_driver.o" "../src/uart_driver/uart_driver.c"
+Finished building: ../src/uart_driver/uart_driver.c
+ 
+Building file: ../src/data2pc/data2pc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data2pc/data2pc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/data2pc/data2pc.d" -MT"src/data2pc/data2pc.o" -o "src/data2pc/data2pc.o" "../src/data2pc/data2pc.c"
+../src/data2pc/data2pc.c: In function 'InitUartPc':
+../src/data2pc/data2pc.c:37:2: error: too few arguments to function 'InitUartLite'
+  InitUartLite(&UartPc, UARTLITE_PC_DEVICE_ID, UARTLITE_PC_INT_ID, &InterruptController, PcSendHandler, PcRecvHandler);
+  ^~~~~~~~~~~~
+In file included from ../src/data2pc/data2pc.h:11:0,
+                 from ../src/data2pc/data2pc.c:7:
+../src/data2pc/../uart_driver/uart_driver.h:35:5: note: declared here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+make: *** [src/data2pc/data2pc.o] ´íÎó 1
+19:37:15 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/data2pc/data2pc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data2pc/data2pc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/data2pc/data2pc.d" -MT"src/data2pc/data2pc.o" -o "src/data2pc/data2pc.o" "../src/data2pc/data2pc.c"
+../src/data2pc/data2pc.c: In function 'InitUartPc':
+../src/data2pc/data2pc.c:37:2: error: too few arguments to function 'InitUartLite'
+  InitUartLite(&UartPc, UARTLITE_PC_DEVICE_ID, UARTLITE_PC_INT_ID, &InterruptController, PcSendHandler, PcRecvHandler);
+  ^~~~~~~~~~~~
+In file included from ../src/data2pc/data2pc.h:11:0,
+                 from ../src/data2pc/data2pc.c:7:
+../src/data2pc/../uart_driver/uart_driver.h:35:5: note: declared here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+make: *** [src/data2pc/data2pc.o] ´íÎó 1
+19:37:24 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/data2pc/data2pc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data2pc/data2pc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/data2pc/data2pc.d" -MT"src/data2pc/data2pc.o" -o "src/data2pc/data2pc.o" "../src/data2pc/data2pc.c"
+Finished building: ../src/data2pc/data2pc.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/task.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/task.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/task.d" -MT"src/task.o" -o "src/task.o" "../src/task.c"
+Finished building: ../src/task.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'InitUartCam':
+../src/uart_cam.c:35:2: error: too few arguments to function 'InitUartLite'
+  InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController, CamSendHandler, CamRecvHandler);
+  ^~~~~~~~~~~~
+In file included from ../src/uart_cam.h:13:0,
+                 from ../src/uart_cam.c:8:
+../src/uart_driver/uart_driver.h:35:5: note: declared here
+ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
+     ^~~~~~~~~~~~
+make: *** [src/uart_cam.o] ´íÎó 1
+19:37:50 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+../src/uart_cam.c: In function 'InitUartCam':
+../src/uart_cam.c:35:124: error: 'PRI_UART_CAM' undeclared (first use in this function); did you mean 'SRC_UART_CAM_H_'?
+  InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController, CamSendHandler, CamRecvHandler, PRI_UART_CAM);
+                                                                                                                            ^~~~~~~~~~~~
+                                                                                                                            SRC_UART_CAM_H_
+../src/uart_cam.c:35:124: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/uart_cam.o] ´íÎó 1
+19:38:11 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/data2pc/data2pc.o  ./src/control/PID_Control.o ./src/control/SimpleDigitalFiltering.o ./src/control/position_control.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108832	   4264	  24416	 137512	  21928	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+19:39:57 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c:25:5: error: conflicting types for 'InitTimer'
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+In file included from ../src/timer_driver/timer_driver.c:7:0:
+../src/timer_driver/timer_driver.h:20:5: note: previous declaration of 'InitTimer' was here
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+19:40:36 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c:25:5: error: conflicting types for 'InitTimer'
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+In file included from ../src/timer_driver/timer_driver.c:7:0:
+../src/timer_driver/timer_driver.h:20:5: note: previous declaration of 'InitTimer' was here
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'TimerSetupIntrSystem':
+../src/timer_driver/timer_driver.c:105:63: error: 'Priority' undeclared (first use in this function)
+  XScuGic_SetPriorityTriggerType(IntcInstancePtr, TimerIntrId, Priority, 0x3);
+                                                               ^~~~~~~~
+../src/timer_driver/timer_driver.c:105:63: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+19:40:49 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c:25:5: error: conflicting types for 'InitTimer'
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+In file included from ../src/timer_driver/timer_driver.c:7:0:
+../src/timer_driver/timer_driver.h:20:5: note: previous declaration of 'InitTimer' was here
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+../src/timer_driver/timer_driver.c:87:12: error: conflicting types for 'TimerSetupIntrSystem'
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:20:12: note: previous declaration of 'TimerSetupIntrSystem' was here
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:20:12: warning: 'TimerSetupIntrSystem' used but never defined
+../src/timer_driver/timer_driver.c:87:12: warning: 'TimerSetupIntrSystem' defined but not used [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+19:41:00 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c:25:5: error: conflicting types for 'InitTimer'
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+In file included from ../src/timer_driver/timer_driver.c:7:0:
+../src/timer_driver/timer_driver.h:20:5: note: previous declaration of 'InitTimer' was here
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+../src/timer_driver/timer_driver.c: In function 'InitTimer':
+../src/timer_driver/timer_driver.c:60:11: error: too few arguments to function 'TimerSetupIntrSystem'
+  Status = TimerSetupIntrSystem(IntcInstancePtr,
+           ^~~~~~~~~~~~~~~~~~~~
+../src/timer_driver/timer_driver.c:20:12: note: declared here
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+19:41:18 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+../src/timer_driver/timer_driver.c:25:5: error: conflicting types for 'InitTimer'
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+In file included from ../src/timer_driver/timer_driver.c:7:0:
+../src/timer_driver/timer_driver.h:20:5: note: previous declaration of 'InitTimer' was here
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+make: *** [src/timer_driver/timer_driver.o] ´íÎó 1
+19:45:51 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/timer_driver/timer_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_driver/timer_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_driver/timer_driver.d" -MT"src/timer_driver/timer_driver.o" -o "src/timer_driver/timer_driver.o" "../src/timer_driver/timer_driver.c"
+Finished building: ../src/timer_driver/timer_driver.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Init_System':
+../src/helloworld.c:158:2: error: too few arguments to function 'InitTimer'
+  InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &InterruptController, TIMER_0_LOAD_VALUE);
+  ^~~~~~~~~
+In file included from ../src/helloworld.c:61:0:
+../src/./timer_driver/timer_driver.h:20:5: note: declared here
+ int InitTimer(XScuTimer *TimerInstancePtr,
+     ^~~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+19:46:08 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/data2pc/data2pc.o  ./src/control/PID_Control.o ./src/control/SimpleDigitalFiltering.o ./src/control/position_control.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108896	   4264	  24416	 137576	  21968	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+19:47:02 **** Auto Build of configuration Debug for project ball_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/data2pc/data2pc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data2pc/data2pc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/data2pc/data2pc.d" -MT"src/data2pc/data2pc.o" -o "src/data2pc/data2pc.o" "../src/data2pc/data2pc.c"
+Finished building: ../src/data2pc/data2pc.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/uart_cam.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cam.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_cam.d" -MT"src/uart_cam.o" -o "src/uart_cam.o" "../src/uart_cam.c"
+Finished building: ../src/uart_cam.c
+ 
+Building target: ball_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ball_test.elf"  ./src/uart_driver/uart_driver.o  ./src/timer_driver/timer_driver.o  ./src/mpu6500/AHRS_Hardware.o ./src/mpu6500/MahonyAHRS.o ./src/mpu6500/mpu6500.o  ./src/iic_driver/iic_driver.o  ./src/data2pc/data2pc.o  ./src/control/PID_Control.o ./src/control/SimpleDigitalFiltering.o ./src/control/position_control.o  ./src/flag.o ./src/helloworld.o ./src/platform.o ./src/task.o ./src/uart_cam.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ball_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ball_test.elf  |tee "ball_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108896	   4264	  24416	 137576	  21968	ball_test.elf
+Finished building: ball_test.elf.size
+ 
+19:47:20 **** Auto Build of configuration Debug for project fsbl ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.

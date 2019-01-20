@@ -8,6 +8,7 @@
 #include "uart_cam.h"
 #include "flag.h"
 #include "DronePara.h"
+#include "interrupt_priority.h"
 
 extern XUartLite UartCam;
 extern XScuGic InterruptController;
@@ -32,7 +33,7 @@ void CamSendHandler(void *CallBackRef, unsigned int EventData)
 }
 
 void InitUartCam(void) {
-	InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController, CamSendHandler, CamRecvHandler);
+	InitUartLite(&UartCam, UARTLITE_CAM_DEVICE_ID, UARTLITE_CAM_INT_ID, &InterruptController, CamSendHandler, CamRecvHandler, PRI_UART_CAM);
 
     //打开uart接收
     XUartLite_Recv(&UartCam, ReceiveBuffer, DATA_LEN);

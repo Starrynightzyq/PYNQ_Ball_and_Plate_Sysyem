@@ -30,10 +30,10 @@
 void Iic_SendHandler(XIic *InstancePtr);
 void Iic_ReceiveHandler(XIic *InstancePtr);
 void Iic_StatusHandler(XIic *InstancePtr, int Event);
-int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr);
+int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr, u8 Priority);
 
 //Function for external calls
-int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr);
+int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr, u8 Priority);
 int IicWriteData(XIic *InstancePtr, u8 reg, u8 *WriteBuffer, u16 ByteCount);
 int IicReadData(XIic *InstancePtr, u8 reg, u8 *ReadBuffer, u16 ByteCount);
 

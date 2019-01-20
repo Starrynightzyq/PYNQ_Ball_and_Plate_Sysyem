@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="ifdef" key="selection"/>
+		<item value="priority" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="Priority"/>
 			<item value="ifdef"/>
 			<item value="PCData"/>
 			<item value="XIntc"/>
@@ -15,7 +16,6 @@
 			<item value="IIC"/>
 			<item value="XPAR_AXI_UARTLITE_0_DEVICE_ID"/>
 			<item value="UARTLITE"/>
-			<item value="UART"/>
 		</list>
 		<list key="replacehistory">
 			<item value="PcData"/>

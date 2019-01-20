@@ -5,6 +5,7 @@
  *      Author: admin
  */
 #include "data2pc.h"
+#include "../interrupt_priority.h"
 
 static u8 ReceiveBufferPc[DATA_LEN_PC] = {0};
 //static u8 SendBufferPc[DATA_LEN_PC] = {0};
@@ -34,7 +35,7 @@ void PcSendHandler(void *CallBackRef, unsigned int EventData)
 }
 
 void InitUartPc(void) {
-	InitUartLite(&UartPc, UARTLITE_PC_DEVICE_ID, UARTLITE_PC_INT_ID, &InterruptController, PcSendHandler, PcRecvHandler);
+	InitUartLite(&UartPc, UARTLITE_PC_DEVICE_ID, UARTLITE_PC_INT_ID, &InterruptController, PcSendHandler, PcRecvHandler, PRI_UART_PC);
 
     //打开uart接收
 //	XUartLite_ResetFifos(&UartPc);

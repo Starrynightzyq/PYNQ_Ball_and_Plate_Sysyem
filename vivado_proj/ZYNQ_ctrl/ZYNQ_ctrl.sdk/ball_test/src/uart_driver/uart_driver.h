@@ -33,7 +33,7 @@ void SendHandler(void *CallBackRef, unsigned int EventData);
 */
 
 int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
-		XUartLite_Handler SendFuncPtr, XUartLite_Handler RecvFuncPtr);
+		XUartLite_Handler SendFuncPtr, XUartLite_Handler RecvFuncPtr, u8 Priority);
 
 //Uart 检查是否出错
 void Uart_Check(XUartLite *UartInstancePtr);

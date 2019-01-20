@@ -6110,3 +6110,20 @@ con
 17:29:32 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -arch zynq -o C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\fsbl\bootimage\BOOT.bin -w on
 17:29:33 INFO  : Bootgen command execution is done.
 17:29:41 INFO  : Disconnected from the channel tcfchan#5.
+18:44:21 INFO  : Registering command handlers for SDK TCF services
+18:44:21 INFO  : Launching XSCT server: xsct.bat -interactive C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\temp_xsdb_launch_script.tcl
+18:44:25 INFO  : XSCT server has started successfully.
+18:44:26 INFO  : Successfully done setting XSCT server connection channel  
+18:44:26 INFO  : Successfully done setting SDK workspace  
+19:17:08 INFO  : Registering command handlers for SDK TCF services
+19:17:08 INFO  : Launching XSCT server: xsct.bat -interactive C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\temp_xsdb_launch_script.tcl
+19:17:12 INFO  : XSCT server has started successfully.
+19:17:12 INFO  : Successfully done setting XSCT server connection channel  
+19:17:13 INFO  : Successfully done setting SDK workspace  
+19:47:18 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -arch zynq -o C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\fsbl\bootimage\BOOT.bin -w on
+19:47:19 INFO  : Bootgen command execution is done.
+20:02:00 INFO  : Registering command handlers for SDK TCF services
+20:02:01 INFO  : Launching XSCT server: xsct.bat -interactive C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.sdk\temp_xsdb_launch_script.tcl
+20:02:04 INFO  : XSCT server has started successfully.
+20:02:05 INFO  : Successfully done setting XSCT server connection channel  
+20:02:05 INFO  : Successfully done setting SDK workspace  

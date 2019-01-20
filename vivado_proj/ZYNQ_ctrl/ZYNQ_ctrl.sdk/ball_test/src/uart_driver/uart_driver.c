@@ -10,7 +10,7 @@ static volatile int TotalReceivedCount;
 static volatile int TotalSentCount;
 
 int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrInstancePtr,
-		XUartLite_Handler SendFuncPtr, XUartLite_Handler RecvFuncPtr) {
+		XUartLite_Handler SendFuncPtr, XUartLite_Handler RecvFuncPtr, u8 Priority) {
 
 	int Status;
 
@@ -57,7 +57,7 @@ int InitUartLite(XUartLite *UartInstancePtr, u16 DevId, u16 IntId, INTC *IntrIns
 	}
 
 	//0x3 sets a rising edge triggered interrupt, 0x0 sets highest priority.
-	XScuGic_SetPriorityTriggerType(IntrInstancePtr, IntId, 0x0, 0x3);
+	XScuGic_SetPriorityTriggerType(IntrInstancePtr, IntId, Priority, 0x3);
 
 	XScuGic_Enable(IntrInstancePtr, IntId);
 #endif

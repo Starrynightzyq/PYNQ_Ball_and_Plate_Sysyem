@@ -67,6 +67,7 @@
 #include "flag.h"
 #include "task.h"
 #include "servo.h"
+#include "interrupt_priority.h"
 
 #define INTC_DEVICE_ID			XPAR_SCUGIC_0_DEVICE_ID
 #define IICAXI_0_DEVICE_ID		XPAR_IIC_0_DEVICE_ID
@@ -134,7 +135,7 @@ int Init_System(void) {
 	InitInterruptController(&InterruptController, INTC_DEVICE_ID);
 
 	//初始化与MPU6500连接的IIC接口
-	IicInit(&IicInstance, IICAXI_0_DEVICE_ID, IICAXI_0_INT_ID, MPU6500_IIC_ADDR, &InterruptController);
+	IicInit(&IicInstance, IICAXI_0_DEVICE_ID, IICAXI_0_INT_ID, MPU6500_IIC_ADDR, &InterruptController, PRI_IIC0);
 
 	//初始化摄像头串口
 	InitUartCam();
@@ -154,7 +155,7 @@ int Init_System(void) {
     xil_printf("Init the mpu 6500 done\r\n");
 
 	//初始化定时器
-	InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &InterruptController, TIMER_0_LOAD_VALUE);
+	InitTimer(&TimerInstance, TIMER_0_DEVICE_ID, TIMER_0_INT_ID, &InterruptController, TIMER_0_LOAD_VALUE, PRI_TIMER0);
 
 	return XST_SUCCESS;
 }

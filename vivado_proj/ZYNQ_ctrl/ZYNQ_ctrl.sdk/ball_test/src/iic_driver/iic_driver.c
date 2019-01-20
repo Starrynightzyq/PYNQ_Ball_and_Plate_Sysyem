@@ -23,7 +23,7 @@ typedef u8 AddressType;
  */
 #define PAGE_SIZE   16
 
-int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr) {
+int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Address, INTC *IntcInstancePtr, u8 Priority) {
 	int Status;
 	XIic_Config *ConfigPtr;	/* Pointer to configuration data */
 	/*
@@ -43,7 +43,7 @@ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Addr
 	/*
 	 * Setup the iic interrupt
 	 */
-	Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr);
+	Status = iic_setup_interrupt(IicInstancePtr, Iic_Intc_Id, IntcInstancePtr, Priority);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
@@ -66,7 +66,7 @@ int IicInit(XIic *IicInstancePtr, u16 Iic_Dev_Id, u8 Iic_Intc_Id, int Slave_Addr
 	return XST_SUCCESS;
 }
 
-int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr) {
+int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstancePtr, u8 Priority) {
 	int Status;
 	/*
 	 * Connect the device driver handler that will be called when an
@@ -102,6 +102,9 @@ int iic_setup_interrupt(XIic *IicInstancePtr, u8 Iic_Intc_Id, INTC *IntcInstance
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
+
+	//0x3 sets a rising edge triggered interrupt, 0x0 sets highest priority.
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, Iic_Intc_Id, Priority, 0x03);
 
 	XScuGic_Enable(IntcInstancePtr, Iic_Intc_Id);
 

@@ -18,13 +18,13 @@ extern flag FlagInstance;
 static u16 counter = 0;
 
 static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
-			      XScuTimer *TimerInstancePtr, u16 TimerIntrId);
+			      XScuTimer *TimerInstancePtr, u16 TimerIntrId, u8 Priority);
 
 static void TimerIntrHandler(void *CallBackRef);
 
 int InitTimer(XScuTimer *TimerInstancePtr,
 		u16 TimerDeviceId, u16 TimerIntrId,
-		XScuGic *IntcInstancePtr, u32 TimerLoadValue) {
+		XScuGic *IntcInstancePtr, u32 TimerLoadValue, u8 Priority) {
 
 	int Status;
 //	int LastTimerExpired = 0;
@@ -58,7 +58,7 @@ int InitTimer(XScuTimer *TimerInstancePtr,
 	 * can occur.
 	 */
 	Status = TimerSetupIntrSystem(IntcInstancePtr,
-					TimerInstancePtr, TimerIntrId);
+					TimerInstancePtr, TimerIntrId, Priority);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
@@ -85,7 +85,7 @@ int InitTimer(XScuTimer *TimerInstancePtr,
 }
 
 static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
-			      XScuTimer *TimerInstancePtr, u16 TimerIntrId)
+			      XScuTimer *TimerInstancePtr, u16 TimerIntrId, u8 Priority)
 {
 	int Status;
 
@@ -100,6 +100,9 @@ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
 	if (Status != XST_SUCCESS) {
 		return Status;
 	}
+
+	//0x3 sets a rising edge triggered interrupt, 0x0 sets highest priority.
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, TimerIntrId, Priority, 0x3);
 
 	/*
 	 * Enable the interrupt for the device.
