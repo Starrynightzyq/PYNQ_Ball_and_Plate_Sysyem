@@ -91,6 +91,7 @@ DroneRTInfo RT_Info;	//传感器数据
 OffsetInfo OffsetData;	//校准数据
 flag FlagInstance;		//标志位
 BallInfo Ball_Info;		//小球位置数据
+BallInfo Ball_Target;	//目标位置
 Pid Angle_x, Angle_y, Position_x, Position_y;	//Angle内环PID参数，Position外环PID参数
 _Pid_Out Pid_Out;		//PID输出数据
 
@@ -99,6 +100,7 @@ int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
 int InitInterruptController(XScuGic *XScuGicInstancePtr, u16 DeviceId);
 void InitServo(void);
 void Servo_test();
+void Init_Ball_Target(void);
 
 void AT24C_test();
 
@@ -127,6 +129,9 @@ int main()
 int Init_System(void) {
 	//初始化标志位
 	InitFlag(&FlagInstance);
+
+	//初始化小球目标位置
+	Init_Ball_Target();
 
 	//初始化PID参数
 	PID_Init(&Angle_x, &Angle_y, &Position_x, &Position_y);
@@ -284,4 +289,9 @@ void Servo_test() {
 	    sleep(1);
 	}
 	sleep(2);
+}
+
+void Init_Ball_Target(void) {
+	Ball_Target.x = 120;
+	Ball_Target.y = 160;
 }

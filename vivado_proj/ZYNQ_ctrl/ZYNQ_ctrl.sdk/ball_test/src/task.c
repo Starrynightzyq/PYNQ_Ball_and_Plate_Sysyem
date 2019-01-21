@@ -9,6 +9,7 @@
 extern flag FlagInstance;
 extern _Pid_Out Pid_Out;		//PID输出数据
 extern BallInfo Ball_Info;		//小球位置数据
+extern BallInfo Ball_Target;	//目标位置
 /*
 //500 Hz
 void MPU6500_Task() {
@@ -48,7 +49,7 @@ void TimerTask(void) {
 
 		//外环PID
 		if(FlagInstance.pid_mode == MODE_DUAL) {
-			Position_Control(120, 160);
+			Position_Control(Ball_Target.x, Ball_Target.y);
 		}
 
 		FlagInstance.timer_40Hz = 0;

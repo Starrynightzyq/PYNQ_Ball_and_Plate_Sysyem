@@ -18,6 +18,7 @@ extern flag FlagInstance;
 extern Pid Angle_x, Angle_y, Position_x, Position_y;	//Angle内环PID参数，Position外环PID参数
 extern DroneRTInfo RT_Info;	//传感器数据
 extern BallInfo Ball_Info;		//小球位置数据
+extern BallInfo Ball_Target;	//目标位置
 
 void PcRecvHandler(void *CallBackRef, unsigned int EventData)
 {
@@ -127,6 +128,17 @@ void Process_PcData(u8 *PcData) {
 			FlagInstance.report_pid = 1;
 			FlagInstance.save_pid = 1;
         }
+        /* 设置PositionX的PID参数 -> 设置目标位置 */
+        else if(PcData[2]==0x12){
+
+        	xil_printf("target position\r\n");
+
+        	Ball_Target.x = 1000*UnsignedcharToFloat(PcData,3);
+        	Ball_Target.y = 1000*UnsignedcharToFloat(PcData,7);
+//            OriginalPointX.Kd = UnsignedcharToFloat(PCData,11);
+			FlagInstance.report_pid = 1;
+			FlagInstance.save_pid = 1;
+        }
         else {
         	xil_printf("ID = %x\r\n", PcData[2]);
         }
@@ -227,6 +239,13 @@ void sendParaInfo(void)
     FloatToUnsignedchar(3,SYMBOL_POSITION_Y*Position_y.Kp,paraToPC);
     FloatToUnsignedchar(7,SYMBOL_POSITION_Y*Position_y.Ki,paraToPC);
     FloatToUnsignedchar(11,SYMBOL_POSITION_Y*Position_y.Kd,paraToPC);
+    while(XUartLite_IsSending(&UartPc) == TRUE){};
+    XUartLite_Send(&UartPc, paraToPC, DATA_LEN_PC);
+
+    paraToPC[2]=0X0A;
+    FloatToUnsignedchar(3,((float)(Ball_Target.x)/1000.0),paraToPC);
+    FloatToUnsignedchar(7,((float)(Ball_Target.y)/1000.0),paraToPC);
+//    FloatToUnsignedchar(11,SYMBOL_POSITION_Y*Position_y.Kd,paraToPC);
     while(XUartLite_IsSending(&UartPc) == TRUE){};
     XUartLite_Send(&UartPc, paraToPC, DATA_LEN_PC);
 

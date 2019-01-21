@@ -15,6 +15,7 @@ Priority is the new priority for the IRQ source. 0 is highest
 *			0, 8, 16, 32, 40 ..., 248.
 */
 
+// 中断优先级
 
 #define PRI_TIMER0		0
 #define PRI_IIC0		8	//mpu6500

@@ -2,10 +2,10 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Jan 20 19:20:38 2019
-# Process ID: 3888
+# Start of session at: Mon Jan 21 12:52:12 2019
+# Process ID: 11308
 # Current directory: C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3004 C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9804 C:\MyFiles\PYNQ_Ball_and_Plate_Sysyem\vivado_proj\ZYNQ_ctrl\ZYNQ_ctrl.xpr
 # Log file: C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/vivado.log
 # Journal file: C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl\vivado.jou
 #-----------------------------------------------------------
@@ -16,7 +16,11 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 864.996 ; gain = 151.152
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 876.570 ; gain = 161.008
 update_compile_order -fileset sources_1
+launch_sdk -workspace C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk -hwspec C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk -hwspec C:/MyFiles/PYNQ_Ball_and_Plate_Sysyem/vivado_proj/ZYNQ_ctrl/ZYNQ_ctrl.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Jan 20 19:53:59 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 21 14:14:31 2019...
